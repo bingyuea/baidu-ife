@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE JavaScript Task 05</title>
+</head>
+<style>
+    .new{
+        background: red;
+        text-align: center;
+        display: inline-block;
+    }
+</style>
+<body>
+<input type = "text" class = "input"/>
+<button class = "search" value = "">查询</button>
+
+<textarea class = "textarea">
+
+</textarea>
+
+</body>
+<script>
+    // http://blog.csdn.net/xiangxiangw29/article/details/52460563 append等常用的方法
+    window.onload = function () {
+        var $ = function(dom){
+            return document.querySelectorAll(dom);
+        };
+        var _input = $("input");
+        var _textArea = $("textarea");
+        var _search = $(".search")[0];
+        _search.onclick = function () {
+            if(_input.value != "" && _textArea.value != ""){
+                var filter = _input.value;
+
+            }
+        }
+
+
+    }
+</script>
+</html>
