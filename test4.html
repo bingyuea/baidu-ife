@@ -42,7 +42,7 @@
                             if(status == "in"){
                                 insertNum.leftIn($(".numberArr")[0],span);
                             }
-                            if(status == "out" && $(".numberArr").children != ""){
+                            if(status == "out"){
                                 insertNum.leftOut($(".numberArr")[0]);
                             }
                         }
@@ -50,7 +50,7 @@
                             if(status == "in"){
                                 insertNum.rightIn($(".numberArr")[0],span);
                             }
-                            if(status == "out" && $(".numberArr").children != ""){
+                            if(status == "out"){
                                 insertNum.rightOut($(".numberArr")[0]);
                             }
                         }
@@ -111,14 +111,5 @@
                 }
             }
         };
-//        function eventListen(dom,type,fn) {
-//            if(dom.addEventListener){
-//                dom.addEventListener(type,fn)
-//            }
-//            else{
-//                dom.attachEvent("on"+type,fn);
-//            }
-//            return this;
-//        };
     </script>
 </html>
