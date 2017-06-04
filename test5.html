@@ -10,6 +10,14 @@
         text-align: center;
         display: inline-block;
     }
+    .arr{
+        position: absolute;
+        bottom: 0;
+    }
+    .newNumberArr,.numberArr{
+        padding-top:200px;
+        position: relative;
+    }
 </style>
 <body>
 <input type = "number" class = "input"/>
@@ -27,10 +35,57 @@
 <script>
     // http://blog.csdn.net/xiangxiangw29/article/details/52460563 append等常用的方法
     window.onload = function () {
-        var $ = function(dom){
-            return document.querySelectorAll(dom);
-        };
-        var arr = [];
+        for(var i = 0; i< $("button").length;i++){
+            $("button")[i].onclick = function () {
+                // 给所有的button按钮绑定事件
+                var inputValue = $("input")[0].value;
+                if($(".numberArr")[0].children.length > 60){
+                    alert("超过60个")
+                }else{
+                    if(checkNumber(inputValue)){
+                        var dom = this.getAttribute("class");
+                        var direction = dom.split("_")[0];
+                        var status = dom.split("_")[1];
+                        var span = document.createElement("span");
+                        span.setAttribute("class","new");
+                        span.innerHTML = inputValue;
+                        if(direction == "left"){
+                            if(status == "in"){
+                                insertNum.leftIn($(".numberArr")[0],span);
+                                arrLeft.push(inputValue);
+                                sortNum(arrLeft,true);
+                            }
+                            if(status == "out"){
+                                insertNum.leftOut($(".numberArr")[0]);
+                            }
+                        }
+                        if(direction == "right"){
+                            if(status == "in"){
+                                insertNum.rightIn($(".numberArr")[0],span);
+                                arrLeft.push(inputValue);
+                                sortNum(arrLeft,true);
+                            }
+                            if(status == "out"){
+                                insertNum.rightOut($(".numberArr")[0]);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 删除单个li
+        $(".numberArr")[0].onclick = function (e) {
+            if(this.children != 0){
+                if(e.target != this){
+                    alert(e.target.innerText);
+                    this.removeChild(e.target);
+                };
+            }else{
+                alert("已清空");
+            }
+        }
+        // 排序
+        var arrLeft = [];
         function sortNum(arr,flag){
             var minHeight;
             $(".newNumberArr")[0].innerHTML = "";
@@ -43,65 +98,75 @@
                     }
                 }
             }
+                // 正序
             if(flag) {
-                arr.forEach(function (value,indexe,arr) {
+                arr.forEach(function (value,index,arr) {
                     var span = document.createElement("span");
-                    span.setAttribute("class","new");
+                    span.setAttribute("class","new arr");
                     span.style.height = value+"px";
+                    span.style.left = 20*index+"px";
                     span.innerText = value;
                     $(".newNumberArr")[0].append(span);
 
                 })
             }else{
-                arr.reverse().forEach(function (value,indexe,arr) {
+                // 倒序
+                arr.reverse().forEach(function (value,index,arr) {
                     var span = document.createElement("span");
-                    span.setAttribute("class","new");
+                    span.setAttribute("class","new arr");
                     span.style.height = value+"px";
+                    span[index].style.left = 20*index+"px";
                     span.innerText = value;
                     $(".newNumberArr")[0].append(span);
                 })
             }
         };
-        for(var i = 0; i< $("button").length;i++){
-            $("button")[i].onclick = function () {
-                var dom = this.getAttribute("class");
-                var direction = dom.split("_")[0];
-                var status = dom.split("_")[1];
-                var span = document.createElement("span");
-                span.setAttribute("class","new");
-                if($(".numberArr span").length <= 60){
-                    if(Number($("input")[0].value) != ""  && Number($("input")[0].value) >= 10 && Number($("input")[0].value) <= 100){
-                    span.innerText = $("input")[0].value;
-                    if(direction == "left"){
-                        if(status == "in"){
-                            $(".numberArr")[0].prepend(span);
-                            span.style.height = $("input")[0].value+"px";
-                            arr.push($("input")[0].value);
-                            sortNum(arr,true);
-                        }
-                        if(status == "out" && $(".numberArr").children != ""){
-                            $(".numberArr")[0].removeChild($(".numberArr")[0].firstElementChild);
-                            alert($(".numberArr")[0].firstElementChild.innerText);
-                        }
-                    }
-                    if(direction == "right"){
-                        if(status == "in"){
-                            $(".numberArr")[0].append(span);
-                            span.style.height = $("input")[0].value+"px";
-                            arr.push($("input")[0].value);
-                            sortNum(arr,false);
-                        }
-                        if(status == "out" && $(".numberArr").children != ""){
-                            $(".numberArr")[0].removeChild($(".numberArr")[0].lastElementChild);
-                            alert($(".numberArr")[0].lastElementChild.innerText);
-                        }
-                    }
-                }
-                }else{
-                    alert("超过60个了");
-                }
+    };
+    var $ = function(dom){
+        return document.querySelectorAll(dom);
+    };
+    function  checkNumber(inputValue) {
+        if(inputValue == ""){
+            console.log("不能为空");
+            return false;
+        }else if(Number(inputValue)){
+            if(Number(inputValue) >=10 && Number(inputValue) <100){
+                return true;
+            }else{
+                console.log("请输入大于10小于100的数字");
             }
+        }else{
+            console.log('请输入数字');
+            return false;
         }
     }
+    var insertNum = {
+        leftIn : function (dom,insertDom) {
+            if(dom.children == ""){
+                dom.append(insertDom);
+            }else{
+                dom.insertBefore(insertDom,dom.firstElementChild)
+            }
+        },
+        leftOut : function (dom) {
+            if(dom.children.length != 0){
+                alert(dom.firstElementChild.innerText);
+                dom.removeChild(dom.firstElementChild);
+            }else{
+                alert("已清空");
+            }
+        },
+        rightIn : function (dom,insertDom) {
+            dom.append(insertDom);
+        },
+        rightOut : function (dom) {
+            if(dom.children.length != 0){
+                alert(dom.lastElementChild.innerText);
+                dom.removeChild(dom.lastElementChild);
+            }else{
+                alert("已清空");
+            }
+        }
+    };
 </script>
 </html>
