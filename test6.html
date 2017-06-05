@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IFE JavaScript Task 05</title>
+    <title>IFE JavaScript Task 06</title>
 </head>
 <style>
     .new{
@@ -10,15 +10,22 @@
         text-align: center;
         display: inline-block;
     }
+    .textarea{
+        width:100px;
+        height:100px;
+    }
+    .found{
+        color: ;
+    }
 </style>
 <body>
 <input type = "text" class = "input"/>
 <button class = "search" value = "">查询</button>
-
 <textarea class = "textarea">
 
 </textarea>
-
+<button class="insert">插入</button>
+<div class = "result"></div>
 </body>
 <script>
     // http://blog.csdn.net/xiangxiangw29/article/details/52460563 append等常用的方法
@@ -26,17 +33,49 @@
         var $ = function(dom){
             return document.querySelectorAll(dom);
         };
-        var _input = $("input");
-        var _textArea = $("textarea");
+        var _input = $(".input")[0];
+        var _textArea = $("textarea")[0];
         var _search = $(".search")[0];
+        var _insert = $(".insert")[0];
+        var _result = $(".result")[0];
+        var filter =/[\u4e00-\u9fa5_a-zA-Z0-9]/g;
+        //查询
         _search.onclick = function () {
             if(_input.value != "" && _textArea.value != ""){
-                var filter = _input.value;
-
+                d = d.replace(new RegExp(_input.value, 'g'), '<span class="found">' + _input.value + '</span>');
+            }else{
+                alert("请输入查询内容");
             }
         }
-
-
+        // 插入
+        _insert.onclick = function () {
+            if(_textArea.value != ""){
+                var arr = _textArea.value.replace(/^[\u4e00-\u9fa5_a-zA-Z0-9]/g," ").split(" ")
+                arr.forEach(function (value,index,arr) {
+                    var span = document.createElement("span");
+                    span.innerText = value;
+                    _result.append("span");
+                });
+            }else{
+                alert("请插入内容")
+            }
+        }
+//        function regArr(str,inputValue){
+//            var arr2= [];
+//            var arr = str.replace(/^[\u4e00-\u9fa5_a-zA-Z0-9]/g," ").split(" ");
+//            arr.forEach(function (value,index,arr) {
+//                arr2 = value.split("").forEach(function (value2,inex2,arr2) {
+//                   if(value2 == inputValue){
+//                        var result = arr2.join("");
+//                   }else{
+//                       alert("未找到");
+//                   }
+//                })
+//                $("textarea")[0].value = "";
+//                $("textarea")[0].innerHTML += value;
+//
+//            })
+//        }
     }
 </script>
 </html>
