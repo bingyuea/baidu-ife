@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单效验2</title>
+</head>
+<style>
+    main{
+        width:500px;
+        margin:100px auto 0;
+    }
+    label{
+        width:500px;
+        height: 80px;
+        display: inline-block;
+    }
+    label > input {
+        border : 1px solid #eee;
+        box-sizing: border-box;
+        width:70%;
+        height: 44px;
+        float: right;
+    }
+    label > input.checkEmpty {
+        border : 1px solid orangered;
+    }
+    label > input.checkRight {
+        border : 1px solid green;
+    }
+    label > input.checkError {
+        border : 1px solid palevioletred;
+    }
+    main >button {
+        border : 1px solid #eee;
+        box-sizing: border-box;
+        width:20%;
+        height: 44px;
+    }
+    main p {
+        padding-left: 30%;
+        line-height: 36px;
+        margin: 0;
+        height: 36px;
+        float: left;
+    }
+</style>
+<body>
+<main>
+
+    <label>名称
+        <input type = "text" class = "check_input " check = "name"/>
+        <p class = "check_tip"></p>
+    </label>
+    <label>密码
+        <input type = "text" class = "check_input " check = "password"/>
+        <p class = "check_tip"></p>
+    </label>
+    <label>确认密码
+        <input type = "text" class = "check_input " check = "rePassword"/>
+        <p class = "check_tip"></p>
+    </label>
+    <label>邮箱
+        <input type = "text" class = "check_input " check = "email"/>
+        <p class = "check_tip"></p>
+    </label>
+
+    <label>手机
+        <input type = "text" class = "check_input " check = "mobile"/>
+        <p class = "check_tip"></p>
+    </label>
+    <button class = "btn">提交</button>
+</main>
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script>
+    var msg = [
+        {"name" : {
+            "type" : "name",
+            "tip_focus" : "必填,长度为4~16个字符",
+            "tip_right" : "right",
+            "tip_blur" : "不能为空",
+            "tip_error" : "格式错误",
+            "reg" : "^.{4,16}$"
+        }},
+        {"name" : {
+            "type" : "password",
+            "tip_focus" : "必填,密码长度不小于6位",
+            "tip_right" : "right",
+            "tip_blur" : "不能为空",
+            "tip_error" : "格式错误",
+            "reg" : "^{6,}$"
+        }},
+        {"name" : {
+            "type" : "rePassword",
+            "tip_focus" : "必填,重复输入密码",
+            "tip_right" : "right",
+            "tip_blur" : "不能为空",
+            "tip_error" : "两次输入不一致，请重新输入",
+            "reg" : "^{6,}$"
+        }},
+        {"name" : {
+            "type" : "email",
+            "tip_focus" : "必填,输入常用邮箱",
+            "tip_right" : "right",
+            "tip_blur" : "不能为空",
+            "tip_error" : "请输入正确的邮箱",
+            // 2310179201@qq.com
+            //"reg" : "^/w*@/w*[/./w]$"
+            "reg" : "^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
+        }},
+        {"name" : {
+            "type" : "mobile",
+            "tip_focus" : "必填,请输入你的手机号码",
+            "tip_right" : "right",
+            "tip_blur" : "不能为空",
+            "tip_error" : "请输入正确的手机号",
+            // 13671536220
+            "reg" : "^/d{11}$"
+        }}
+    ];
+    //[{name : {tip : }]
+    $(document).on("focusin focusout","label > input",function (e) {
+        var isPassword;
+        if(e.type == "focusin"){//获取焦点 输入
+            msg.forEach(function (value,index,msg) {
+                if($(e.target).attr("check") == msg[index].name.type){
+                    $('p').eq(index).show().text(msg[index].name.tip_focus);
+                }
+            })
+        }else if(e.type == "focusout"){// 是去焦点
+            var _value = $(e.target).val();
+            if(_value == ""){// 空
+                msg.forEach(function (value,index,msg) {
+                    if($(e.target).attr("check") == msg[index].name.type){
+                        $('p').eq(index).show().text(msg[index].name.tip_blur);
+                        $(e.target).removeClass();
+                        $(e.target).addClass("checkEmpty");
+                    }
+                })
+            }else{
+                var i = $(this).index();
+                var reg = new RegExp(msg[i].name.reg);
+                if(reg.test(_value)){// 效验通过
+                    msg.forEach(function (value,index,msg) {
+                        if($(e.target).attr("check") == msg[index].name.type){
+                            $('p').eq(index).text(msg[index].name.tip_right);
+                            $(e.target).removeClass();
+                            $(e.target).addClass("checkRight");
+                            if($(e.target).attr("check") == "rePassword" && $(e.target).attr("check","password").val() != ""){
+                                isPassword = $(e.target).attr("check","password").val();
+                                console.log("号码消炎");
+                            }
+                            if(isPassword == $(e.target).attr("check","rePassword").val()){
+                                console.log("号码消炎通过");
+                            }
+                        }
+
+                    })
+                }else{// 效验不通过
+                    msg.forEach(function (value,index,msg) {
+                        if($(e.target).attr("check") == msg[index].name.type){
+                            $('p').eq(index).text(msg[index].name.tip_error);
+                            $(e.target).removeClass();
+                            $(e.target).addClass("checkError");
+                        }
+                    })
+                }
+            }
+        }
+    })
+</script>
+</html>
