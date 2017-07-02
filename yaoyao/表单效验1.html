@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单效验1</title>
+</head>
+<style>
+    label{
+        width:500px;
+        height: 80px;
+        display: inline-block;
+    }
+    label > input {
+        border : 1px solid #eee;
+        box-sizing: border-box;
+        width:70%;
+        height: 44px;
+    }
+    label > input.checkEmpty {
+        border : 1px solid orangered;
+        box-sizing: border-box;
+        width:70%;
+        height: 44px;
+    }
+    label > input.right {
+        border : 1px solid green;
+        box-sizing: border-box;
+        width:70%;
+        height: 44px;
+    }
+    label > input.checkError {
+        border : 1px solid palevioletred;
+        box-sizing: border-box;
+        width:70%;
+        height: 44px;
+    }
+    label >button {
+        border : 1px solid #eee;
+        box-sizing: border-box;
+        width:20%;
+        height: 44px;
+    }
+</style>
+
+<body>
+        <label>名称<input type = "text"/>
+            <button type = "" onclick= "check()">效验</button>
+            <P id = "checkTip"></P>
+        </label>
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    function check() {
+        var _input = $("label > input");
+        var value = _input.val();
+        switch (isResult(value)){
+            case 0 :
+                _input.removeClass();
+                _input.addClass("checkEmpty");
+                $("#checkTip").text("不能为空");
+                break;
+            case 1 :
+                _input.removeClass();
+                _input.addClass("checkRight");
+                break;
+            case 2 :
+                _input.removeClass();
+                _input.addClass("checkError") ;
+                $("#checkTip").text("输入有误");
+                break;
+        }
+
+    }
+    function isResult(value) {
+        value = $.trim(value);
+        if(value == ""){
+            return 0;
+        }else{
+            value = value.replace(/[xd800-xffff]/g, 'A');
+            value = value.replace(/[^x00-xff]/g,'AB');
+            if(value > 4 && value < 16) {
+                return 1;
+            }else{
+                return 2;
+            }
+        }
+    }
+</script>
+</html>
