@@ -89,7 +89,7 @@
             "tip_right" : "right",
             "tip_blur" : "不能为空",
             "tip_error" : "格式错误",
-            "reg" : "^{6,}$"
+            "reg" : "^.{6,}$"
         }},
         {"name" : {
             "type" : "rePassword",
@@ -97,7 +97,7 @@
             "tip_right" : "right",
             "tip_blur" : "不能为空",
             "tip_error" : "两次输入不一致，请重新输入",
-            "reg" : "^{6,}$"
+            "reg" : "^.{6,}$"
         }},
         {"name" : {
             "type" : "email",
@@ -107,7 +107,9 @@
             "tip_error" : "请输入正确的邮箱",
             // 2310179201@qq.com
             //"reg" : "^/w*@/w*[/./w]$"
-            "reg" : "^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
+            //"reg" : "^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
+            "reg" : "^(\\w)+(\.\\w+)*@(\\w)+((\.\\w+)+)$"
+
         }},
         {"name" : {
             "type" : "mobile",
@@ -116,63 +118,64 @@
             "tip_blur" : "不能为空",
             "tip_error" : "请输入正确的手机号",
             // 13671536220
-            "reg" : "^/d{11}$"
+            "reg" : "^(\\d){11}$"
         }}
     ];
     //[{name : {tip : }]
     $(document).on("focusin focusout","label > input",function (e) {
         var isPassword;
+        var that = this;
         if(e.type == "focusin"){//获取焦点 输入
             msg.forEach(function (value,index,msg) {
-                if($(e.target).attr("name") == msg[index].name.type){
+                if($(that).attr("name") == msg[index].name.type){
                     $('p').eq(index).show().text(msg[index].name.tip_focus);
                 }
             })
         }else if(e.type == "focusout"){// 是去焦点
-            var _value = $(e.target).val();
-            if(_value == ""){// 空
+            if($(that).val() == ""){// 空
                 msg.forEach(function (value,index,msg) {
-                    if($(e.target).attr("name") == msg[index].name.type){
+                    if($(that).attr("name") == msg[index].name.type){
                         $('p').eq(index).show().text(msg[index].name.tip_blur);
-                        $(e.target).removeClass();
-                        $(e.target).addClass("nameEmpty");
+                        $(that).removeClass();
+                        $(that).addClass("nameEmpty");
                     }
                 })
             }else{
-                var i = $(this).index();
-                var reg = new RegExp(msg[i].name.reg);
-                if(reg.test(_value)){// 效验通过
-                    msg.forEach(function (value,index,msg) {
-                        if($(e.target).attr("name") == msg[index].name.type){
-                            if($(e.target[name = "password"]).val() != ""){
-                                isPassword = $(e.target[name = "password"]).val();
+                msg.forEach(function (value,index,msg){
+                    if($(that).attr("name") == msg[index].name.type){
+                        var reg = new RegExp(msg[index].name.reg);
+                        if(reg.test($(that).val())){// 效验通过
+                            // 把密码保存下来
+                            if($('input[name = "password"]').val() != ""){
+                                isPassword = $('input[name = "password"]').val();
                             }
-                            if($(e.target).attr("name") == "rePassword"){
-                                if(isPassword == $(e.target[name = "rePassword"]).val()){
+                            // 如果输入的是repassword 就执行下面的
+                            if($(that).attr("name") == "rePassword"){
+                                if(isPassword == $(that).val()){
                                     $('p').eq(index).text(msg[index].name.tip_right);
-                                    $(e.target[name = "rePassword"]).removeClass();
-                                    $(e.target[name = "rePassword"]).addClass("nameRight");
+                                    $(that).removeClass();
+                                    $(that).addClass("nameRight");
                                 }else{
                                     $('p').eq(index).text(msg[index].name.tip_error);
-                                    $(e.target[name = "rePassword"]).removeClass();
-                                    $(e.target[name = "rePassword"]).addClass("nameError");
+                                    $(that).removeClass();
+                                    $(that).addClass("nameError");
                                 }
+                            }else{
+                                $('p').eq(index).text(msg[index].name.tip_right);
+                                $(that).removeClass();
+                                $(that).addClass("nameRight");
                             }
-                            $('p').eq(index).text(msg[index].name.tip_right);
-                            $(e.target).removeClass();
-                            $(e.target).addClass("nameRight");
+                        }else{// 效验不通过
+                            msg.forEach(function (value,index,msg) {
+                                if($(that).attr("name") == msg[index].name.type){
+                                    $('p').eq(index).text(msg[index].name.tip_error);
+                                    $(that).removeClass();
+                                    $(that).addClass("nameError");
+                                }
+                            })
                         }
-
-                    })
-                }else{// 效验不通过
-                    msg.forEach(function (value,index,msg) {
-                        if($(e.target).attr("name") == msg[index].name.type){
-                            $('p').eq(index).text(msg[index].name.tip_error);
-                            $(e.target).removeClass();
-                            $(e.target).addClass("nameError");
-                        }
-                    })
-                }
+                    }
+                })
             }
         }
     })
