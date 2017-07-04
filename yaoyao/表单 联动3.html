@@ -50,7 +50,6 @@
         $(document).on("change","input[type = 'radio']:checked",function () {
             $(".result").not($(this).index()).hide();
             $(".result").eq($(this).index()).show();
-
         })
         $(document).on("change","select:first-of-type",function () {
             $("select:last-of-type").val($(this).val()).selected;
