@@ -17,7 +17,7 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
     <table class = "bordered" style = "position:relative;">
 
     </table>
-
+    <input type ="text" id = "commandPush"/>
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script>
@@ -71,9 +71,46 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
                 "borderLeft": "1px solid #f0f",
                 "borderTop": "1px solid #f0f"
             }).appendTo($("table"));
+
+
         },2500)
+        $(document).on("blur","#commandPush",function () {
+            var pushValue = $(this).val().trim();
+            showRes(pushValue);
+        })
 
 
+            //    GO：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+            //    TUN LEF：向左转（逆时针旋转90度）
+            //    TUN RIG：向右转（顺时针旋转90度）
+            //    TUN BAC：向右转（旋转180度）
+        function showRes(pushValue) {
+            switch (pushValue){
+                case "GO":
+                    if($(".temp").offset().top <= $("tr:nth-of-type(2) > td").offset().top){
+                       alert("已到边界");
+                       return;
+                    }
+                    $(".temp").offset({top:$(".temp").offset().top - $(".temp").height() -1});
+                    break;
+                case "TUN LEF":
+                    $(".temp").css({
+                        //transform: rotate(90deg)
+                        "transfrom":"rotate(-90deg)"
+                    });
+                    break;
+                case "TUN RIG":
+                    $(".temp").css({
+                        "transfrom":"rotate(90deg)"
+                    });
+                    break;
+                case "TUN BAC":
+                    $(".temp").css({
+                        "transfrom":"rotate(180deg)"
+                    });
+                    break;
+            }
+        }
 
 
     })
