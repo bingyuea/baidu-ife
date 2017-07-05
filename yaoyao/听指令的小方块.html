@@ -7,33 +7,115 @@
 <style>
 
 
-*{margin: 0;padding: 0;} body { padding: 40px 100px; } .demo { width: 600px; margin: 40px auto; font-family: 'trebuchet MS', 'Lucida sans', Arial; font-size: 14px; color: #444; } table { *border-collapse: collapse; /* IE7 and lower */ border-spacing: 0; width: 100%; } /*========bordered table========*/ .bordered { border: solid #ccc 1px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 1px 1px #ccc; -moz-box-shadow: 0 1px 1px #ccc; box-shadow: 0 1px 1px #ccc; } .bordered tr { -o-transition: all 0.1s ease-in-out; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out;	} .bordered .highlight, .bordered tr:hover { background: #fbf8e9;	} .bordered td, .bordered th { border-left: 1px solid #ccc; border-top: 1px solid #ccc; padding: 10px; text-align: left; } .bordered th { background-color: #dce9f9; background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9)); background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9); background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9); background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9); background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9); background-image: linear-gradient(top, #ebf3fc, #dce9f9); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9); -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9)"; -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset; box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; border-top: none; text-shadow: 0 1px 0 rgba(255,255,255,.5); } .bordered td:first-child, .bordered th:first-child { border-left: none; } .bordered th:first-child { -moz-border-radius: 6px 0 0 0; -webkit-border-radius: 6px 0 0 0; border-radius: 6px 0 0 0; } .bordered th:last-child { -moz-border-radius: 0 6px 0 0; -webkit-border-radius: 0 6px 0 0; border-radius: 0 6px 0 0; } .bordered tr:last-child td:first-child { -moz-border-radius: 0 0 0 6px; -webkit-border-radius: 0 0 0 6px; border-radius: 0 0 0 6px; } .bordered tr:last-child td:last-child { -moz-border-radius: 0 0 6px 0; -webkit-border-radius: 0 0 6px 0; border-radius: 0 0 6px 0; } /*----------------------*/ .zebra td, .zebra th { padding: 10px; border-bottom: 1px solid #f2f2f2; } .zebra .alternate, .zebra tbody tr:nth-child(even) { background: #f5f5f5; -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset; box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; } .zebra th { text-align: left; text-shadow: 0 1px 0 rgba(255,255,255,.5); border-bottom: 1px solid #ccc; background-color: #eee; background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eee)); background-image: -webkit-linear-gradient(top, #f5f5f5, #eee); background-image: -moz-linear-gradient(top, #f5f5f5, #eee); background-image: -ms-linear-gradient(top, #f5f5f5, #eee); background-image: -o-linear-gradient(top, #f5f5f5, #eee); background-image: linear-gradient(top, #f5f5f5, #eee); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f5f5f5, endColorstr=#eeeeee); -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#f5f5f5, endColorstr=#eeeeee)"; } .zebra th:first-child { -moz-border-radius: 6px 0 0 0; -webkit-border-radius: 6px 0 0 0; border-radius: 6px 0 0 0; } .zebra th:last-child { -moz-border-radius: 0 6px 0 0; -webkit-border-radius: 0 6px 0 0; border-radius: 0 6px 0 0; } .zebra tfoot td { border-bottom: 0; border-top: 1px solid #fff; background-color: #f1f1f1; } .zebra tfoot td:first-child { -moz-border-radius: 0 0 0 6px; -webkit-border-radius: 0 0 0 6px; border-radius: 0 0 0 6px; } .zebra tfoot td:last-child { -moz-border-radius: 0 0 6px 0; -webkit-border-radius: 0 0 6px 0; border-radius: 0 0 6px 0; }
-td{width:30px;height: 30px;box-sizing: border-box;}
+*{margin: 0;padding: 0;} body { padding: 40px 100px; } .demo { width: 600px; margin: 40px auto; font-family: 'trebuchet MS', 'Lucida sans', Arial; font-size: 14px; color: #444; } table { *border-collapse: collapse; /* IE7 and lower */ border-spacing: 0; width: 350px; } /*========bordered table========*/ .bordered { border: solid #ccc 1px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 1px 1px #ccc; -moz-box-shadow: 0 1px 1px #ccc; box-shadow: 0 1px 1px #ccc; } .bordered tr { -o-transition: all 0.1s ease-in-out; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out;	} .bordered .highlight, .bordered tr:hover { background: #fbf8e9;	} .bordered td, .bordered th { border-left: 1px solid #ccc; border-top: 1px solid #ccc; padding: 10px; text-align: left; } .bordered th { background-color: #dce9f9; background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9)); background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9); background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9); background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9); background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9); background-image: linear-gradient(top, #ebf3fc, #dce9f9); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9); -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9)"; -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset; box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; border-top: none; text-shadow: 0 1px 0 rgba(255,255,255,.5); } .bordered td:first-child, .bordered th:first-child { border-left: none; } .bordered th:first-child { -moz-border-radius: 6px 0 0 0; -webkit-border-radius: 6px 0 0 0; border-radius: 6px 0 0 0; } .bordered th:last-child { -moz-border-radius: 0 6px 0 0; -webkit-border-radius: 0 6px 0 0; border-radius: 0 6px 0 0; } .bordered tr:last-child td:first-child { -moz-border-radius: 0 0 0 6px; -webkit-border-radius: 0 0 0 6px; border-radius: 0 0 0 6px; } .bordered tr:last-child td:last-child { -moz-border-radius: 0 0 6px 0; -webkit-border-radius: 0 0 6px 0; border-radius: 0 0 6px 0; } /*----------------------*/ .zebra td, .zebra th { padding: 10px; border-bottom: 1px solid #f2f2f2; } .zebra .alternate, .zebra tbody tr:nth-child(even) { background: #f5f5f5; -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset; box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; } .zebra th { text-align: left; text-shadow: 0 1px 0 rgba(255,255,255,.5); border-bottom: 1px solid #ccc; background-color: #eee; background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eee)); background-image: -webkit-linear-gradient(top, #f5f5f5, #eee); background-image: -moz-linear-gradient(top, #f5f5f5, #eee); background-image: -ms-linear-gradient(top, #f5f5f5, #eee); background-image: -o-linear-gradient(top, #f5f5f5, #eee); background-image: linear-gradient(top, #f5f5f5, #eee); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f5f5f5, endColorstr=#eeeeee); -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#f5f5f5, endColorstr=#eeeeee)"; } .zebra th:first-child { -moz-border-radius: 6px 0 0 0; -webkit-border-radius: 6px 0 0 0; border-radius: 6px 0 0 0; } .zebra th:last-child { -moz-border-radius: 0 6px 0 0; -webkit-border-radius: 0 6px 0 0; border-radius: 0 6px 0 0; } .zebra tfoot td { border-bottom: 0; border-top: 1px solid #fff; background-color: #f1f1f1; } .zebra tfoot td:first-child { -moz-border-radius: 0 0 0 6px; -webkit-border-radius: 0 0 0 6px; border-radius: 0 0 0 6px; } .zebra tfoot td:last-child { -moz-border-radius: 0 0 6px 0; -webkit-border-radius: 0 0 6px 0; border-radius: 0 0 6px 0; }
+td{width:30px !important;height: 30px !important;box-sizing: border-box !important;padding:0 !important;}
+.bordered td, .bordered th{
+    text-align: center;
+}
 </style>
 <body>
-    <table class = "bordered" >
+    <table class = "bordered" style = "position:relative;">
 
     </table>
-    <embed wmode="transparent" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_wh.swf" quality="high" bgcolor="#ffffff" width="160" height="70" name="honehoneclock" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
-        <object type="application/x-shockwave-flash" style="outline:none;" data="http://cdn.abowman.com/widgets/hamster/hamster.swf?" width="190" height="200">
-            <param name="movie" value="http://cdn.abowman.com/widgets/hamster/hamster.swf?">
-            <param name="AllowScriptAccess" value="always">
-            <param name="wmode" value="opaque">
-        </object>
+
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script>
     // 字符串 repeat 异步处理
     $(function () {
-        var num = 10;
-        for(var i=1;i<= num;i++){
-            $("<tr></tr>").appendTo($("table"));
-            setTimeout(function () {
-                for(var j = 1;j <= num; j++){
-                    $('<td>'+j+'</td>').appendTo($("tr")[j-1]);
-                }
-            },500)
-        }
+        var num = 11;
+        var str = "<tr></tr>";
+        $(str.repeat(11)).appendTo($("table"));
+        setTimeout(function () {
+            for(var j = 1;j <= num; j++){
+                var str2 = "<td></td>";
+                $(str2.repeat(11)).appendTo($("tr")[j-1]).eq(0).text(j-1).css({
+                    "borderTop": "0",
+                    "borderLeft":"0"
+                });
+                $("tr:first-of-type > td").eq(j-1).text(j-1).css({
+                    "borderTop": "0",
+                    "borderLeft":"0"
+                });
+                continue;
+            }
+        },500);
+        // 小色块
+        var tempPosition;
+        var ram = 0;
+        setTimeout(function () {
+            $(".bordered td:empty").each(function (index,ele,arr) {
+                ram = index;
+                var x = $(ele).offset().left;
+                var y = $(ele).offset().top;
+                $(ele).css({
+                    "positon" : "absolute",
+                    "top" : y,
+                    "left" : x
+                });
+            })
+        },1000);
+        setTimeout(function () {
+            tempPosition= $(".bordered td:empty").eq(parseInt(Math.random()*ram));
+            console.log($(tempPosition).width());
+        },2000);
+
+        setTimeout(function () {
+            $("<div class = 'temp'></div>").css({
+                "position":"absolute",
+                "left" : tempPosition.position().left,
+                "top" : tempPosition.position().top,
+                "backgroundColor" : "#000",
+                "width" : $(tempPosition).width(),
+                "height" : $(tempPosition).height(),
+                "borderLeft": "1px solid #f0f",
+                "borderTop": "1px solid #f0f"
+            }).appendTo($("table"));
+        },2500)
+
+
+
+
     })
+
+
+
+
+
+
+
+    // 代码串行
+//    var items = [ 1, 2, 3, 4, 5, 6 ];
+//    var results = [];
+//    function series(item) {
+//        if(item) {
+//            async( item, function(result) {
+//                results.push(result);
+//                return series(items.shift());
+//            });
+//        } else {
+//            return final(results);
+//        }
+//    }
+//    series(items.shift());
+//    function async(arg, callback) {
+//        console.log('参数为 ' + arg +' , 1秒后返回结果');
+//        setTimeout(
+//            function() {
+//                callback(arg * 2);
+//            },
+//        1000);
+//    }
+//    function final(value) {
+//        console.log('完成: ', value);
+//    }
+
+//    var promise = new Promise(function (resolve,reject) {
+//        if("异步操作成功"){
+//            resolve(success);
+//        }else{
+//            reject(error);
+//        }
+//    })
 </script>
 </html>
