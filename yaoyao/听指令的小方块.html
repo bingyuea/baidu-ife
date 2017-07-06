@@ -68,8 +68,10 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
                 "backgroundColor" : "#000",
                 "width" : $(tempPosition).width(),
                 "height" : $(tempPosition).height(),
-                "borderLeft": "1px solid #f0f",
-                "borderTop": "1px solid #f0f"
+                "border": "10px solid red",
+                "borderColor": "blue transparent transparent transparent",
+                "backgroundColor" : "red",
+                "box-sizing": "border-box"
             }).appendTo($("table"));
 
 
@@ -79,6 +81,8 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
             count++;
             var pushValue = $(this).val().trim();
             showRes(pushValue,count);
+            console.log($(".temp"));
+
         })
 
 
@@ -90,28 +94,32 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
 
             switch (pushValue){
                 case "GO":
-                    if(parseInt($(".temp").offset().top) <= parseInt($("tr:nth-of-type(2) > td").offset().top)){
-                        alert("已到边界");
+                    console.log($(".temp").offset().top);
+                    console.log($(".bordered").offset().top);
+
+                    if(parseInt($(".temp").offset().top) <= parseInt($(".bordered").offset().top)+parseInt($(".temp")[0].offsetHeight)){
+                        alert("已到上边界");
                         return;
                     }
-                    if(parseInt($(".temp").offset().top) >= parseInt($("tr:nth-of-type(11) > td").offset().top)){
-                        alert("已到边界");
+                    if(parseInt($(".temp").offset().top) >= parseInt($(".bordered").offset().top)+parseInt($(".bordered").offsetHeight)){
+                        alert("已到下边界");
                         return;
                     }
-                    if(parseInt($(".temp").offset().left) <= parseInt($("tr:nth-of-type(1) > td").offset().left)){
-                        alert("已到边界");
+                    if(parseInt($(".temp").offset().left) <= parseInt($(".bordered").offset().left)+parseInt($(".temp")[0].offsetWidth)){
+                        alert("已到左边界");
                         return;
                     }
-                    if(parseInt($(".temp").offset().left) >= parseInt($("tr:nth-of-type(2) > td:last-of-type").offset().left)){
-                        alert("已到边界");
+                    if(parseInt($(".temp").offset().left) >= parseInt($(".bordered").offset().left)+parseInt($(".bordered").offsetWidth)){
+                        alert("已到右边界");
                         return;
                     }
-                    $(".temp").offset({top:$(".temp").offset().top - $(".temp").height() -1});
+                    // 上
+                    $(".temp").offset({top:$(".temp").offset().top - $(".temp")[0].offsetHeight});
                     break;
                 case "TUN LEF":
                     $(".temp").css({
                         //transform: rotate(90deg)
-                        transform:"rotate((-90*'count')deg)"
+                        transform:"rotate(-90deg)"
                     });
                     break;
                 case "TUN RIG":
