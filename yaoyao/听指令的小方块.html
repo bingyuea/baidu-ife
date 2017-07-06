@@ -12,12 +12,14 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
 .bordered td, .bordered th{
     text-align: center;
 }
+.bordered td, .bordered th{
+    border:1px solid #000;
+}
 </style>
 <body>
     <table class = "bordered" style = "position:relative;">
 
     </table>
-    <input type ="text" id = "commandPush"/>
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script>
@@ -30,12 +32,10 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
             for(var j = 1;j <= num; j++){
                 var str2 = "<td></td>";
                 $(str2.repeat(11)).appendTo($("tr")[j-1]).eq(0).text(j-1).css({
-                    "borderTop": "0",
-                    "borderLeft":"0"
+                    "border": "0",
                 });
                 $("tr:first-of-type > td").eq(j-1).text(j-1).css({
-                    "borderTop": "0",
-                    "borderLeft":"0"
+                    "border": "0",
                 });
                 continue;
             }
@@ -66,8 +66,8 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
                 "left" : tempPosition.position().left,
                 "top" : tempPosition.position().top,
                 "backgroundColor" : "#000",
-                "width" : $(tempPosition).width(),
-                "height" : $(tempPosition).height(),
+                "width" : $(tempPosition).width()+2,
+                "height" : $(tempPosition).height()+2,
                 "border": "10px solid red",
                 "borderColor": "blue transparent transparent transparent",
                 "backgroundColor" : "red",
@@ -76,64 +76,97 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
 
 
         },2500)
-        var count = 0;
-        $(document).on("blur","#commandPush",function () {
+        var count = 0,go,up,down,left,right;
+        $(document).keyup(function (e) {
             count++;
-            var pushValue = $(this).val().trim();
-            showRes(pushValue,count);
-            console.log($(".temp"));
-
+            // showRes(pushValue,count);
+            switch (e.keyCode) {
+                case 13:
+                    executeRes(go); // 执行前进方法
+                    break;
+                case 37:
+                    executeRes(go,left); // 执行左方法
+                    break;
+                case 38:
+                    executeRes(go,up); // 执行上方法
+                    break;
+                case 39:
+                    executeRes(go,right); // 执行前进方法
+                    break;
+                case 40:
+                    executeRes(go,down); // 执行前进方法
+                    break;
+            }
         })
+//        function executeRes(go,direction) {
+//            if(direction){
+//
+//            }else{
+//                showRes(go)
+//            }
+//
+//
+//
+//        }
 
-
-            //    GO：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+             //    GO：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
             //    TUN LEF：向左转（逆时针旋转90度）
             //    TUN RIG：向右转（顺时针旋转90度）
             //    TUN BAC：向右转（旋转180度）
-        function showRes(pushValue) {
-
-            switch (pushValue){
-                case "GO":
-                    console.log($(".temp").offset().top);
-                    console.log($(".bordered").offset().top);
-
-                    if(parseInt($(".temp").offset().top) <= parseInt($(".bordered").offset().top)+parseInt($(".temp")[0].offsetHeight)){
+        function executeRes(pushValue,direction) {
+                if (pushValue == "go") {
+                    if (parseInt($(".temp").offset().top) <= parseInt($(".bordered").offset().top) + parseInt($(".temp")[0].offsetHeight) * 2) {
                         alert("已到上边界");
                         return;
                     }
-                    if(parseInt($(".temp").offset().top) >= parseInt($(".bordered").offset().top)+parseInt($(".bordered").offsetHeight)){
+                    if (parseInt($(".temp").offset().top) >= parseInt($(".bordered").offset().top) + parseInt($(".bordered").offsetHeight)) {
                         alert("已到下边界");
                         return;
                     }
-                    if(parseInt($(".temp").offset().left) <= parseInt($(".bordered").offset().left)+parseInt($(".temp")[0].offsetWidth)){
+                    if (parseInt($(".temp").offset().left) <= parseInt($(".bordered").offset().left) + parseInt($(".temp")[0].offsetWidth) * 2) {
                         alert("已到左边界");
                         return;
                     }
-                    if(parseInt($(".temp").offset().left) >= parseInt($(".bordered").offset().left)+parseInt($(".bordered").offsetWidth)){
+                    if (parseInt($(".temp").offset().left) >= parseInt($(".bordered").offset().left) + parseInt($(".bordered").offsetWidth)) {
                         alert("已到右边界");
                         return;
                     }
-                    // 上
+                }
+            switch (direction){
+                case "up":
                     $(".temp").offset({top:$(".temp").offset().top - $(".temp")[0].offsetHeight});
-                    break;
-                case "TUN LEF":
-                    $(".temp").css({
-                        //transform: rotate(90deg)
-                        transform:"rotate(-90deg)"
-                    });
-                    break;
-                case "TUN RIG":
-                    $(".temp").css({
-                        transform:"rotate(90deg)"
-                    });
-                    break;
-                case "TUN BAC":
-                    $(".temp").css({
-                        transform:"rotate(180deg)"
-                    });
-                    break;
+                case "down":
+                    $(".temp").offset({top:$(".temp").offset().top + $(".temp")[0].offsetHeight});
+                case "left":
+                    $(".temp").offset({top:$(".temp").offset().left - $(".temp")[0].offsetWidth});
+                case "right":
+                    $(".temp").offset({top:$(".temp").offset().left + $(".temp")[0].offsetWidth});
             }
+
+
+
         }
+        function move(direction) {
+
+        }
+
+//                case "TUN LEF":
+//                    $(".temp").css({
+//                        //transform: rotate(90deg)
+//                        transform:"rotate("+(-90*count)+"deg)"
+//                    });
+//                    break;
+//                case "TUN RIG":
+//                    $(".temp").css({
+//                        transform:"rotate("+(90*count)+"deg)"
+//                    });
+//                    break;
+//                case "TUN BAC":
+//                    $(".temp").css({
+//                        transform:"rotate("+(180*count)+"deg)"
+//                    });
+//                    break;
+
 
 
     })
