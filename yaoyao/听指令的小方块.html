@@ -73,83 +73,66 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
                 "backgroundColor" : "red",
                 "box-sizing": "border-box"
             }).appendTo($("table"));
-
-
         },2500)
-        var count = 0,go,up,down,left,right;
+        var count = 0;
         $(document).keyup(function (e) {
             count++;
-            // showRes(pushValue,count);
             switch (e.keyCode) {
                 case 13:
-                    executeRes(go); // 执行前进方法
+                    executeRes.go();
                     break;
                 case 37:
-                    executeRes(go,left); // 执行左方法
+                    executeRes.go() || executeRes.left();
                     break;
                 case 38:
-                    executeRes(go,up); // 执行上方法
+                    executeRes.go() || executeRes.up();
                     break;
                 case 39:
-                    executeRes(go,right); // 执行前进方法
+                    executeRes.go() || executeRes.right();
                     break;
                 case 40:
-                    executeRes(go,down); // 执行前进方法
+                    executeRes.go() || executeRes.down();
                     break;
             }
         })
-//        function executeRes(go,direction) {
-//            if(direction){
-//
-//            }else{
-//                showRes(go)
-//            }
-//
-//
-//
-//        }
-
-             //    GO：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
-            //    TUN LEF：向左转（逆时针旋转90度）
-            //    TUN RIG：向右转（顺时针旋转90度）
-            //    TUN BAC：向右转（旋转180度）
-        function executeRes(pushValue,direction) {
-                if (pushValue == "go") {
-                    if (parseInt($(".temp").offset().top) <= parseInt($(".bordered").offset().top) + parseInt($(".temp")[0].offsetHeight) * 2) {
-                        alert("已到上边界");
-                        return;
-                    }
-                    if (parseInt($(".temp").offset().top) >= parseInt($(".bordered").offset().top) + parseInt($(".bordered").offsetHeight)) {
-                        alert("已到下边界");
-                        return;
-                    }
-                    if (parseInt($(".temp").offset().left) <= parseInt($(".bordered").offset().left) + parseInt($(".temp")[0].offsetWidth) * 2) {
-                        alert("已到左边界");
-                        return;
-                    }
-                    if (parseInt($(".temp").offset().left) >= parseInt($(".bordered").offset().left) + parseInt($(".bordered").offsetWidth)) {
-                        alert("已到右边界");
-                        return;
-                    }
-                }
-            switch (direction){
-                case "up":
-                    $(".temp").offset({top:$(".temp").offset().top - $(".temp")[0].offsetHeight});
-                case "down":
-                    $(".temp").offset({top:$(".temp").offset().top + $(".temp")[0].offsetHeight});
-                case "left":
-                    $(".temp").offset({top:$(".temp").offset().left - $(".temp")[0].offsetWidth});
-                case "right":
-                    $(".temp").offset({top:$(".temp").offset().left + $(".temp")[0].offsetWidth});
+    })
+    // 左 上 右 下
+    //    GO：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+    //    TUN LEF：向左转（逆时针旋转90度）
+    //    TUN RIG：向右转（顺时针旋转90度）
+    //    TUN BAC：向右转（旋转180度）
+    var executeRes = {
+        go : function () {
+            if (parseInt($(".temp").offset().top) <= parseInt($(".bordered").offset().top) + parseInt($(".temp")[0].offsetHeight) * 2) {
+                alert("已到上边界");
+                return true;
             }
-
-
-
+            if (parseInt($(".temp").offset().top) >= parseInt($(".bordered").offset().top) + parseInt($(".bordered").offsetHeight)) {
+                alert("已到下边界");
+                return true;
+            }
+            if (parseInt($(".temp").offset().left) <= parseInt($(".bordered").offset().left) + parseInt($(".temp")[0].offsetWidth)) {
+                alert("已到左边界");
+                return true;
+            }
+            if (parseInt($(".temp").offset().left) >= parseInt($(".bordered").offset().left) + parseInt($(".bordered").offsetWidth)) {
+                alert("已到右边界");
+                return true;
+            }
+        },
+        up : function () {
+            $(".temp").offset({top:$(".temp").offset().top - $(".temp")[0].offsetHeight});
+        },
+        down : function () {
+            $(".temp").offset({top:$(".temp").offset().top + $(".temp")[0].offsetHeight});
+        },
+        left : function () {
+            $(".temp").offset({left:$(".temp").offset().left - $(".temp")[0].offsetWidth});
+        },
+        right : function () {
+            $(".temp").offset({left:$(".temp").offset().left + $(".temp")[0].offsetWidth});
         }
-        function move(direction) {
-
-        }
-
+    }
 //                case "TUN LEF":
 //                    $(".temp").css({
 //                        //transform: rotate(90deg)
@@ -169,7 +152,7 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
 
 
 
-    })
+
 
 
 
