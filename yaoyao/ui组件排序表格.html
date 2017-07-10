@@ -104,50 +104,53 @@
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script>
-    $(function(){
-        $(document).on("click",".chinese .triangle_up",function () {
-            var res = [
-                {
-                    "name" : $("tbody tr:nth-of-type(1) td:nth-of-type(1)").text(),
-                    "chinese" : $("tbody tr:nth-of-type(1) td:nth-of-type(2)").text(),
-                    "math" : $("tbody tr:nth-of-type(1) td:nth-of-type(3)").text(),
-                    "english" : $("tbody tr:nth-of-type(1) td:nth-of-type(4)").text(),
-                    "sum" : $("tbody tr:nth-of-type(1) td:nth-of-type(5)").text(),
+//    $(function(){
+//        $(document).on("click",".chinese .triangle_up",function () {
+//            var res = [
+//                {
+//                    "name" : $("tbody tr:nth-of-type(1) td:nth-of-type(1)").text(),
+//                    "chinese" : $("tbody tr:nth-of-type(1) td:nth-of-type(2)").text(),
+//                    "math" : $("tbody tr:nth-of-type(1) td:nth-of-type(3)").text(),
+//                    "english" : $("tbody tr:nth-of-type(1) td:nth-of-type(4)").text(),
+//                    "sum" : $("tbody tr:nth-of-type(1) td:nth-of-type(5)").text(),
+//
+//                },
+//                {
+//
+//                    "chinese" : $("tbody tr:nth-of-type(2) td:nth-of-type(2)").text(),
+//                    "math" : $("tbody tr:nth-of-type(2) td:nth-of-type(3)").text(),
+//                    "english" : $("tbody tr:nth-of-type(2) td:nth-of-type(4)").text(),
+//                    "sum" : $("tbody tr:nth-of-type(2) td:nth-of-type(5)").text(),
+//                    "name" : $("tbody tr:nth-of-type(2) td:nth-of-type(1)").text(),
+//
+//                },
+//                {
+//                    "name" : $("tbody tr:nth-of-type(3) td:nth-of-type(1)").text(),
+//                    "chinese" : $("tbody tr:nth-of-type(3) td:nth-of-type(2)").text(),
+//                    "math" : $("tbody tr:nth-of-type(3) td:nth-of-type(3)").text(),
+//                    "english" : $("tbody tr:nth-of-type(3) td:nth-of-type(4)").text(),
+//                    "sum" : $("tbody tr:nth-of-type(3) td:nth-of-type(5)").text(),
+//                }
+//                ];
+//            console.log(res);
+//            var result = res.sort(numSort(res,true));
+//            console.log(result);
+//            function numSort (res,rev){
+//                return function(a,b){
+//                    if(rev){
+//                        return a[1] - b[1];
+//                    }else{
+//                        return b[1] - a[1];
+//                    }
+//                }
+//            }
+//        })
+//
+//
+//    })
 
-                },
-                {
-
-                    "chinese" : $("tbody tr:nth-of-type(2) td:nth-of-type(2)").text(),
-                    "math" : $("tbody tr:nth-of-type(2) td:nth-of-type(3)").text(),
-                    "english" : $("tbody tr:nth-of-type(2) td:nth-of-type(4)").text(),
-                    "sum" : $("tbody tr:nth-of-type(2) td:nth-of-type(5)").text(),
-                    "name" : $("tbody tr:nth-of-type(2) td:nth-of-type(1)").text(),
-
-                },
-                {
-                    "name" : $("tbody tr:nth-of-type(3) td:nth-of-type(1)").text(),
-                    "chinese" : $("tbody tr:nth-of-type(3) td:nth-of-type(2)").text(),
-                    "math" : $("tbody tr:nth-of-type(3) td:nth-of-type(3)").text(),
-                    "english" : $("tbody tr:nth-of-type(3) td:nth-of-type(4)").text(),
-                    "sum" : $("tbody tr:nth-of-type(3) td:nth-of-type(5)").text(),
-                }
-                ];
-            console.log(res);
-            var result = res.sort(numSort(res,true));
-            console.log(result);
-            function numSort (res,rev){
-                return function(a,b){
-                    if(rev){
-                        return a[1] - b[1];
-                    }else{
-                        return b[1] - a[1];
-                    }
-                }
-            }
-        })
 
 
-    })
 </script>
 
 
