@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ui组件排序表格</title>
+</head>
+<style>
+    table{
+        margin:100px auto;
+        border-collapse: collapse;
+    }
+    td{
+        border:1px solid #000;
+        padding:10px;
+        width: 60px;
+        height: 20px;
+        text-align: center;
+    }
+    thead > tr >td{
+        position: relative;
+    }
+    .triangle_up
+    {
+        height:0px; width:0px;
+        border-bottom:8px solid #006633;
+        border-left:8px solid transparent;
+        border-right:8px solid transparent;
+    }
+    .triangle_bottom
+    {
+        height:0px; width:0px;
+        border-top:8px solid #006633;
+        border-left:8px solid transparent;
+        border-right:8px solid transparent;
+    }
+    .triangle{
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+</style>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <td>姓名
+                <!--<div class = "triangle">-->
+                    <!--<span class = "triangle_up"></span>-->
+                    <!--<span class = "triangle_bottom"></span>-->
+                <!--</div>-->
+            </td>
+            <td class = "chinese">语文
+                <div class = "triangle">
+                    <span class = "triangle_up"></span>
+                    <span class = "triangle_bottom"></span>
+                </div></td>
+            <td>数学
+                <div class = "triangle">
+                    <span class = "triangle_up"></span>
+                    <span class = "triangle_bottom"></span>
+                </div></td>
+            <td>英语
+                <div class = "triangle">
+                    <span class = "triangle_up"></span>
+                    <span class = "triangle_bottom"></span>
+                </div></td>
+            <td>总分
+                <div class = "triangle">
+                    <span class = "triangle_up"></span>
+                    <span class = "triangle_bottom"></span>
+                </div></td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小红</td>
+                <td>80</td>
+                <td>81</td>
+                <td>82</td>
+                <td>83</td>
+            </tr>
+            <tr>
+                <td>小明</td>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>小亮</td>
+                <td>34</td>
+                <td>34</td>
+                <td>34</td>
+                <td>34</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(function(){
+        $(document).on("click",".chinese .triangle_up",function () {
+            var res = [
+                {
+                    "name" : $("tbody tr:nth-of-type(1) td:nth-of-type(1)").text(),
+                    "chinese" : $("tbody tr:nth-of-type(1) td:nth-of-type(2)").text(),
+                    "math" : $("tbody tr:nth-of-type(1) td:nth-of-type(3)").text(),
+                    "english" : $("tbody tr:nth-of-type(1) td:nth-of-type(4)").text(),
+                    "sum" : $("tbody tr:nth-of-type(1) td:nth-of-type(5)").text(),
+
+                },
+                {
+
+                    "chinese" : $("tbody tr:nth-of-type(2) td:nth-of-type(2)").text(),
+                    "math" : $("tbody tr:nth-of-type(2) td:nth-of-type(3)").text(),
+                    "english" : $("tbody tr:nth-of-type(2) td:nth-of-type(4)").text(),
+                    "sum" : $("tbody tr:nth-of-type(2) td:nth-of-type(5)").text(),
+                    "name" : $("tbody tr:nth-of-type(2) td:nth-of-type(1)").text(),
+
+                },
+                {
+                    "name" : $("tbody tr:nth-of-type(3) td:nth-of-type(1)").text(),
+                    "chinese" : $("tbody tr:nth-of-type(3) td:nth-of-type(2)").text(),
+                    "math" : $("tbody tr:nth-of-type(3) td:nth-of-type(3)").text(),
+                    "english" : $("tbody tr:nth-of-type(3) td:nth-of-type(4)").text(),
+                    "sum" : $("tbody tr:nth-of-type(3) td:nth-of-type(5)").text(),
+                }
+                ];
+            console.log(res);
+            var result = res.sort(numSort(res,true));
+            console.log(result);
+            function numSort (res,rev){
+                return function(a,b){
+                    if(rev){
+                        return a[1] - b[1];
+                    }else{
+                        return b[1] - a[1];
+                    }
+                }
+            }
+        })
+
+
+    })
+</script>
+
+
+
+</html>
