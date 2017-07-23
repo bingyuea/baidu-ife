@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务七：JavaScript和树（一）</title>
+</head>
+<style>
+    html,body{
+        width:100%;
+        height:100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    div{
+        border:1px solid  #000;
+        display: flex;
+        align-items: center;
+        justify-content : space-around;
+        width:40%;
+        height: 40%;
+    }
+    .main{
+        width:80%;
+        height: 60%;
+        margin: 100px auto 0;
+    }
+    button{
+        padding:10px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class = "main">
+        <div class = "content">
+            <div class = "inner">
+                <div class = "inner-contain">
+
+                </div>
+
+                <div class = "inner-contain">
+
+                </div>
+            </div>
+
+            <div class = "inner">
+                <div class = "inner-contain">
+
+                </div>
+
+                <div class = "inner-contain">
+
+                </div>
+            </div>
+        </div>
+
+        <div class = "content">
+            <div class = "inner">
+                <div class = "inner-contain">
+
+                </div>
+
+                <div class = "inner-contain">
+
+                </div>
+            </div>
+
+            <div class = "inner">
+                <div class = "inner-contain">
+
+                </div>
+
+                <div class = "inner-contain">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class = "foot">
+        <button class = "preOrder">前序遍历</button>
+        <button class = "inOrder">中序遍历</button>
+        <button class = "postOrder">后序遍历</button>
+    </p>
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+//    （1）前序遍历（DLR），首先访问根结点，然后遍历左子树，最后遍历右子树。简记根-左-右。
+//
+//    （2）中序遍历（LDR），首先遍历左子树，然后访问根结点，最后遍历右子树。简记左-根-右。
+//
+//    （3）后序遍历（LRD），首先遍历左子树，然后遍历右子树，最后访问根结点。简记左-右-根。
+$(function(){
+    var treeNodes=[],
+        time = null,
+        treeRoot = $(".main")[0];
+
+    $(document).on("click",function (e) {
+        handle.call(e.target,e);
+    })
+    function handle(e) {
+        switch ($(this).attr("class")) {
+            case "preOrder":
+                reset();
+                pre(treeRoot);
+                show();
+                break;
+            case "inOrder":
+                reset();
+                mid(treeRoot);
+                show();
+                break;
+            case "postOrder":
+                reset();
+                post(treeRoot);
+                show();
+                break;
+        }
+    }
+
+    function pre(node){
+        if(node){
+            treeNodes.push(node);
+            pre(node.firstElementChild);
+            pre(node.lastElementChild);
+        }
+    }
+    function mid(node){
+        if(node){
+            mid(node.firstElementChild);
+            treeNodes.push(node);
+            mid(node.lastElementChild);
+        }
+    }
+    function post(node){
+        if(node){
+            post(node.lastElementChild);
+            post(node.firstElementChild);
+            treeNodes.push(node);
+        }
+    }
+    function reset(){
+        treeNodes = [];
+        clearInterval(time);
+        $("div").css({
+            "background" : "#fff"
+        });
+    }
+    function show() {
+        var i=0;
+        treeNodes[i].style.backgroundColor="#F34949";
+        time =setInterval(function(){
+            i++;
+            if(i<treeNodes.length){
+                treeNodes[i-1].style.backgroundColor="white";
+                treeNodes[i].style.backgroundColor="#F34949";
+            }else{
+                clearInterval(time);
+                treeNodes[i-1].style.backgroundColor="white";
+            }
+        },200)
+    }
+
+})
+
+</script>
+</html>
