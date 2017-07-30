@@ -1,4 +1,8 @@
-### baidu-ife
 ### 百度前端学院
 #### 耀耀学院
-    `任务一：表单（一）单个表单项的检验` https://bingyuea.github.io/baidu-ife/yaoyao/表单效验1.html
+    `任务一：表单（一）单个表单项的检验` https://bingyuea.github.io/baidu-ife/yaoyao/test1.html  
+     `任务二：表单（二）多个表单项的动态校验` https://bingyuea.github.io/baidu-ife/yaoyao/test2.html   
+       `任务三：表单（三）联动
+` https://bingyuea.github.io/baidu-ife/yaoyao/test3.html
+
+ 
