@@ -39,7 +39,7 @@
 <body>
         <label>名称<input type = "text"/>
             <button type = "" onclick= "check()">效验</button>
-            <P id = "checkTip"></P>
+            <P id = "checkTip">请输入字符串</P>
         </label>
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -56,6 +56,7 @@
             case 1 :
                 _input.removeClass();
                 _input.addClass("checkRight");
+                $("#checkTip").text("效验成功");
                 break;
             case 2 :
                 _input.removeClass();
@@ -72,7 +73,7 @@
         }else{
             value = value.replace(/[xd800-xffff]/g, 'A');
             value = value.replace(/[^x00-xff]/g,'AB');
-            if(value > 4 && value < 16) {
+            if(value.length > 4 && value.length < 16) {
                 return 1;
             }else{
                 return 2;
