@@ -20,6 +20,16 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
     <table class = "bordered" style = "position:relative;">
 
     </table>
+    <ul>
+        <li>箭头上↓：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</li>
+        <li>箭头下↑：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</li>
+        <li>    箭头左←：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</li>
+        <li>    箭头右→：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</li>
+        <li>    w：向左转（逆时针旋转90度）</li>
+        <li>    s：向右转（顺时针旋转90度）</li>
+        <li>    a：向后转（逆时针旋转180度）</li>
+        <li>    d：向前转（顺时针旋转180度）</li>
+    </ul>
 </body>
 <script src="./lib/jQuery.js"></script>
 <script>
@@ -73,14 +83,12 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
                 "backgroundColor" : "red",
                 "box-sizing": "border-box"
             }).appendTo($("table"));
+            count = 0;
         },2500)
-        var count = 0;
         $(document).keyup(function (e) {
-            count++;
+            console.log(count);
+            // w 87 s 83 a 65 d 68
             switch (e.keyCode) {
-                case 13:
-                    executeRes.go();
-                    break;
                 case 37:
                     executeRes.go() || executeRes.left();
                     break;
@@ -93,29 +101,50 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
                 case 40:
                     executeRes.go() || executeRes.down();
                     break;
+
+                case 87: // w
+                    count++;
+                    executeRes.turnLeft();
+                    break;
+                case 83: // s
+                    count++;
+                    executeRes.turnRight();
+                    break;
+                case 65: // a
+                    count++;
+                    executeRes.turnForward();
+                    break;
+                case 68: // d
+                    count++;
+                    executeRes.turnBackward();
+                    break;
             }
         })
     })
-    // 左 上 右 下
-    //    GO：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
-    //    TUN LEF：向左转（逆时针旋转90度）
-    //    TUN RIG：向右转（顺时针旋转90度）
-    //    TUN BAC：向右转（旋转180度）
+    //    箭头上↓：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+    //    箭头下↑：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+    //    箭头左←：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+    //    箭头右→：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+    //    w：向左转（逆时针旋转90度）
+    //    s：向右转（顺时针旋转90度）
+    //    a：向后转（旋转180度）
+    //    d：向前转（旋转180度）
+
     var executeRes = {
         go : function () {
-            if (parseInt($(".temp").offset().top) <= parseInt($(".bordered").offset().top) + parseInt($(".temp")[0].offsetHeight) * 2) {
+            if (parseInt($(".temp").offset().top) <= parseInt($(".bordered > tbody").offset().top) + parseInt($(".temp")[0].offsetHeight) * 2) {
                 alert("已到上边界");
                 return true;
             }
-            if (parseInt($(".temp").offset().top) >= parseInt($(".bordered").offset().top) + parseInt($(".bordered").offsetHeight)) {
+            if (parseInt($(".temp").offset().top) >= parseInt($(".bordered > tbody").offset().top) + parseInt($(".bordered > tbody").offsetHeight)) {
                 alert("已到下边界");
                 return true;
             }
-            if (parseInt($(".temp").offset().left) <= parseInt($(".bordered").offset().left) + parseInt($(".temp")[0].offsetWidth)) {
+            if (parseInt($(".temp").offset().left) <= parseInt($(".bordered > tbody").offset().left) + parseInt($(".temp")[0].offsetWidth)) {
                 alert("已到左边界");
                 return true;
             }
-            if (parseInt($(".temp").offset().left) >= parseInt($(".bordered").offset().left) + parseInt($(".bordered").offsetWidth)) {
+            if (parseInt($(".temp").offset().left) >= parseInt($(".bordered > tbody").offset().left) + parseInt($(".bordered > tbody").offsetWidth)) {
                 alert("已到右边界");
                 return true;
             }
@@ -131,24 +160,30 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
         },
         right : function () {
             $(".temp").offset({left:$(".temp").offset().left + $(".temp")[0].offsetWidth});
+        },
+        turnLeft : function () {
+            $(".temp").css({
+                transform:"rotate("+(-90*count)+"deg)"
+            });
+        },
+        turnRight : function () {
+            $(".temp").css({
+                transform:"rotate("+(90*count)+"deg)"
+            });
+        },
+        turnForward : function () {
+            $(".temp").css({
+                transform:"rotate("+(180*count)+"deg)"
+            });
+        },
+        turnBackward : function () {
+            $(".temp").css({
+                transform:"rotate("+(-180*count)+"deg)"
+            });
         }
     }
-//                case "TUN LEF":
-//                    $(".temp").css({
-//                        //transform: rotate(90deg)
-//                        transform:"rotate("+(-90*count)+"deg)"
-//                    });
-//                    break;
-//                case "TUN RIG":
-//                    $(".temp").css({
-//                        transform:"rotate("+(90*count)+"deg)"
-//                    });
-//                    break;
-//                case "TUN BAC":
-//                    $(".temp").css({
-//                        transform:"rotate("+(180*count)+"deg)"
-//                    });
-//                    break;
+
+
 
 
 
