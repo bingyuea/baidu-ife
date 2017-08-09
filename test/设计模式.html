@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>designPattern</title>
+</head>
+<body>
+<button id = "btn">点击我</button>
+<script>
+    // 工厂模式 简单
+    function CreatePerson(name,age,sex){
+        var obj = {};
+        obj.name = name;
+        obj.age = age;
+        obj.sex = sex;
+        obj.sayName = function () {
+            return CreatPersonPrototype.prototype.name;
+        }
+        return obj;
+    }
+//    var a = CreatePerson('bingyue',22,'man');
+//    console.log(a.name);
+//    console.log(a.age);
+//    console.log(a.sex);
+//    console.log(a.sayName());
+    // 工厂模式 复杂构造函数
+//    function CreatCar(size,name) {
+//        CreatPersonPrototype.prototype.name = name;
+//        CreatPersonPrototype.prototype.size = size;
+//        CreatPersonPrototype.prototype.sayName = function () {
+//            return CreatPersonPrototype.prototype.name;
+//        }
+//    }
+//    var b = new CreatCar(100,"bingyueaaaa");
+//    console.log(b.name+"b.name");
+//    console.log(b.size+"b.size");
+//    console.log(b.sayName()+"b.sayName()");
+//    // 工厂模式 原型模式
+//    function CreatPersonPrototype() {}
+//    CreatPersonPrototype.prototype.name = "bingyueeweeeeeeeeeaaaa";
+//    CreatPersonPrototype.prototype.size = "100";
+//    CreatPersonPrototype.prototype.sayName = function () {
+//        return CreatPersonPrototype.prototype.name;
+//    }
+//    var b = new CreatPersonPrototype();
+//    console.log(b.sayName()+"CreatPersonPrototype.sayName()");
+    // 单体模式
+    // 实现一个弹窗(点击之后会无限创建弹窗)
+//    var createWindow = function(){
+    //        var win = document.createElement("div");
+    //        win.innerText = "我是一个弹窗";
+    //        win.style.display = "none";
+    //        document.body.appendChild(win);
+    //        return win;
+    //    }
+    //    document.getElementById("btn").onclick = function(){
+    //        var win = createWindow();
+    //        win.style.display = 'block';
+    //    };
+    // 改为单例模式
+    var createWindow = (function(){
+        console.log(2222);
+        var div;
+        return function(){
+            console.log(233333333333333);
+            if(!div) {
+                console.log("aaaaaaaaaaaaaaa");
+                div = document.createElement("div");
+                div.innerHTML = "我是弹窗内容";
+                div.style.display = 'none';
+                document.body.appendChild(div);
+            }
+            return div;
+        }
+    })();
+    createWindow();
+    document.getElementById("btn").onclick = function(){
+        // 点击后先创建一个div元素
+        var win = createWindow();
+        win.style.display = "block";
+    }
+
+
+</script>
+</body>
+</html>
