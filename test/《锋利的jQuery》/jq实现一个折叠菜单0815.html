@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq实现一个折叠菜单0815</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+        display:none;
+    }
+    .main{
+        margin:100px auto;
+        background-color: #eee;
+    }
+    .highLight{
+        background-color: red;
+    }
+
+</style>
+<body>
+    <div class = "main">
+        <div class = "has_children">
+            <span>认识jq</span>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+        </div>
+        <div class = "has_children">
+            <span>使用jq</span>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+        </div>
+        <div class = "has_children">
+            <span>深入jq</span>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+        </div>
+    </div>
+<script src = "./jQuery.js"></script>
+<script>
+    $(function(){
+        $(".has_children").on("click",function(){
+            $(this).addClass("highLight").children("a").show().end().siblings().removeClass("highLight")
+                .children("a").hide();
+        })
+    })
+//    .end()
+//    回到最近的一个"破坏性"操作之前。即，将匹配的元素列表变为前一次的状态。
+//    如果之前没有破坏性操作，则返回一个空集。所谓的"破坏性"就是指任何改变所匹配的jQuery元素的操作
+    // 。这包括在 Traversing 中任何返回一个jQuery对象的函数--'add', 'andSelf', 'children', 'filter', 'find', 'map', 'next', 'nextAll', 'not', 'parent', 'parents', 'prev', 'prevAll', 'siblings' and 'slice'--再加上 Manipulation 中的 'clone'。
+</script>
+</body>
+</html>

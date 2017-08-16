@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .a{
+      color:blue;
+    }
+    .red{
+         color:red;
+     }
+    .green{
+        color:green;
+    }
+    .black{
+        color:black;
+    }
+</style>
+<script src = "./jQuery.js"></script>
+<script>
+    (function ($) {
+        jQuery.fn.extend({
+            "color" : function(value){
+                return this.css("color",value);
+            }
+        })
+    })(jQuery);
+
+
+    $(function(){
+        console.log($("div").color());
+    })
+</script>
+
+<body>
+<div class = "a">red</div>
+<div class = "red">1</div>
+<div class = "green">2</div>
+<div class = "black">3</div>
+</body>
+</html>
