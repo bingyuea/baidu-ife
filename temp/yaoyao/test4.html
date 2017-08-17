@@ -16,7 +16,7 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
     border:1px solid #000;
 }
 </style>
-<body>
+<body  oncontextmenu=self.event.returnvalue=false onselectstart="return false">
     <table class = "bordered" style = "position:relative;">
 
     </table>
@@ -81,40 +81,35 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
                 "border": "10px solid red",
                 "borderColor": "blue transparent transparent transparent",
                 "backgroundColor" : "red",
-                "box-sizing": "border-box"
+                "box-sizing": "border-box",
             }).appendTo($("table"));
-            count = 0;
+            $(".temp")[0].style.transform = "rotate(0deg)";
         },2500)
         $(document).keyup(function (e) {
-            console.log(count);
             // w 87 s 83 a 65 d 68
             switch (e.keyCode) {
                 case 37:
-                    executeRes.go() || executeRes.left();
+                    executeRes.left();
                     break;
                 case 38:
-                    executeRes.go() || executeRes.up();
+                    executeRes.up();
                     break;
                 case 39:
-                    executeRes.go() || executeRes.right();
+                    executeRes.right();
                     break;
                 case 40:
-                    executeRes.go() || executeRes.down();
+                    executeRes.down();
                     break;
                 case 87: // w
-                    count++;
                     executeRes.turnLeft();
                     break;
                 case 83: // s
-                    count++;
                     executeRes.turnRight();
                     break;
                 case 65: // a
-                    count++;
                     executeRes.turnForward();
                     break;
                 case 68: // d
-                    count++;
                     executeRes.turnBackward();
                     break;
             }
@@ -130,63 +125,72 @@ td{width:30px !important;height: 30px !important;box-sizing: border-box !importa
     //    d：向前转（旋转180度）
 
     var executeRes = {
-        go : function () {
-            var $tobody_top = parseInt($(".bordered > tbody").offset().top);
-            var $tobody_left = parseInt($(".bordered > tbody").offset().left);
-            var $tobody_width = parseInt($(".bordered > tbody").width());
-            var $tobody_height = parseInt($(".bordered > tbody").height());
-            var $temp_top = parseInt($(".temp").offset().top);
-            var $temp_left = parseInt($(".temp").offset().left);
-            var $temp_width = parseInt($(".temp").width());
-            var $temp_height = parseInt($(".temp").height());
-            if (parseInt($(".temp").offset().top) <= $tobody_top + parseInt($(".temp")[0].offsetHeight)) {
+        getTbody_top : function(){
+            return parseInt($(".bordered > tbody").offset().top)
+        },
+        getTbody_left : function(){
+            return parseInt($(".bordered > tbody").offset().left)
+        },
+        getTbody_width : function(){
+            return parseInt($(".bordered > tbody")[0].offsetWidth)
+        },
+        getTbody_height : function(){
+            return parseInt($(".bordered > tbody")[0].offsetHeight)
+        },
+        getTemp_top : function(){
+            return parseInt($(".temp").offset().top)
+        },
+        getTemp_left : function(){
+            return parseInt($(".temp").offset().left)
+        },
+        getTemp_width : function(){
+            return parseInt($(".temp")[0].offsetWidth)
+        },
+        getTemp_height : function(){
+            return parseInt($(".temp")[0].offsetHeight)
+        },
+        up : function () {
+            if (executeRes.getTemp_top() <= executeRes.getTbody_top() + executeRes.getTemp_height()) {
                 alert("已到上边界");
                 return true;
             }
-            if (parseInt($(".temp").offset().top) >= $tobody_top + parseInt($(".bordered > tbody")[0].offsetHeight)) {
+            $(".temp").offset({top:executeRes.getTemp_top() - executeRes.getTemp_height()});
+        },
+        down : function () {
+            if (executeRes.getTemp_top() >= executeRes.getTbody_top() + executeRes.getTbody_height() - executeRes.getTemp_height()) {
                 alert("已到下边界");
                 return true;
             }
-            if (parseInt($(".temp").offset().left) <= $tobody_left + parseInt($(".temp")[0].offsetWidth)) {
+            $(".temp").offset({top:executeRes.getTemp_top() + executeRes.getTemp_height()});
+        },
+        left : function () {
+            if (executeRes.getTemp_left() <= executeRes.getTbody_left() + executeRes.getTemp_width()) {
                 alert("已到左边界");
                 return true;
             }
-            if (parseInt($(".temp").offset().left) >= $tobody_left + parseInt($(".bordered > tbody")[0].offsetWidth)) {
+            $(".temp").offset({left:executeRes.getTemp_left() - executeRes.getTemp_width()});
+        },
+        right : function () {
+            if (executeRes.getTemp_left() >= executeRes.getTbody_left() + executeRes.getTbody_width() - executeRes.getTemp_width()) {
                 alert("已到右边界");
                 return true;
             }
+            $(".temp").offset({left:executeRes.getTemp_left() + executeRes.getTemp_width()});
         },
-        up : function () {
-            $(".temp").offset({top:$(".temp").offset().top - $(".temp")[0].offsetHeight});
-        },
-        down : function () {
-            $(".temp").offset({top:$(".temp").offset().top + $(".temp")[0].offsetHeight});
-        },
-        left : function () {
-            $(".temp").offset({left:$(".temp").offset().left - $(".temp")[0].offsetWidth});
-        },
-        right : function () {
-            $(".temp").offset({left:$(".temp").offset().left + $(".temp")[0].offsetWidth});
+        getTemp_rotate : function(){
+            return $(".temp")[0].style.transform.replace(/[^0-9]/g, "");
         },
         turnLeft : function () {
-            $(".temp").css({
-                transform:"rotate("+(-90*count)+"deg)"
-            });
+            $(".temp")[0].style.transform = "rotate("+(executeRes.getTemp_rotate() - 90)+"deg)"
         },
         turnRight : function () {
-            $(".temp").css({
-                transform:"rotate("+(90*count)+"deg)"
-            });
+            $(".temp")[0].style.transform = "rotate("+(Number(executeRes.getTemp_rotate()) + 90)+"deg)"
         },
         turnForward : function () {
-            $(".temp").css({
-                transform:"rotate("+(180*count)+"deg)"
-            });
+            $(".temp")[0].style.transform = "rotate("+(Number(executeRes.getTemp_rotate()) + 180)+"deg)"
         },
         turnBackward : function () {
-            $(".temp").css({
-                transform:"rotate("+(-180*count)+"deg)"
-            });
+            $(".temp")[0].style.transform = "rotate("+(executeRes.getTemp_rotate() - 90)+"deg)"
         }
     }
 
