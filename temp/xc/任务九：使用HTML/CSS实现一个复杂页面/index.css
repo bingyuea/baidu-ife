@@ -1,50 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
+*{
+  margin:0;
+  padding:0;
+  font-size:14px;
   list-style: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
-  * img {
-    display: block; }
-
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
-[data-page="index"] [data-page="page"] header {
-  height: 44px;
-  background: blue;
-  padding: 0 80px 0 40px; }
-  [data-page="index"] [data-page="page"] header .logo {
-    width: 40px;
-    height: 40px; }
-    [data-page="index"] [data-page="page"] header .logo a {
-      height: 100%;
-      width: 100%;
-      display: block; }
-      [data-page="index"] [data-page="page"] header .logo a img {
-        width: 100%; }
-  [data-page="index"] [data-page="page"] header .search {
-    width: 300px; }
-    [data-page="index"] [data-page="page"] header .search .search-left label {
-      position: relative;
-      width: 100%;
-      height: 100%; }
-      [data-page="index"] [data-page="page"] header .search .search-left label input {
-        border: none;
-        width: 200px;
-        height: 22px;
-        border-radius: 22px;
-        box-sizing: content-box; }
-      [data-page="index"] [data-page="page"] header .search .search-left label img {
-        width: 15px;
-        height: auto;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 20px; }
-    [data-page="index"] [data-page="page"] header .search .search-right img {
-      width: 15px;
-      height: auto; }
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+img{
+  display: block;
+}
+.left{
+  float: left;
+}
+.right{
+  float:right;
+}
