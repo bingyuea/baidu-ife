@@ -150,9 +150,9 @@
                     $(".sec").eq(index).show().siblings(".sec").hide();
                     $(this).addClass("btn-success").siblings("button").removeClass("btn-success");
                     $.each($(".sec").eq(index).find("img"),function(d,e){
-                        console.log(cake[index][d]);
                         $(e).attr("src",cake[index][d]);
                     })
+                    $(".sec").not($(".sec").eq(index)).find("img").attr("src",cake[0][0]);
                 })
             })
 
