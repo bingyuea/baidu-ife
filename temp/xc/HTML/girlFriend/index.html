@@ -10,14 +10,14 @@
 <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="index.css" type="text/css" />
 <body>
+    <p>
+        <button type="button" class="btn btn-success">嫩滑鲜奶</button>
+        <button type="button" class="btn ">异形蛋糕</button>
+        <button type="button" class="btn ">松鹤延年</button>
+        <button type="button" class="btn ">清爽慕斯</button>
+        <button type="button" class="btn ">经典巧克力</button>
+    </p>
     <section data-page = "index">
-        <p>
-            <button type="button" class="btn btn-success">嫩滑鲜奶</button>
-            <button type="button" class="btn ">异形蛋糕</button>
-            <button type="button" class="btn ">松鹤延年</button>
-            <button type="button" class="btn ">清爽慕斯</button>
-            <button type="button" class="btn ">经典巧克力</button>
-        </p>
         <div class = "sec">
             <img src = "./img/cake/嫩滑鲜奶/1 (1).JPG"class = "img-thumbnail"/>
             <img src = "./img/cake/嫩滑鲜奶/1 (1).PNG"class = "img-thumbnail"/>
@@ -134,6 +134,9 @@
     <script>
             $(function(){
                 $(".sec").eq(0).show().siblings(".sec").hide();
+                var h = $("body").height();
+                var hp = $("p").height();
+                $("[data-page = 'index']").height(h - hp -20);
             })
             $(document).on("click","p > button",function () {
                 var index = $(this).index();
