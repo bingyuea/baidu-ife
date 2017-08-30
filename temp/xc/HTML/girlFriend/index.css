@@ -14,3 +14,26 @@ img{
 .right{
   float:right;
 }
+[data-page = "index"]{
+  width:80%;
+  margin:100px auto 0;
+}
+[data-page = "index"] .sec{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+[data-page = "index"] p{
+  text-align:center;
+}
+[data-page = "index"] p button{
+  background-color: #fff;
+  border-color: #ccc;
+  color: #333
+}
+[data-page = "index"] p button.btn-success{
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
