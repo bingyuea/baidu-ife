@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.编写高质量的javascript</title>
+</head>
+<body>
+    <script>
+        //1.减少创建全局变量
+         //   隐式创建变量的两个情况
+            function sum (a,b){
+                var result = a+b;
+                result = a+b;(false,创建了一个全局变量)
+                return result;
+            }
+            function sum2(){
+                var a,b;
+                a= b =0;
+                var a = b = 0;(fasle,此时的b为全局变量)
+            }
+
+        //2.使用单var 形式
+        function func() {
+            var a = 1,
+                b = 2,
+                sum = a + b,
+                myobject = {},
+                i,
+                j;
+            // function body...
+        }
+        // 3.使用for-in循环 hasOwnProperty 可以过滤掉来自原型链的属性
+        var man = {
+            eye : 2,
+            head :1,
+        }
+        if(typeof Object.prototype.clone === "undefined"){
+            Object.prototype.clone = function(){};
+        }
+//        for(var k in man){
+//            if(man.hasOwnProperty(k)){ // 可以过滤
+//                // 这样会后来添加的也打印出来
+//                console.log(k +":"+man[k]);
+//            }
+//        }
+        for (var i in man) {
+            if (Object.prototype.hasOwnProperty.call(man, i)) { // 过滤
+                console.log(i, ":", man[i]);
+            }
+        }
+
+        // 当然可以用来扩增内置原型
+        if(typeof Object.prototype.method !== "function"){
+            Object.prototype.method = function(){}
+        }
+
+        // 尽量使用 === 或者 ！== (避免隐式类型转换)
+        var zero = 0;
+        if (zero === false) {
+            // 不执行，因为zero为0, 而不是false
+        }
+
+        // 反面示例
+        if (zero == false) {
+            // 执行了...
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
