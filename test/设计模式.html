@@ -47,22 +47,20 @@
     // 单体模式
     // 实现一个弹窗(点击之后会无限创建弹窗)
 //    var createWindow = function(){
-    //        var win = document.createElement("div");
-    //        win.innerText = "我是一个弹窗";
-    //        win.style.display = "none";
-    //        document.body.appendChild(win);
-    //        return win;
-    //    }
-    //    document.getElementById("btn").onclick = function(){
-    //        var win = createWindow();
-    //        win.style.display = 'block';
-    //    };
+//            var win = document.createElement("div");
+//            win.innerText = "我是一个弹窗";
+//            win.style.display = "none";
+//            document.body.appendChild(win);
+//            return win;
+//        }
+//        document.getElementById("btn").onclick = function(){
+//            var win = createWindow();
+//            win.style.display = 'block';
+//        };
     // 改为单例模式
     var createWindow = (function(){
-        console.log(2222);
         var div;
         return function(){
-            console.log(233333333333333);
             if(!div) {
                 console.log("aaaaaaaaaaaaaaa");
                 div = document.createElement("div");
@@ -73,13 +71,42 @@
             return div;
         }
     })();
+    console.log(createWindow())
     createWindow();
+    console.log(createWindow())
     document.getElementById("btn").onclick = function(){
         // 点击后先创建一个div元素
         var win = createWindow();
         win.style.display = "block";
     }
-
+//    var Singleton = (function () {
+//        var instantiated;
+//        alert("Singleton")
+//        function init() {
+//            /*这里定义单例代码*/
+//            return {
+//                publicMethod: function () {
+//                    alert("publicMethod")
+//                    console.log('hello world');
+//                },
+//                publicProperty: 'test'
+//            };
+//        }
+//
+//        return {
+//            getInstance: function () {
+//                alert("getInstance")
+//
+//                if (!instantiated) {
+//                    instantiated = init();
+//                }
+//                return instantiated;
+//            }
+//        };
+//    })();
+//    setTimeout(() => {
+//        Singleton.getInstance().publicMethod();
+//    },3000)
 
 </script>
 </body>

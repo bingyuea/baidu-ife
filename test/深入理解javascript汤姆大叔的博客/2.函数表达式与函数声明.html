@@ -9,6 +9,26 @@
 
 </body>
 <script>
+    // 两种生命函数的方式
+    // 函数声明
+    // function functionName(params:可选){}
+    // 函数表达式
+    // function 函数名称可选(params:可选){}
+
+    // 此刻，foo还没用声明
+    console.log(typeof foo); // "undefined"
+//    function foo() { 这样就是function
+//
+//    }
+    if (true) {
+        // 进入这里以后，foo就被声明在整个作用域内了
+        function foo(){ return 1; }
+    }
+    else {
+        // 从来不会走到这里，所以这里的foo也不会被声明
+        function foo(){ return 2; }
+    }
+    console.log(typeof foo); // "function"
 
 </script>
 </html>
