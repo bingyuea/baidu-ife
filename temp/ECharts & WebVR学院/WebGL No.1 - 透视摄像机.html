@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebGL No.1 - 透视摄像机.html</title>
+    <script type="text/javascript" src="./lib/three.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    window.onload = function () {
+//        renderer 为渲染器 需要和canvas 元素进行绑定
+//        可以手动创建 前提是有一个canvs元素绑定
+//        var renderer = new THREE.WebGLRenderer({
+//            canvas: document.getElementById('mainCanvas')
+//        });
+        // 添加渲染器
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(400, 300);
+        document.getElementsByTagName('body')[0].appendChild(renderer.domElement);
+        renderer.setClearColor(0x000000);
+        // 添加场景
+        var scene = new THREE.Scene();
+        // 添加相机
+        var camera = new THREE.PerspectiveCamera(45, 400 / 300, 1, 10);
+        camera.position.set(0, 0, 5);
+        scene.add(camera);
+        // 添加长方体
+        var cube = new THREE.Mesh(new THREE.CubeGeometry(1, 2, 3),
+            new THREE.MeshBasicMaterial({
+                color: 0xff0000,
+                wireframe: true
+            })
+        );
+        scene.add(cube);
+        renderer.render(scene, camera);
+
+
+    }
+</script>
+</html>

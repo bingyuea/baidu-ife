@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebGL No.1 - Three.js 入门</title>
+    <script type="text/javascript" src="./lib/three.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    window.onload = function () {
+        // 添加渲染器
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(400, 300);
+        document.getElementsByTagName('body')[0].appendChild(renderer.domElement);
+        renderer.setClearColor(0xFFFFFF);
+        // 添加场景
+        var scene = new THREE.Scene();
+        // 添加相机
+        var camera = new THREE.OrthographicCamera(-2, 2, 1.5, -1.5, 1, 120);
+        camera.position.set(6, 1, 10);
+        camera.lookAt(new THREE.Vector3(0, 0, 0));
+        scene.add(camera);
+
+        // 添加长方体
+        var geometryCube = new THREE.CubeGeometry(1, 1, 4);
+        // 添加一个圆环
+        var geometryTorus = new THREE.TorusGeometry(0.2, 0.06, 20, 20);
+
+        var material = new THREE.MeshLambertMaterial({
+            color: 0xFFD700
+        });
+        //
+        var materialCube = new THREE.MeshLambertMaterial({
+            color: 0xFFFF00
+        });
+        //设置立方体
+        var cube = new THREE.Mesh(geometryCube, materialCube);
+
+        //设置圆环
+        var torus1 = new THREE.Mesh(geometryTorus, material);
+        var torus2 = new THREE.Mesh(geometryTorus, material);
+        var torus3 = new THREE.Mesh(geometryTorus, material);
+        var torus4 = new THREE.Mesh(geometryTorus, material);
+        torus1.rotation.y = Math.PI/2;
+        torus1.position.set(0.5, -0.5, 1);
+
+        torus2.rotation.y = Math.PI/2;
+        torus2.position.set(0.5, -0.5, -1);
+
+        torus3.rotation.y = Math.PI/2;
+        torus3.position.set(-0.5, -0.5, 1);
+
+        torus4.rotation.y = Math.PI/2;
+        torus4.position.set(-0.5, -0.5, -1);
+
+        scene.add(cube);         //立方体添加到场景中
+        scene.add(torus1);       //圆环添加到场景中
+        scene.add(torus2);       //圆环添加到场景中
+        scene.add(torus3);       //圆环添加到场景中
+        scene.add(torus4);       //圆环添加到场景中
+
+        var light = new THREE.PointLight(0xffffff, 2, 100);     //点光源
+        light.position.set(0, 10, 20);      //点光源位置
+        scene.add(light);
+
+        // render
+        renderer.render(scene, camera);
+
+    }
+</script>
+</html>

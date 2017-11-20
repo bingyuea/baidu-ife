@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebGL No.1 - Three.js 入门</title>
+    <script type="text/javascript" src="./lib/three.js"></script>
+    <style>
+        html,body{
+            width:100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<script>
+    window.onload = function () {
+//        renderer 为渲染器 需要和canvas 元素进行绑定
+//        可以手动创建 前提是有一个canvs元素绑定
+//        var renderer = new THREE.WebGLRenderer({
+//            canvas: document.getElementById('mainCanvas')
+//        });
+        // 添加渲染器
+        var width =  document.body.scrollWidth ;
+        var height =   document.body.scrollHeight;
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(width, height);
+        document.getElementsByTagName('body')[0].appendChild(renderer.domElement);
+        renderer.setClearColor(0x000000);
+        // 添加场景
+        var scene = new THREE.Scene();
+        // 添加相机
+        var camera = new THREE.OrthographicCamera(-2, 2, 1.5, -1.5, 1, 10);
+        camera.position.set(4, 4, 4);
+        camera.lookAt(new THREE.Vector3(1, 1, 1));
+        scene.add(camera);
+        // 添加长方体
+
+        var cube = new THREE.Mesh(new THREE.SphereGeometry(0.5, 0, 0, 0, Math.PI * 2, Math.PI / 6, Math.PI / 3),
+            new THREE.MeshBasicMaterial({
+                color: 0xff0000,
+                wireframe: true
+            })
+        );
+        scene.add(cube);
+        renderer.render(scene, camera);
+
+
+    }
+</script>
+</html>
