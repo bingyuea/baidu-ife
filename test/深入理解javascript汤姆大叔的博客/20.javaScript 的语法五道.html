@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20.javaScript 的语法五道</title>
+</head>
+<body>
+
+
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script>
+    if (!("a" in window)) {
+        var a = 1;
+    }
+    alert(a);
+    // =>
+    // 1.所有的全局变量都是window的属性
+    var a;
+    if (!("a" in window)) {
+        a = 1;
+    }
+    alert(a);
+
+
+    // 2 第三需要知道的是，函数声明会覆盖变量声明，但不会覆盖变量赋值，为了解释这个，我们来看一个例子：
+    var a = 1,
+        b = function a(x) {
+            x && a(--x);
+        };
+    alert(a);
+
+    function value(){
+        return 1;
+    }
+    var value;
+    alert(typeof value);    //"function"
+
+    function value(){
+        return 1;
+    }
+    var value = 1;
+    alert(typeof value);    //"number"
+
+
+    function a(x) {
+        return x * 2;
+    }
+    var a;
+    alert(a);
+
+</script>
+</html>

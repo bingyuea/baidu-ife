@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="">
+    <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="一些 关于 typescript">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/20.javaScript 的语法五道.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/23 和 24 略js  和 dom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/3全面解析Module模式.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/6.SOLID 五大原则之一 单一职责SPR.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/7.SOLID五大原则之开闭原则.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/baidu-ife.iml" afterPath="$PROJECT_DIR$/.idea/baidu-ife.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - Three.js 入门.html" afterPath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - Three.js 入门.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/yaoyao/test7.html" afterPath="$PROJECT_DIR$/temp/yaoyao/test7.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/2.函数表达式与函数声明.html" afterPath="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/2.函数表达式与函数声明.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,12 +33,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2.函数表达式与函数声明.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/2.函数表达式与函数声明.html">
+      <file leaf-file-name="test7.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/temp/yaoyao/test7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="4080">
+              <caret line="170" column="29" lean-forward="false" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="29" />
+              <folding>
+                <element signature="e#5373#5401#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test7改版.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/temp/yaoyao/test7改版.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1614">
+              <caret line="204" column="28" lean-forward="false" selection-start-line="204" selection-start-column="28" selection-end-line="204" selection-end-column="28" />
+              <folding>
+                <element signature="e#1545#3258#0" expanded="false" />
+                <element signature="e#1716#1840#0" expanded="false" />
+                <element signature="e#1842#1963#0" expanded="false" />
+                <element signature="e#1965#2089#0" expanded="false" />
+                <element signature="e#2091#2213#0" expanded="false" />
+                <marker date="1512719041256" expanded="true" signature="3715:3932" ph="..." />
+                <marker date="1512719041256" expanded="true" signature="3737:3808" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,10 +68,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>triangle_up</find>
+      <find>$</find>
+      <find>target</find>
+      <find>renderQuestion</find>
+      <find>greenCube</find>
+      <find>upSort</find>
+      <find>sortFN</find>
+      <find>sortNum</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,21 +103,43 @@
         <option value="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/1.编写高质量的javascript.html" />
         <option value="$PROJECT_DIR$/test/typeScript分享/js.ts" />
         <option value="$PROJECT_DIR$/test/typeScript分享/typeScript.html" />
+        <option value="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - Three.js 入门.html" />
+        <option value="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - test.html" />
+        <option value="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.1.1.html" />
+        <option value="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.2.1.html" />
         <option value="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/2.函数表达式与函数声明.html" />
+        <option value="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/3全面解析Module模式.html" />
+        <option value="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/6.SOLID 五大原则之一 单一职责SPR.html" />
+        <option value="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/7.SOLID五大原则之开闭原则.html" />
+        <option value="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/20.javaScript 的语法五道.html" />
+        <option value="$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/23js  和 dom.html" />
+        <option value="$PROJECT_DIR$/temp/yaoyao/test7.html" />
+        <option value="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.1.html" />
+        <option value="$PROJECT_DIR$/temp/yaoyao/lib/test7.html" />
+        <option value="$PROJECT_DIR$/temp/yaoyao/test7改版.html" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/temp/stickyRice/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-32000" />
-    <option name="y" value="-32000" />
-    <option name="width" value="170" />
-    <option name="height" value="47" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1924" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -96,7 +159,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -119,7 +184,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yaoyao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -133,58 +202,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="temp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="深入理解javascript汤姆大叔的博客" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baidu-ife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baidu-ife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="typeScript分享" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baidu-ife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="baidu-ife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="typeScript分享" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js.ts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,7 +219,21 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="D:\software\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.HTML" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/sourceCode/spareWork/baidu-ife/test/深入理解javascript汤姆大叔的博客/7.SOLID五大原则之开闭原则.html" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
+      <recent name="D:\sourceCode\spareWork\baidu-ife\test\深入理解javascript汤姆大叔的博客" />
+      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
+      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院\studyWebGL" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -596,6 +633,12 @@
       <workItem from="1510450236374" duration="2354000" />
       <workItem from="1510803795723" duration="96000" />
       <workItem from="1510803905195" duration="50000" />
+      <workItem from="1511187217923" duration="1001000" />
+      <workItem from="1511188585344" duration="1288000" />
+      <workItem from="1511488637600" duration="6093000" />
+      <workItem from="1511749114545" duration="13626000" />
+      <workItem from="1511921264630" duration="12586000" />
+      <workItem from="1512718824824" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的任务">
       <created>1497935601764</created>
@@ -643,11 +686,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40111000" />
+    <option name="totallyTimeSpent" value="74949000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-32000" y="-32000" width="170" height="47" extended-state="0" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1924" height="1048" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -663,6 +705,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Key Promoter" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -671,7 +714,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19891892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -702,7 +745,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="一些 关于 typescript" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -710,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,7 +762,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/2.函数表达式与函数声明.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -808,11 +858,211 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/2.函数表达式与函数声明.html">
+    <entry file="file://$PROJECT_DIR$/temp/stickyRice/test1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - Three.js 入门.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - 正交摄像机.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.4.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.3.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter1/1.2.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter1/1.1.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="70" lean-forward="true" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.1.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.2.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="35" column="78" lean-forward="false" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.3.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1800">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/3全面解析Module模式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/2.函数表达式与函数声明.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/6.SOLID 五大原则之一 单一职责SPR.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/7.SOLID五大原则之开闭原则.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="143" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/20.javaScript 的语法五道.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/23 和 24 略js  和 dom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/yaoyao/position 如何使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="22" column="59" lean-forward="false" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.2.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.3.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.4.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-412">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2088">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4080">
+          <caret line="170" column="29" lean-forward="false" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="29" />
+          <folding>
+            <element signature="e#5373#5401#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test7改版.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1614">
+          <caret line="204" column="28" lean-forward="false" selection-start-line="204" selection-start-column="28" selection-end-line="204" selection-end-column="28" />
+          <folding>
+            <element signature="e#1545#3258#0" expanded="false" />
+            <element signature="e#1716#1840#0" expanded="false" />
+            <element signature="e#1842#1963#0" expanded="false" />
+            <element signature="e#1965#2089#0" expanded="false" />
+            <element signature="e#2091#2213#0" expanded="false" />
+            <marker date="1512719041256" expanded="true" signature="3715:3932" ph="..." />
+            <marker date="1512719041256" expanded="true" signature="3737:3808" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
