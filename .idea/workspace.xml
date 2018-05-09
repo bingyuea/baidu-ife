@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="重新联系百度前端学院内容">
-      <change afterPath="$PROJECT_DIR$/IFE-2018/第十六天，开始感受JS的乐趣/index.html" afterDir="false" />
+    <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IFE-2018/第十六天，开始感受JS的乐趣/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IFE-2018/第十六天，开始感受JS的乐趣/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" beforeDir="false" afterPath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/xc/bingyue" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,20 +33,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IFE-2018/第十六天，开始感受JS的乐趣/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="953">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="240">
+              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-495" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -623,7 +620,7 @@
       <workItem from="1522639810809" duration="846000" />
       <workItem from="1525783636930" duration="2699000" />
       <workItem from="1525828728536" duration="17000" />
-      <workItem from="1525871773762" duration="4091000" />
+      <workItem from="1525871773762" duration="4265000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的任务">
       <created>1497935601764</created>
@@ -674,11 +671,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512719099898</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="IFE-2018\第十六天，开始感受JS的乐趣">
+      <created>1525878990912</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1525878990912</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103738000" />
+    <option name="totallyTimeSpent" value="103912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -737,7 +741,8 @@
     <MESSAGE value="rotate 不能用？" />
     <MESSAGE value="一些 关于 typescript" />
     <MESSAGE value="重新联系百度前端学院内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="重新联系百度前端学院内容" />
+    <MESSAGE value="IFE-2018\第十六天，开始感受JS的乐趣" />
+    <option name="LAST_COMMIT_MESSAGE" value="IFE-2018\第十六天，开始感受JS的乐趣" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -998,16 +1003,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/IFE-2018/第十六天，开始感受JS的乐趣/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="953">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="240">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495" />
       </provider>
     </entry>
   </component>
