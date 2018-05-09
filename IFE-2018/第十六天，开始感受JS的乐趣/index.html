@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+
+        (function () {
+            eventHandle(document,"click",(e) => {
+                e = e || window.event;
+                let target  = e.target || e.srcElement,
+                    targetID = target.id;
+                switch (targetID){
+                    case "add-btn" :
+                        setValue(getValue().firstValue + getValue().secondValue);
+                        break;
+                    case "minus-btn" :
+                        setValue(getValue().firstValue - getValue().secondValue);
+                        break;
+                    case "times-btn" :
+                        setValue(getValue().firstValue * getValue().secondValue);
+                        break
+                    case "divide-btn" :
+                        setValue(getValue().firstValue / getValue().secondValue);
+                        break;
+                }
+            })
+        })();
+        function $(param){
+             return document.getElementById(param);
+        }
+
+        function getValue(){
+            return {
+                firstValue  : Number($("first-number").value),
+                secondValue : Number($("second-number").value)
+            };
+        }
+
+        function setValue(value){
+            $("result").innerText = value;
+        }
+
+        function eventHandle(element,type,handle){
+            if(element.addEventListener){
+                element.addEventListener(type,handle,false)
+            }
+            if(element.attachEvent){
+                element.attachEvent(`on${type}`,handle)
+            }
+        }
+    </script>
+</body>
+</html>
