@@ -21,16 +21,28 @@
                     targetID = target.id;
                 switch (targetID){
                     case "add-btn" :
-                        setValue(getValue().firstValue + getValue().secondValue);
+                        if(checkNum(getValue().firstValue) === false|| checkNum(getValue().secondValue) === false ){
+                            return;
+                        }
+                        setValue(Number(getValue().firstValue) + Number(getValue().secondValue));
                         break;
                     case "minus-btn" :
-                        setValue(getValue().firstValue - getValue().secondValue);
+                        if(checkNum(getValue().firstValue) === false|| checkNum(getValue().secondValue) === false ){
+                            return;
+                        }
+                        setValue(Number(getValue().firstValue) - Number(getValue().secondValue));
                         break;
                     case "times-btn" :
-                        setValue(getValue().firstValue * getValue().secondValue);
+                        if(checkNum(getValue().firstValue) === false|| checkNum(getValue().secondValue) === false ){
+                            return;
+                        }
+                        setValue(Number(getValue().firstValue) * Number(getValue().secondValue));
                         break
                     case "divide-btn" :
-                        setValue(getValue().firstValue / getValue().secondValue);
+                        if(checkNum(getValue().firstValue) === false|| checkNum(getValue().secondValue) === false || checkDevider(getValue().secondValue) === false){
+                            return;
+                        }
+                        setValue(Number(getValue().firstValue) / Number(getValue().secondValue));
                         break;
                 }
             })
@@ -41,8 +53,8 @@
 
         function getValue(){
             return {
-                firstValue  : Number($("first-number").value),
-                secondValue : Number($("second-number").value)
+                firstValue  : $("first-number").value,
+                secondValue : $("second-number").value
             };
         }
 
@@ -58,6 +70,29 @@
                 element.attachEvent(`on${type}`,handle)
             }
         }
+
+        function checkNum(value){
+            if(value === ""){
+                console.log("为空");
+                return false;
+            }else if(isNaN(Number(value))){
+                console.log("不是数字");
+                return false;
+            }else{
+                return true;
+            }
+        }
+        
+        function checkDevider(value) {
+            value = Number(value);
+            if(value === 0){
+                console.log("除数为0");
+                return false;
+            }else{
+                return true;
+            }
+        }
+
     </script>
 </body>
 </html>
