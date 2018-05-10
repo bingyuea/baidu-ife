@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="修改 README">
-      <change afterPath="$PROJECT_DIR$/IFE-2018/第十七天到第十八天，“如果”可以“重来”/十进制整数转化为二进制.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" beforeDir="false" afterPath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" afterDir="false" />
     </list>
@@ -46,8 +44,8 @@
       <file leaf-file-name="十进制整数转化为二进制.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IFE-2018/第十七天到第十八天，“如果”可以“重来”/十进制整数转化为二进制.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="666">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -619,7 +617,7 @@
       <workItem from="1525828728536" duration="17000" />
       <workItem from="1525871773762" duration="8589000" />
       <workItem from="1525916242987" duration="402000" />
-      <workItem from="1525954576397" duration="9365000" />
+      <workItem from="1525954576397" duration="10260000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的任务">
       <created>1497935601764</created>
@@ -698,11 +696,25 @@
       <option name="project" value="LOCAL" />
       <updated>1525916441640</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="修改 README">
+      <created>1525966705543</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1525966705543</updated>
+    </task>
+    <task id="LOCAL-00013" summary="改用字符串repeat方法">
+      <created>1525967194398</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1525967194398</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118003000" />
+    <option name="totallyTimeSpent" value="118898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="2" width="1773" height="1036" extended-state="0" />
@@ -764,7 +776,8 @@
     <MESSAGE value="IFE-2018\第十六天，开始感受JS的乐趣" />
     <MESSAGE value="IFE-2018\第十六天，开始感受JS的乐趣(修改)" />
     <MESSAGE value="修改 README" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 README" />
+    <MESSAGE value="改用字符串repeat方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="改用字符串repeat方法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1044,8 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IFE-2018/第十七天到第十八天，“如果”可以“重来”/十进制整数转化为二进制.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="666">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
