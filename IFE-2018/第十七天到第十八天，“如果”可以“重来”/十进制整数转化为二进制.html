@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+<input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+<input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数">
+
+<button id="trans-btn">转化为二进制</button>
+<p id="result">运算结果</p>
+<script>
+
+    function dec2bin(decNumber) {
+        // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
+        decNumber = Number(decNumber);
+        if(decNumber > 0 && Number.isInteger(decNumber)){
+            return getRemainderArr(decNumber,[]);
+        }
+    }
+    function getRemainderArr(decNumber,remainderArr){
+        if(parseInt(decNumber/2) === 0 ){
+            remainderArr.push(decNumber);
+            return remainderArr.reverse().join("");
+        }else{
+            remainderArr.push(decNumber%2);
+            return arguments.callee (parseInt(decNumber/2),remainderArr)
+        }
+    }
+
+    function $(dom){
+        return document.getElementById(dom)
+    }
+
+    function eventHandle(element,type,handle){
+        if(element.addEventListener){
+            element.addEventListener(type,handle,false)
+        }
+        if(element.attachEvents){
+            element.attachEvents(`on${type}`,handle)
+        }
+    }
+    // 实现党点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+    // Some coding
+    eventHandle($("trans-btn"),"click",() => {
+        let value = $("dec-number").value,
+            realBit = dec2bin(value).length;
+            checkBit(realBit,dec2bin(value));
+    })
+    // 新的需求是，转化显示后的二进制数为bin-bit中输入的数字宽度，例如
+    // dec-number为5，bin-bit为5，则转化后数字为00101
+    // 如果bin-bit小于转化后的二进制本身位数，则使用原本的位数，如dec-number为5，bin-bit为2，依然输出101，但同时在console中报个错
+    // Some coding
+
+    function setResult(value) {
+        $("result").innerText =  `运算结果:${value}`
+    }
+
+    function getBit(){
+        return Number($("bin-bit").value);
+    }
+
+    function checkBit(realBit,value){
+        let bit = getBit();
+        if(bit < realBit){
+            setResult(value);
+            console.error(`输入位数错误${bit}位`)
+        }else{
+            for(let i = 1;i <= Math.abs(realBit - bit);i++){
+                value= "0"+ value;
+            }
+            setResult(value);
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
