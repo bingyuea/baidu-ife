@@ -67,9 +67,7 @@
             setResult(value);
             console.error(`输入位数错误${bit}位`)
         }else{
-            for(let i = 1;i <= Math.abs(realBit - bit);i++){
-                value= "0"+ value;
-            }
+            value= "0".repeat(Math.abs(realBit - bit))+value;
             setResult(value);
         }
     }
