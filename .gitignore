@@ -45,3 +45,5 @@ jspm_packages
 .DS_Store
 
 .idea
+.idea/**
+temp/ECharts & WebVR学院/studyWebGL/ThreeExample.js

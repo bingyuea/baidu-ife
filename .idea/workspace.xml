@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" beforeDir="false" afterPath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -35,17 +36,22 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IFE-2018/第十六天，开始感受JS的乐趣/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+            <state relative-caret-position="644">
+              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="161">
+                <caret line="7" column="87" lean-forward="true" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -112,6 +118,7 @@
         <option value="$PROJECT_DIR$/temp/yaoyao/test6改版32232.html" />
         <option value="$PROJECT_DIR$/temp/yaoyao/200.html" />
         <option value="$PROJECT_DIR$/IFE-2018/第十六天，开始感受JS的乐趣/index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -602,6 +609,7 @@
       <workItem from="1525783636930" duration="2699000" />
       <workItem from="1525828728536" duration="17000" />
       <workItem from="1525871773762" duration="8589000" />
+      <workItem from="1525916242987" duration="402000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的任务">
       <created>1497935601764</created>
@@ -673,19 +681,27 @@
       <option name="project" value="LOCAL" />
       <updated>1525881927581</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修改 README">
+      <created>1525916441640</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1525916441640</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108236000" />
+    <option name="totallyTimeSpent" value="108638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15234375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32733223" />
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24972972" />
@@ -706,8 +722,10 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Nl-Palette" order="6" />
       <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="JRebel Executor" order="12" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
@@ -715,8 +733,6 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" id="Key Promoter" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Find" order="2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -737,7 +753,8 @@
     <MESSAGE value="重新联系百度前端学院内容" />
     <MESSAGE value="IFE-2018\第十六天，开始感受JS的乐趣" />
     <MESSAGE value="IFE-2018\第十六天，开始感受JS的乐趣(修改)" />
-    <option name="LAST_COMMIT_MESSAGE" value="IFE-2018\第十六天，开始感受JS的乐趣(修改)" />
+    <MESSAGE value="修改 README" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改 README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,6 +762,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/temp/yaoyao/test4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1472">
@@ -991,20 +1018,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/IFE-2018/第十六天，开始感受JS的乐趣/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state relative-caret-position="644">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="161">
+            <caret line="7" column="87" lean-forward="true" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
