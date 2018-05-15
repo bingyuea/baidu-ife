@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="day19">
-      <change afterPath="$PROJECT_DIR$/IFE-2018/day19/index.html" afterDir="false" />
+    <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IFE-2018/day19/dom.html" beforeDir="false" afterPath="$PROJECT_DIR$/IFE-2018/day19/dom.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" beforeDir="false" afterPath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day19/index.html">
+      <file leaf-file-name="dom.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IFE-2018/day19/dom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="42" column="119" selection-start-line="42" selection-start-column="119" selection-end-line="42" selection-end-column="119" />
+            <state relative-caret-position="414">
+              <caret line="42" column="138" selection-start-line="42" selection-start-column="138" selection-end-line="42" selection-end-column="138" />
             </state>
           </provider>
         </entry>
@@ -125,6 +125,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/IFE-2018/第十七天到第十八天，“如果”可以“重来”/十进制整数转化为二进制.html" />
         <option value="$PROJECT_DIR$/IFE-2018/day19/index.html" />
+        <option value="$PROJECT_DIR$/IFE-2018/day19/dom.html" />
       </list>
     </option>
   </component>
@@ -170,6 +171,12 @@
               <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
               <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
               <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
+              <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
+              <item name="day19" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -624,7 +631,7 @@
       <workItem from="1525954576397" duration="11568000" />
       <workItem from="1526134576694" duration="1198000" />
       <workItem from="1526260232913" duration="197000" />
-      <workItem from="1526302647986" duration="7392000" />
+      <workItem from="1526302647986" duration="8016000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的任务">
       <created>1497935601764</created>
@@ -731,11 +738,25 @@
       <option name="project" value="LOCAL" />
       <updated>1525967765565</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="day19">
+      <created>1526313036504</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1526313036504</updated>
+    </task>
+    <task id="LOCAL-00017" summary="day19">
+      <created>1526348050380</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1526348050380</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128993000" />
+    <option name="totallyTimeSpent" value="129617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -799,7 +820,8 @@
     <MESSAGE value="修改 README" />
     <MESSAGE value="改用字符串repeat方法" />
     <MESSAGE value="更改目录结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改目录结构" />
+    <MESSAGE value="day19" />
+    <option name="LAST_COMMIT_MESSAGE" value="day19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1077,10 +1099,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2018/day19/index.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day19/dom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="42" column="119" selection-start-line="42" selection-start-column="119" selection-end-line="42" selection-end-column="119" />
+        <state relative-caret-position="414">
+          <caret line="42" column="138" selection-start-line="42" selection-start-column="138" selection-end-line="42" selection-end-column="138" />
         </state>
       </provider>
     </entry>
