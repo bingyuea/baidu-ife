@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    select{
+        display: none;
+    }
+    .showSelect {
+        display: block;
+    }
+</style>
+<body>
+    <div >
+        <input id="name" type="text">
+        <button id="submit-btn">Submit</button>
+        <script>
+
+            function getID(id){
+                return document.getElementById(id);
+            }
+            function eventHandle(element,type,handle){
+                if(element.addEventListener){
+                    element.addEventListener(type,handle,false);
+                }
+                if(element.attachEvents){
+                    element.attachEvents(`on${type}`,handle)
+                }
+            }
+
+            function getText(id){
+                console.log(getID(id).value)
+            }
+
+            eventHandle(getID("submit-btn"),"click",() => {
+                getText("name");
+            })
+
+            eventHandle(document,'keydown',(e) => {
+                e = e || window.event;
+                if(e.keyCode === 13){
+                    getText("name");
+                }
+                if(e.keyCode === 27){
+                    getID("name").value = "";
+                }
+            })
+
+
+
+
+        </script>
+        <hr/>
+    </div>
+
+    <div>
+        <label>
+            <input id="school" name="status" type="radio">
+            School
+        </label>
+        <label>
+            <input id="company" name="status" type="radio">
+            Company
+        </label>
+
+        <select id="school-select">
+            <option>北京邮电大学</option>
+            <option>黑龙江大学</option>
+            <option>华中科技大学</option>
+        </select>
+
+        <select id="company-select">
+            <option>百度</option>
+            <option>爱奇艺</option>
+        </select>
+        <script>
+            let classHandle = {
+                addClass:(id,attribute) => {
+                   let oldClass = getID(id).className;
+                   oldClass = oldClass+" "+attribute;
+                    getID(id).setAttribute("class",oldClass);
+                },
+                removeClass:(id,attribute) => {
+                    let oldClass = getID(id).className;
+                    oldClass = oldClass.replace(new RegExp(attribute,"g"),"");
+                    getID(id).setAttribute("class",oldClass);
+                }
+            }
+            eventHandle(getID("school"),'click',() => {
+                classHandle.addClass("school-select","showSelect");
+                classHandle.removeClass("company-select","showSelect");
+            })
+            eventHandle(getID("company"),'click',() => {
+                classHandle.addClass("company-select","showSelect");
+                classHandle.removeClass("school-select","showSelect");
+            })
+
+
+        </script>
+        <hr/>
+        <a href = "https://blog.csdn.net/ityang521/article/details/53649849">
+            replace 方法
+        </a>
+    </div>
+
+</body>
+</html>
