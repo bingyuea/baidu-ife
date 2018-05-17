@@ -12,7 +12,7 @@
     .showSelect {
         display: block;
     }
-    #box{
+    #box,#box2{
         background:url("http://ife.baidu.com/2016/static/img/erik_ce204002.jpg") no-repeat;
         width:480px;
         height:480px;
@@ -198,18 +198,49 @@
     </div>
     <script>
         (function () {
-            getID("box").style.backgroundPositionY = 0;
-            positionChange();
+            init();
+            function init(){
+                getID("box").style.backgroundPositionY = 0;
+                positionChange();
+            }
+
             function positionChange(){
                 let positionY = getID("box").style.backgroundPositionY;
                 getID("box").style.backgroundPositionY = `${parseInt(positionY) - 480}px`;
                 let t = setTimeout(positionChange,50)
                 if(parseInt(positionY) <= -8610){
                     clearTimeout(t);
-                    getID("box").style.backgroundPositionY = 0;
-                    positionChange();
+                    init();
                 }
             }
+        })();
+
+    </script>
+</div>
+
+<div>
+    <div id="box2">
+
+    </div>
+    <script>
+        (function () {
+            init();
+            function init(){
+                getID("box2").style.backgroundPositionY = 0;
+                let t = setInterval(() => {
+                    positionChange(t)
+                },50)
+            }
+
+            function positionChange(t){
+                let positionY = getID("box2").style.backgroundPositionY;
+                getID("box2").style.backgroundPositionY = `${parseInt(positionY) - 480}px`;
+                if(parseInt(positionY) <= -8610){
+                    clearTimeout(t);
+                    init();
+                }
+            }
+
         })();
 
     </script>
