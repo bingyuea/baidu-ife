@@ -87,11 +87,11 @@
             e = e || window.event;
             let target = e.srcElement || e.target,
                 numAValue = numA.value,
-                numBValue = numB.value;
+                numBValue = numB.value,
+                checkDom = isChecked(),
+                checkValue = checkDom[0].parentElement.nextElementSibling.value;
             switch (target.innerText) {
                 case "判断当前选中的输入框输入内容是否为数字" :
-                    let checkDom = isChecked(),
-                        checkValue = checkDom[0].parentNode.nextSibling.value;
                     result.innerText = checkNum(checkValue);
                     break;
                 case "把 A 四舍五入为 B 个小数位数的数字" :

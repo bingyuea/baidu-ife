@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串类型).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数字类型).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IFE-2018/day2021/让你和页面对话.html" beforeDir="false" afterPath="$PROJECT_DIR$/IFE-2018/day2021/让你和页面对话.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" beforeDir="false" afterPath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -60,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="让你和页面对话.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="让你和页面对话.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IFE-2018/day2021/让你和页面对话.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="210" selection-start-line="210" selection-end-line="210" />
+            <state relative-caret-position="530">
+              <caret line="220" column="5" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#1;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -76,6 +78,41 @@
                 <element signature="n#style#0;n#li#7;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaScript里面的居民们(数字类型).html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数字类型).html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+              <folding>
+                <element signature="e#792#816#0" />
+                <element signature="e#893#917#0" />
+                <element signature="e#1061#1288#0" />
+                <element signature="e#1491#1505#0" />
+                <element signature="e#1302#1521#0" />
+                <element signature="e#1745#2039#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaScript里面的居民们(字符串类型).html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串类型).html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1220">
+              <caret line="124" selection-start-line="124" selection-end-line="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaScript里面的居民们(字符串去空格).html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="39" column="35" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -101,7 +138,19 @@
       <find>sortFN</find>
       <find>sortNum</find>
       <find>&lt;/script</find>
+      <find>box</find>
+      <find>box2</find>
+      <find>checkNum</find>
+      <find>使用slice获取选中输入框内容的部分内容，参数为num-a及num-b</find>
+      <find>checkValue</find>
+      <find>textarea</find>
+      <find>当前选中输入框的行数</find>
+      <find>isChecked</find>
+      <find>this</find>
     </findStrings>
+    <replaceStrings>
+      <replace>textareaValue</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,6 +196,10 @@
         <option value="$PROJECT_DIR$/IFE-2018/day19/index.html" />
         <option value="$PROJECT_DIR$/IFE-2018/day19/dom.html" />
         <option value="$PROJECT_DIR$/IFE-2018/day2021/让你和页面对话.html" />
+        <option value="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们.html" />
+        <option value="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数字类型).html" />
+        <option value="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串类型).html" />
+        <option value="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html" />
       </list>
     </option>
   </component>
@@ -197,25 +250,8 @@
             <path>
               <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
               <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="temp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="temp" type="462c0819:PsiDirectoryNode" />
-              <item name="binbin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="temp" type="462c0819:PsiDirectoryNode" />
-              <item name="xc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="temp" type="462c0819:PsiDirectoryNode" />
-              <item name="yaoyao" type="462c0819:PsiDirectoryNode" />
+              <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
+              <item name="day2224" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,14 +274,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
-      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院\studyWebGL" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\sourceCode\spareWork\baidu-ife\IFE-2018\day2224" />
       <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
       <recent name="D:\sourceCode\spareWork\baidu-ife\test\深入理解javascript汤姆大叔的博客" />
       <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
+      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院\studyWebGL" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -673,7 +710,8 @@
       <workItem from="1526302647986" duration="8112000" />
       <workItem from="1526391560425" duration="6061000" />
       <workItem from="1526435939194" duration="645000" />
-      <workItem from="1526474252963" duration="13998000" />
+      <workItem from="1526474252963" duration="18114000" />
+      <workItem from="1526791070646" duration="13705000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的任务">
       <created>1497935601764</created>
@@ -808,21 +846,35 @@
       <option name="project" value="LOCAL" />
       <updated>1526435856517</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="day2021">
+      <created>1526552292461</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1526552292461</updated>
+    </task>
+    <task id="LOCAL-00021" summary="day2021 改为两种方式">
+      <created>1526557349062</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1526557349062</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150417000" />
+    <option name="totallyTimeSpent" value="168238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18361954" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18361954" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3281471" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32733223" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32673267" />
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24972972" />
       <window_info anchor="bottom" id="Terminal" order="8" />
@@ -842,6 +894,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Nl-Palette" order="6" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Find" order="2" />
@@ -852,7 +905,6 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" id="Key Promoter" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -877,17 +929,16 @@
     <MESSAGE value="改用字符串repeat方法" />
     <MESSAGE value="更改目录结构" />
     <MESSAGE value="day19" />
-    <option name="LAST_COMMIT_MESSAGE" value="day19" />
+    <MESSAGE value="day2021" />
+    <MESSAGE value="day2021 改为两种方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="day2021 改为两种方式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/binbin/test6.html" />
-    <entry file="file://$PROJECT_DIR$/糯米学院/databinding1/index.html" />
-    <entry file="file://$PROJECT_DIR$/binbin/test5.html" />
     <entry file="file://$PROJECT_DIR$/糯米学院/databinding1/index.html" />
     <entry file="file://$PROJECT_DIR$/binbin/test6.html" />
     <entry file="file://$PROJECT_DIR$/yaoyao/听指令的小方块.html" />
@@ -1161,8 +1212,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IFE-2018/day2021/让你和页面对话.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="210" selection-start-line="210" selection-end-line="210" />
+        <state relative-caret-position="530">
+          <caret line="220" column="5" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#1;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1174,6 +1225,35 @@
             <element signature="n#style#0;n#li#7;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串类型).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1220">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数字类型).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+          <folding>
+            <element signature="e#792#816#0" />
+            <element signature="e#893#917#0" />
+            <element signature="e#1061#1288#0" />
+            <element signature="e#1491#1505#0" />
+            <element signature="e#1302#1521#0" />
+            <element signature="e#1745#2039#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="35" />
         </state>
       </provider>
     </entry>
