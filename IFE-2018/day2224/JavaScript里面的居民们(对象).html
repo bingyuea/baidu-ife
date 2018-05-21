@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript里面的居民们</title>
+</head>
+
+<body>
+
+
+</body>
+<script>
+
+    var tree = {
+        "id": 0,
+        "name": "root",
+        "left": {
+            "id": 1,
+            "name": "Simon",
+            "left": {
+                "id": 3,
+                "name": "Carl",
+                "left": {
+                    "id": 7,
+                    "name": "Lee",
+                    "left": {
+                        "id": 11,
+                        "name": "Fate"
+                    }
+                },
+                "right": {
+                    "id": 8,
+                    "name": "Annie",
+                    "left": {
+                        "id": 12,
+                        "name": "Saber"
+                    }
+                }
+            },
+            "right": {
+                "id": 4,
+                "name": "Tony",
+                "left": {
+                    "id": 9,
+                    "name": "Candy"
+                }
+            }
+        },
+        "right": {
+            "id": 2,
+            "name": "right",
+            "left": {
+                "id": 5,
+                "name": "Carl",
+            },
+            "right": {
+                "id": 6,
+                "name": "Carl",
+                "right": {
+                    "id": 10,
+                    "name": "Kai"
+                }
+            }
+        }
+    }
+    // 有如上对象，分别实现代码下方的几个函数，满足以下需求：
+    //
+    // 假设id和name均不会重复，根据输入name找到对应的id
+    // 假设id和name均不会重复，根据输入id找到对应的name
+    // 把这个对象中所有的名字以“前序遍历”的方式全部输出到console中
+    // 把这个对象中所有的名字以“中序遍历”的方式全部输出到console中
+    // 把这个对象中所有的名字以“后序遍历”的方式全部输出到console中
+    console.log(tree)
+
+    // 假设id和name均不会重复，根据输入name找到对应的id
+        function findIdByName(name, node) {
+            if (node.name === name) {
+                return node.id
+            }
+            if (node.left !== undefined) {
+                arguments.callee(name, node.left)
+            }
+            if (node.right !== undefined) {
+                arguments.callee(name, node.right)
+            }
+        }
+        console.log(findIdByName("Kai",tree));
+        // 假设id和name均不会重复，根据输入id找到对应的name
+        function findNameById(id) {
+
+        }
+
+        // 把这个对象中所有的名字以“前序遍历”的方式全部输出到console中
+        function getListWithDLR() {
+
+        }
+
+        // 把这个对象中所有的名字以“中序遍历”的方式全部输出到console中
+        function getListWithLDR() {
+
+        }
+
+        // 把这个对象中所有的名字以“后序遍历”的方式全部输出到console中
+        function getListWithLRD() {
+
+        }
+</script>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二：表单（二）多个表单项的动态校验</title>
+</head>
+<style>
+    main{
+        width:500px;
+        margin:100px auto 0;
+    }
+    label{
+        width:500px;
+        height: 80px;
+        display: inline-block;
+    }
+    label > input {
+        border : 1px solid #eee;
+        box-sizing: border-box;
+        width:70%;
+        height: 44px;
+        float: right;
+    }
+    label > input.nameEmpty {
+        border : 1px solid orangered;
+    }
+    label > input.nameRight {
+        border : 1px solid green;
+    }
+    label > input.nameError {
+        border : 1px solid palevioletred;
+    }
+    main >button {
+        border : 1px solid #eee;
+        box-sizing: border-box;
+        width:20%;
+        height: 44px;
+    }
+    main p {
+        padding-left: 30%;
+        line-height: 36px;
+        margin: 0;
+        height: 36px;
+        float: left;
+    }
+</style>
+<body>
+<main>
+
+    <label>名称
+        <input type = "text" class = "name_input " name = "name"/>
+        <p class = "name_tip"></p>
+    </label>
+    <label>密码
+        <input type = "text" class = "name_input " name = "password"/>
+        <p class = "name_tip"></p>
+    </label>
+    <label>确认密码
+        <input type = "text" class = "name_input " name = "rePassword"/>
+        <p class = "name_tip"></p>
+    </label>
+    <label>邮箱
+        <input type = "text" class = "name_input " name = "email"/>
+        <p class = "name_tip"></p>
+    </label>
+
+    <label>手机
+        <input type = "text" class = "name_input " name = "mobile"/>
+        <p class = "name_tip"></p>
+    </label>
+    <button class = "btn">提交</button>
+</main>
+</body>
+<script src="lib/jQuery.js"></script>
+<script>
+    var msg = [
+        {"name" : {
+            "type" : "name",
+            "tip_focus" : "必填,长度为4~16个字符",
+            "tip_right" : "right",
+            "tip_blur" : "不能为空",
+            "tip_error" : "格式错误",
+            "reg" : "^.{4,16}$"
+        }},
+        {"name" : {
+            "type" : "password",
+            "tip_focus" : "必填,密码长度不小于6位",
+            "tip_right" : "right",
+            "tip_blur" : "不能为空",
+            "tip_error" : "格式错误",
+            "reg" : "^.{6,}$"
+        }},
+        {"name" : {
+            "type" : "rePassword",
+            "tip_focus" : "必填,重复输入密码",
+            "tip_right" : "right",
+            "tip_blur" : "不能为空",
+            "tip_error" : "两次输入不一致，请重新输入",
+            "reg" : "^.{6,}$"
+        }},
+        {"name" : {
+            "type" : "email",
+            "tip_focus" : "必填,输入常用邮箱",
+            "tip_right" : "right",
+            "tip_blur" : "不能为空",
+            "tip_error" : "请输入正确的邮箱",
+            // 2310179201@qq.com
+            //"reg" : "^/w*@/w*[/./w]$"
+            //"reg" : "^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
+            "reg" : "^(\\w)+(\.\\w+)*@(\\w)+((\.\\w+)+)$"
+
+        }},
+        {"name" : {
+            "type" : "mobile",
+            "tip_focus" : "必填,请输入你的手机号码",
+            "tip_right" : "right",
+            "tip_blur" : "不能为空",
+            "tip_error" : "请输入正确的手机号",
+            // 13671536220
+            "reg" : "^(\\d){11}$"
+        }}
+    ];
+    //[{name : {tip : }]
+    $(document).on("focusin focusout","label > input",function (e) {
+        var isPassword;
+        var that = this;
+        if(e.type == "focusin"){//获取焦点 输入
+            msg.forEach(function (value,index,msg) {
+                if($(that).attr("name") == msg[index].name.type){
+                    $('p').eq(index).show().text(msg[index].name.tip_focus);
+                }
+            })
+        }else if(e.type == "focusout"){// 是去焦点
+            if($(that).val() == ""){// 空
+                msg.forEach(function (value,index,msg) {
+                    if($(that).attr("name") == msg[index].name.type){
+                        $('p').eq(index).show().text(msg[index].name.tip_blur);
+                        $(that).removeClass();
+                        $(that).addClass("nameEmpty");
+                    }
+                })
+            }else{
+                msg.forEach(function (value,index,msg){
+                    if($(that).attr("name") == msg[index].name.type){
+                        var reg = new RegExp(msg[index].name.reg);
+                        if(reg.test($(that).val())){// 效验通过
+                            // 把密码保存下来
+                            if($('input[name = "password"]').val() != ""){
+                                isPassword = $('input[name = "password"]').val();
+                            }
+                            // 如果输入的是repassword 就执行下面的
+                            if($(that).attr("name") == "rePassword"){
+                                if(isPassword == $(that).val()){
+                                    $('p').eq(index).text(msg[index].name.tip_right);
+                                    $(that).removeClass();
+                                    $(that).addClass("nameRight");
+                                }else{
+                                    $('p').eq(index).text(msg[index].name.tip_error);
+                                    $(that).removeClass();
+                                    $(that).addClass("nameError");
+                                }
+                            }else{
+                                $('p').eq(index).text(msg[index].name.tip_right);
+                                $(that).removeClass();
+                                $(that).addClass("nameRight");
+                            }
+                        }else{// 效验不通过
+                            msg.forEach(function (value,index,msg) {
+                                if($(that).attr("name") == msg[index].name.type){
+                                    $('p').eq(index).text(msg[index].name.tip_error);
+                                    $(that).removeClass();
+                                    $(that).addClass("nameError");
+                                }
+                            })
+                        }
+                    }
+                })
+            }
+        }
+    })
+</script>
+</html>

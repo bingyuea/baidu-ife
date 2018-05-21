@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>听指令的小方块</title>
+</head>
+<style>
+
+
+*{margin: 0;padding: 0;} body { padding: 40px 100px; } .demo { width: 600px; margin: 40px auto; font-family: 'trebuchet MS', 'Lucida sans', Arial; font-size: 14px; color: #444; } table { *border-collapse: collapse; /* IE7 and lower */ border-spacing: 0; } /*========bordered table========*/ .bordered { border: solid #ccc 1px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 1px 1px #ccc; -moz-box-shadow: 0 1px 1px #ccc; box-shadow: 0 1px 1px #ccc; } .bordered tr { -o-transition: all 0.1s ease-in-out; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out;	} .bordered .highlight, .bordered tr:hover { background: #fbf8e9;	} .bordered td, .bordered th { border-left: 1px solid #ccc; border-top: 1px solid #ccc; padding: 10px; text-align: left; } .bordered th { background-color: #dce9f9; background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9)); background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9); background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9); background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9); background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9); background-image: linear-gradient(top, #ebf3fc, #dce9f9); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9); -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ebf3fc, endColorstr=#dce9f9)"; -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset; box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; border-top: none; text-shadow: 0 1px 0 rgba(255,255,255,.5); } .bordered td:first-child, .bordered th:first-child { border-left: none; } .bordered th:first-child { -moz-border-radius: 6px 0 0 0; -webkit-border-radius: 6px 0 0 0; border-radius: 6px 0 0 0; } .bordered th:last-child { -moz-border-radius: 0 6px 0 0; -webkit-border-radius: 0 6px 0 0; border-radius: 0 6px 0 0; } .bordered tr:last-child td:first-child { -moz-border-radius: 0 0 0 6px; -webkit-border-radius: 0 0 0 6px; border-radius: 0 0 0 6px; } .bordered tr:last-child td:last-child { -moz-border-radius: 0 0 6px 0; -webkit-border-radius: 0 0 6px 0; border-radius: 0 0 6px 0; } /*----------------------*/ .zebra td, .zebra th { padding: 10px; border-bottom: 1px solid #f2f2f2; } .zebra .alternate, .zebra tbody tr:nth-child(even) { background: #f5f5f5; -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset; box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; } .zebra th { text-align: left; text-shadow: 0 1px 0 rgba(255,255,255,.5); border-bottom: 1px solid #ccc; background-color: #eee; background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eee)); background-image: -webkit-linear-gradient(top, #f5f5f5, #eee); background-image: -moz-linear-gradient(top, #f5f5f5, #eee); background-image: -ms-linear-gradient(top, #f5f5f5, #eee); background-image: -o-linear-gradient(top, #f5f5f5, #eee); background-image: linear-gradient(top, #f5f5f5, #eee); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f5f5f5, endColorstr=#eeeeee); -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#f5f5f5, endColorstr=#eeeeee)"; } .zebra th:first-child { -moz-border-radius: 6px 0 0 0; -webkit-border-radius: 6px 0 0 0; border-radius: 6px 0 0 0; } .zebra th:last-child { -moz-border-radius: 0 6px 0 0; -webkit-border-radius: 0 6px 0 0; border-radius: 0 6px 0 0; } .zebra tfoot td { border-bottom: 0; border-top: 1px solid #fff; background-color: #f1f1f1; } .zebra tfoot td:first-child { -moz-border-radius: 0 0 0 6px; -webkit-border-radius: 0 0 0 6px; border-radius: 0 0 0 6px; } .zebra tfoot td:last-child { -moz-border-radius: 0 0 6px 0; -webkit-border-radius: 0 0 6px 0; border-radius: 0 0 6px 0; }
+td{width:30px !important;height: 30px !important;box-sizing: border-box !important;padding:0 !important;}
+.bordered td, .bordered th{
+    text-align: center;
+}
+.bordered td, .bordered th{
+    border:1px solid #000;
+}
+</style>
+<body  oncontextmenu=self.event.returnvalue=false onselectstart="return false">
+    <table class = "bordered" style = "position:relative;">
+
+    </table>
+    <ul>
+        <li>箭头上↓：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</li>
+        <li>箭头下↑：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</li>
+        <li>    箭头左←：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</li>
+        <li>    箭头右→：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）</li>
+        <li>    w：向左转（逆时针旋转90度）</li>
+        <li>    s：向右转（顺时针旋转90度）</li>
+        <li>    a：向后转（逆时针旋转180度）</li>
+        <li>    d：向前转（顺时针旋转180度）</li>
+    </ul>
+</body>
+<script src="lib/jQuery.js"></script>
+<script>
+    // 字符串 repeat 异步处理
+    $(function () {
+        var num = 11;
+        var str = "<tr></tr>";
+        $(str.repeat(11)).appendTo($("table"));
+        setTimeout(function () {
+            for(var j = 1;j <= num; j++){
+                var str2 = "<td></td>";
+                $(str2.repeat(11)).appendTo($("tr")[j-1]).eq(0).text(j-1).css({
+                    "border": "0",
+                });
+                $("tr:first-of-type > td").eq(j-1).text(j-1).css({
+                    "border": "0",
+                });
+                continue;
+            }
+        },500);
+        // 小色块
+        var tempPosition;
+        var ram = 0;
+        setTimeout(function () {
+            $(".bordered td:empty").each(function (index,ele,arr) {
+                ram = index;
+                var x = $(ele).offset().left;
+                var y = $(ele).offset().top;
+                $(ele).css({
+                    "positon" : "absolute",
+                    "top" : y,
+                    "left" : x
+                });
+            })
+        },1000);
+        setTimeout(function () {
+            tempPosition= $(".bordered td:empty").eq(parseInt(Math.random()*ram));
+            console.log($(tempPosition).width());
+        },2000);
+
+        setTimeout(function () {
+            $("<div class = 'temp'></div>").css({
+                "position":"absolute",
+                "left" : tempPosition.position().left,
+                "top" : tempPosition.position().top,
+                "backgroundColor" : "#000",
+                "width" : $(tempPosition).width()+2,
+                "height" : $(tempPosition).height()+2,
+                "border": "10px solid red",
+                "borderColor": "blue transparent transparent transparent",
+                "backgroundColor" : "red",
+                "box-sizing": "border-box",
+            }).appendTo($("table"));
+            $(".temp")[0].style.transform = "rotate(0deg)";
+        },2500)
+        $(document).keyup(function (e) {
+            // w 87 s 83 a 65 d 68
+            switch (e.keyCode) {
+                case 37:
+                    executeRes.left();
+                    break;
+                case 38:
+                    executeRes.up();
+                    break;
+                case 39:
+                    executeRes.right();
+                    break;
+                case 40:
+                    executeRes.down();
+                    break;
+                case 87: // w
+                    executeRes.turnLeft();
+                    break;
+                case 83: // s
+                    executeRes.turnRight();
+                    break;
+                case 65: // a
+                    executeRes.turnForward();
+                    break;
+                case 68: // d
+                    executeRes.turnBackward();
+                    break;
+            }
+        })
+    })
+    //    箭头上↓：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+    //    箭头下↑：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+    //    箭头左←：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+    //    箭头右→：向蓝色边所面向的方向前进一格（一格等同于正方形的边长）
+    //    w：向左转（逆时针旋转90度）
+    //    s：向右转（顺时针旋转90度）
+    //    a：向后转（旋转180度）
+    //    d：向前转（旋转180度）
+
+    var executeRes = {
+        getTbody_top : function(){
+            return parseInt($(".bordered > tbody").offset().top)
+        },
+        getTbody_left : function(){
+            return parseInt($(".bordered > tbody").offset().left)
+        },
+        getTbody_width : function(){
+            return parseInt($(".bordered > tbody")[0].offsetWidth)
+        },
+        getTbody_height : function(){
+            return parseInt($(".bordered > tbody")[0].offsetHeight)
+        },
+        getTemp_top : function(){
+            return parseInt($(".temp").offset().top)
+        },
+        getTemp_left : function(){
+            return parseInt($(".temp").offset().left)
+        },
+        getTemp_width : function(){
+            return parseInt($(".temp")[0].offsetWidth)
+        },
+        getTemp_height : function(){
+            return parseInt($(".temp")[0].offsetHeight)
+        },
+        up : function () {
+            if (executeRes.getTemp_top() <= executeRes.getTbody_top() + executeRes.getTemp_height()) {
+                alert("已到上边界");
+                return true;
+            }
+            $(".temp").offset({top:executeRes.getTemp_top() - executeRes.getTemp_height()});
+        },
+        down : function () {
+            if (executeRes.getTemp_top() >= executeRes.getTbody_top() + executeRes.getTbody_height() - executeRes.getTemp_height()) {
+                alert("已到下边界");
+                return true;
+            }
+            $(".temp").offset({top:executeRes.getTemp_top() + executeRes.getTemp_height()});
+        },
+        left : function () {
+            if (executeRes.getTemp_left() <= executeRes.getTbody_left() + executeRes.getTemp_width()) {
+                alert("已到左边界");
+                return true;
+            }
+            $(".temp").offset({left:executeRes.getTemp_left() - executeRes.getTemp_width()});
+        },
+        right : function () {
+            if (executeRes.getTemp_left() >= executeRes.getTbody_left() + executeRes.getTbody_width() - executeRes.getTemp_width()) {
+                alert("已到右边界");
+                return true;
+            }
+            $(".temp").offset({left:executeRes.getTemp_left() + executeRes.getTemp_width()});
+        },
+        getTemp_rotate : function(){
+            return $(".temp")[0].style.transform.replace(/[^0-9]/g, "");
+        },
+        turnLeft : function () {
+            $(".temp")[0].style.transform = "rotate("+(executeRes.getTemp_rotate() - 90)+"deg)"
+        },
+        turnRight : function () {
+            $(".temp")[0].style.transform = "rotate("+(Number(executeRes.getTemp_rotate()) + 90)+"deg)"
+        },
+        turnForward : function () {
+            $(".temp")[0].style.transform = "rotate("+(Number(executeRes.getTemp_rotate()) + 180)+"deg)"
+        },
+        turnBackward : function () {
+            $(".temp")[0].style.transform = "rotate("+(executeRes.getTemp_rotate() - 90)+"deg)"
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // 代码串行
+//    var items = [ 1, 2, 3, 4, 5, 6 ];
+//    var results = [];
+//    function series(item) {
+//        if(item) {
+//            async( item, function(result) {
+//                results.push(result);
+//                return series(items.shift());
+//            });
+//        } else {
+//            return final(results);
+//        }
+//    }
+//    series(items.shift());
+//    function async(arg, callback) {
+//        console.log('参数为 ' + arg +' , 1秒后返回结果');
+//        setTimeout(
+//            function() {
+//                callback(arg * 2);
+//            },
+//        1000);
+//    }
+//    function final(value) {
+//        console.log('完成: ', value);
+//    }
+
+//    var promise = new Promise(function (resolve,reject) {
+//        if("异步操作成功"){
+//            resolve(success);
+//        }else{
+//            reject(error);
+//        }
+//    })
+</script>
+</html>

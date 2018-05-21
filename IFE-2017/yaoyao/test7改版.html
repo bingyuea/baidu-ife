@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ui组件排序表格</title>
+</head>
+<style>
+    table{
+        margin:100px auto;
+        border-collapse: collapse;
+    }
+    td{
+        border:1px solid #000;
+        padding:10px;
+        width: 60px;
+        height: 20px;
+        text-align: center;
+    }
+    thead > tr >td{
+        position: relative;
+    }
+    .triangle_up
+    {
+        height:0px; width:0px;
+        border-bottom:8px solid #006633;
+        border-left:8px solid transparent;
+        border-right:8px solid transparent;
+    }
+    .triangle_bottom
+    {
+        height:0px; width:0px;
+        border-top:8px solid #006633;
+        border-left:8px solid transparent;
+        border-right:8px solid transparent;
+    }
+    .triangle{
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .triangle_up.disable
+    {
+        height:0px; width:0px;
+        border-bottom:8px solid #eee;
+        border-left:8px solid transparent;
+        border-right:8px solid transparent;
+    }
+    .triangle_bottom.disable
+    {
+        height:0px; width:0px;
+        border-top:8px solid #eee;
+        border-left:8px solid transparent;
+        border-right:8px solid transparent;
+    }
+</style>
+<body>
+    <table border="1" id="tab"></table>
+</body>
+<script src="./lib/jQuery.js"></script>
+<script>
+
+    let data = [
+        {
+            head:[
+                {
+                    name: 'name',
+                    label: '姓名',
+                    sortable: false
+                }, {
+                    name: 'chinese',
+                    label: '语文',
+                    sortable: true
+                }, {
+                    name: 'math',
+                    label: '数学',
+                    sortable: true
+                }, {
+                    name: 'english',
+                    label: '英语',
+                    sortable: true
+                }, {
+                    name: 'total',
+                    label: '总分',
+                    sortable: true
+                }
+            ],
+            body:[
+                {
+                    name: '小明',
+                    chinese: 90,
+                    math: 100,
+                    english: 70,
+                    total: 260
+                },
+                {
+                    name: '小花',
+                    chinese: 90,
+                    math: 70,
+                    english: 80,
+                    total: 240
+                },
+                {
+                    name: '小红',
+                    chinese: 70,
+                    math: 90,
+                    english: 70,
+                    total: 230
+                },
+                {
+                    name: '小桃',
+                    chinese: 60,
+                    math: 100,
+                    english: 90,
+                    total: 250
+                },
+                {
+                    name: '小张',
+                    chinese: 80,
+                    math: 80,
+                    english: 70,
+                    total: 230
+                }
+            ]
+        }
+    ]
+    let dataHead = data[0].head;
+    let dataBody = data[0].body;
+
+    function init(){
+        addThead();
+        addTbody();
+    }
+    function addThead() {
+        let tHead = $("<thead></thead>");
+        let tr = addTr();
+        dataHead.forEach((v,i,arr) => {
+            let tds = addTd(v.label);
+            if(v.sortable === true){
+                let val = v.name;
+                // 添加按钮
+                let triangle = `<div class = "triangle">
+                    <span class = "triangle_up" onclick="sortFN('${val}','upSort')"></span>
+                    <span class = "triangle_bottom" onclick="sortFN('${val}','downSort')"></span>
+                    </div>`;
+                tds.append(triangle);
+            }
+            tr.append(tds);
+        })
+        tHead.append(tr);
+        $("#tab").append(tHead);
+    }
+    
+    function addTbody() {
+        let tBody = $("<tbody></tbody>");
+        dataBody.forEach((v,i,arr) => {
+            let tr = addTr();
+            for (k of Object.keys(v)){
+                let td = addTd(v[k]);
+                tr.append(td);
+            }
+            tBody.append(tr);
+        })
+        $("#tab").append(tBody);
+    }
+
+    // 生行
+    function addTr() {
+        let tr = $("<tr></tr>");
+        return tr;
+    }
+    // 生列
+    function addTd(str) {
+        let td = $("<td></td>");
+        td.html(str);
+        return td;
+    }
+
+    function sortNum(attr,rev){
+        if(rev === undefined){
+            rev = 1;
+        }else{
+            rev = (rev) ? 1 : -1;
+        }
+        let byScore = function(a,b){
+            a = a[attr];
+            b = b[attr];
+            if(a < b){
+                return rev * -1;
+            }
+            if(a > b){
+                return rev * 1;
+            }
+            return 0;
+        }
+        return dataBody.sort(byScore);
+    }
+
+    function sortFN(val,rev) {
+        if(rev === "upSort"){
+            sortNum(val,true);
+        }
+        if(rev === "downSort"){
+            sortNum(val,false);
+        }
+        $("#tab").html("");
+        init();
+    }
+    init();
+</script>
+
+
+
+</html>

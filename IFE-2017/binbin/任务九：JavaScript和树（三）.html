@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务九：JavaScript和树（三）</title>
+</head>
+<style>
+    html,body{
+        width:100%;
+        height:100%;
+        text-align: center;
+    }
+    div{
+        border:1px solid  #000;
+        display: flex;
+        align-items: center;
+        justify-content : space-around;
+        padding:10px;
+        margin:10px;
+        flex-wrap : wrap;
+    }
+    .main{
+        margin: 100px auto 0;
+        display:flex;
+        flex-wrap : wrap;
+    }
+    button{
+        padding:10px;
+        text-align: center;
+    }
+    .flag{
+        background: red !important;
+    }
+    .select{
+        background:green;
+    }
+
+
+</style>
+<body>
+<div class = "main">
+    root
+    <div class = "content">
+        1
+        <div class = "inner">
+            2
+            <div class = "inner-contain">
+                3
+            </div>
+
+            <div class = "inner-contain">
+                4
+            </div>
+        </div>
+
+        <div class = "inner">
+            5
+            <div class = "inner-contain">
+                6
+            </div>
+
+            <div class = "inner-contain">
+                7
+            </div>
+        </div>
+    </div>
+
+    <div class = "content">
+        1
+        <div class = "inner">
+            2
+            <div class = "inner-contain">
+                3
+            </div>
+
+            <div class = "inner-contain">
+                4
+            </div>
+        </div>
+
+        <div class = "inner">
+            5
+            <div class = "inner-contain">
+                6
+            </div>
+
+            <div class = "inner-contain">
+                7
+            </div>
+        </div>
+    </div>
+</div>
+<p class = "foot">
+    <button class = "preOrder">前序遍历</button>
+    <button class = "inOrder">中序遍历</button>
+    <button class = "postOrder">后序遍历</button>
+    <input type = "text" class = "search" placeholder="请输入搜素内容"/>
+    <button class = "delete">删除</button>
+    <input type = "text" class = "addInput" placeholder="请输入添加内容"/>
+    <button class = "add">添加</button>
+
+</p>
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    //    （1）前序遍历（DLR），首先访问根结点，然后遍历左子树，最后遍历右子树。简记根-左-右。
+    //
+    //    （2）中序遍历（LDR），首先遍历左子树，然后访问根结点，最后遍历右子树。简记左-根-右。
+    //
+    //    （3）后序遍历（LRD），首先遍历左子树，然后遍历右子树，最后访问根结点。简记左-右-根。
+    // 如何动态改变this的指向问题
+    $(function(){
+        var treeNodes=[],
+            time = null,
+            treeRoot = $(".main")[0];
+
+        $(document).on("click",function (e) {
+            handle.call(e.target,e);
+        })
+        function handle(e) {
+            handleClickState.call(e.target,e);
+            if($(".search").val() != ""){
+                var searchValue = $(".search").val();
+            }
+            switch ($(this).attr("class")) {
+                case "preOrder":
+                    reset();
+                    pre(treeRoot);
+                    show(searchValue);
+                    break;
+                case "inOrder":
+                    reset();
+                    mid(treeRoot);
+                    show(searchValue);
+                    break;
+                case "postOrder":
+                    reset();
+                    post(treeRoot);
+                    show(searchValue);
+                    break;
+                case "delete" :
+                    handleDelete.call(e.target,e);
+                case "add" :
+                    handleAdd.call(e.target,e);
+            }
+        }
+        function pre(node){
+            if(node){
+                treeNodes.push(node);
+                pre(node.firstElementChild);
+                pre(node.lastElementChild);
+            }
+        }
+        function mid(node){
+            if(node){
+                mid(node.firstElementChild);
+                treeNodes.push(node);
+                mid(node.lastElementChild);
+            }
+        }
+        function post(node){
+            if(node){
+                post(node.lastElementChild);
+                post(node.firstElementChild);
+                treeNodes.push(node);
+            }
+        }
+        function reset(){
+            treeNodes = [];
+            clearInterval(time);
+            $("div").css({
+                "background" : "#fff",
+            }).removeClass("flag");
+        }
+        function show(searchValue) {
+            var i=0;
+            treeNodes[i].style.backgroundColor="#F34949";
+            time =setInterval(function(){
+                if(i<treeNodes.length){
+                    treeNodes[i].style.backgroundColor="white";
+                    if(i+1 >= treeNodes.length){
+                        return;
+                    }else{
+                        treeNodes[i+1].style.backgroundColor="#F34949";
+                    }
+                    if(treeNodes[i].innerText == searchValue){
+                        $($(treeNodes[i])[0]).addClass("flag");
+                    }
+                    if($.trim(treeNodes[i].childNodes[0].nodeValue) == searchValue){
+                        $($(treeNodes[i])[0]).addClass("flag");
+                    }
+                    i++;
+                }else{
+                    clearInterval(time);
+                    treeNodes[i].style.backgroundColor="white";
+                }
+            },200)
+
+        }
+        function handleClickState(e){
+            if($(this)[0].localName == "div"){
+                $(this).css({
+                    "background" : "green"
+                }).addClass("select");
+                $("div").not(this).css({
+                    "background" : "white"
+                }).removeClass("select");
+            }
+        }
+        function handleDelete(e) {
+            if($("div").hasClass("select")){
+                $("div.select").remove();
+            }
+        }
+        function handleAdd(e){
+            if($("div").hasClass("select")){
+                var value = $(".addInput").val();
+                $("div.select").append("<div>"+value+"</div>");
+            }
+        }
+
+    })
+
+</script>
+</html>
