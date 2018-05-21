@@ -5,7 +5,7 @@
 `任务三：表单（三）联动` https://bingyuea.github.io/baidu-ife/temp/yaoyao/test3.html  
 `任务四：听指令的小方块` https://bingyuea.github.io/baidu-ife/temp/yaoyao/test4.html  
 `任务六：UI组件之浮出层` https://bingyuea.github.io/baidu-ife/temp/yaoyao/test6.html    
-`王慧敏：蛋糕房` https://bingyuea.github.io/baidu-ife/temp/xc/HTML/girlFriend/index.html
+
 
 
 
