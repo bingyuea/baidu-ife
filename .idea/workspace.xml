@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串类型).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数字类型).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html" beforeDir="false" afterPath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" beforeDir="false" afterPath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -65,7 +63,7 @@
       <file leaf-file-name="让你和页面对话.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IFE-2018/day2021/让你和页面对话.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
+            <state relative-caret-position="5060">
               <caret line="220" column="5" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -85,16 +83,8 @@
       <file leaf-file-name="JavaScript里面的居民们(数字类型).html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数字类型).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
+            <state relative-caret-position="2047">
               <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
-              <folding>
-                <element signature="e#792#816#0" />
-                <element signature="e#893#917#0" />
-                <element signature="e#1061#1288#0" />
-                <element signature="e#1491#1505#0" />
-                <element signature="e#1302#1521#0" />
-                <element signature="e#1745#2039#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +92,7 @@
       <file leaf-file-name="JavaScript里面的居民们(字符串类型).html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串类型).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1220">
+            <state relative-caret-position="2852">
               <caret line="124" selection-start-line="124" selection-end-line="124" />
             </state>
           </provider>
@@ -111,8 +101,8 @@
       <file leaf-file-name="JavaScript里面的居民们(字符串去空格).html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="39" column="35" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="35" />
+            <state relative-caret-position="371">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -712,6 +702,7 @@
       <workItem from="1526435939194" duration="645000" />
       <workItem from="1526474252963" duration="18114000" />
       <workItem from="1526791070646" duration="13705000" />
+      <workItem from="1526906677944" duration="1934000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的任务">
       <created>1497935601764</created>
@@ -864,7 +855,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168238000" />
+    <option name="totallyTimeSpent" value="170172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -894,7 +885,6 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Nl-Palette" order="6" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Find" order="2" />
@@ -905,6 +895,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" id="Key Promoter" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1168,11 +1159,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="161">
@@ -1181,6 +1167,11 @@
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1212,7 +1203,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IFE-2018/day2021/让你和页面对话.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
+        <state relative-caret-position="5060">
           <caret line="220" column="5" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1230,30 +1221,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串类型).html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1220">
+        <state relative-caret-position="2852">
           <caret line="124" selection-start-line="124" selection-end-line="124" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数字类型).html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
+        <state relative-caret-position="2047">
           <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
-          <folding>
-            <element signature="e#792#816#0" />
-            <element signature="e#893#917#0" />
-            <element signature="e#1061#1288#0" />
-            <element signature="e#1491#1505#0" />
-            <element signature="e#1302#1521#0" />
-            <element signature="e#1745#2039#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="35" />
+        <state relative-caret-position="371">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
