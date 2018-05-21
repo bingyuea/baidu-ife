@@ -3,8 +3,264 @@
   <component name="ChangeListManager">
     <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html" beforeDir="false" afterPath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" beforeDir="false" afterPath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/ECharts1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - Three.js 入门.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - helloWorld.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - 图形.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - 正交摄像机.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - 透视摄像机.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/lib/font.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/lib/three.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/angular/angular双向绑定.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/angular/angular指令标签.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/binbin/test1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/binbin/test2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/binbin/test3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/binbin/test4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/binbin/test5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/binbin/test6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/binbin/任务七：JavaScript和树（一）.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/binbin/任务九：JavaScript和树（三）.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/binbin/任务八：JavaScript和树（二）.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/dist/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/grunt/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/grunt/bs-commonjs-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/grunt/bs-glyphicons-data-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/grunt/bs-lessdoc-parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/grunt/bs-raw-files-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/grunt/change-version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/grunt/configBridge.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/grunt/npm-shrinkwrap.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/grunt/sauce_browsers.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/affix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/popover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/scrollspy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/js/transition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/alerts.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/badges.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/bootstrap.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/breadcrumbs.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/button-groups.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/buttons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/carousel.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/close.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/code.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/component-animations.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/dropdowns.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/forms.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/glyphicons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/grid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/input-groups.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/jumbotron.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/labels.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/list-group.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/media.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/alerts.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/background-variant.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/border-radius.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/buttons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/center-block.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/clearfix.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/forms.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/gradients.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/grid-framework.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/grid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/hide-text.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/image.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/labels.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/list-group.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/nav-divider.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/nav-vertical-align.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/opacity.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/pagination.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/panels.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/progress-bar.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/reset-filter.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/reset-text.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/resize.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/responsive-visibility.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/size.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/tab-focus.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/table-row.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/text-emphasis.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/text-overflow.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/mixins/vendor-prefixes.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/modals.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/navbar.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/navs.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/normalize.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/pager.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/pagination.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/panels.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/popovers.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/print.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/progress-bars.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/responsive-embed.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/responsive-utilities.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/scaffolding.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/tables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/theme.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/thumbnails.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/tooltip.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/type.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/utilities.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/less/wells.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/rcd.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (1).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (1).PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (10).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (11).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (12).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (13).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (14).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (15).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (16).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (17).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (18).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (19).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (2).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (2).PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (20).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (21).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (22).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (23).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (24).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (25).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (26).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (27).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (28).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (29).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (3).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (30).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (31).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (32).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (33).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (34).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (35).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (36).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (4).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (5).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (6).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (7).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (8).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/嫩滑鲜奶/1 (9).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (1).gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (10).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (11).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (12).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (13).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (14).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (15).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (16).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (17).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (18).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (19).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (20).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (21).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (22).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (4).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (5).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (6).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (7).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (8).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/异形蛋糕/1 (9).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/松鹤延年/1 (1).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/松鹤延年/1 (2).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/松鹤延年/1 (3).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/松鹤延年/1 (4).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/松鹤延年/1 (5).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/松鹤延年/1 (6).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (1).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (10).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (11).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (12).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (13).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (14).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (15).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (16).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (17).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (18).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (19).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (2).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (3).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (4).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (5).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (6).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (7).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (8).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/清爽慕斯/1 (9).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/经典巧克力/1 (1).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/经典巧克力/1 (10).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/经典巧克力/1 (2).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/经典巧克力/1 (3).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/经典巧克力/1 (4).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/经典巧克力/1 (5).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/经典巧克力/1 (6).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/经典巧克力/1 (7).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/经典巧克力/1 (8).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/img/cake/经典巧克力/1 (9).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/HTML/girlFriend/index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/bowsersync/.idea/bowsersync.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/bowsersync/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/bowsersync/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/bowsersync/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/xc/bowsersync/recipes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/200.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/lib/jQuery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/position 如何使用.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/test1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/test2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/test3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/test4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/test6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/test6改版.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/test6改版（面向对象）.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/test7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/yaoyao/test7改版.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,76 +289,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day16/index.html">
+      <file leaf-file-name="JavaScript里面的居民们(对象).html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(对象).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="十进制整数转化为二进制.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day1718/十进制整数转化为二进制.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dom.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day19/dom.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="42" column="138" selection-start-line="42" selection-start-column="138" selection-end-line="42" selection-end-column="138" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="让你和页面对话.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day2021/让你和页面对话.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5060">
-              <caret line="220" column="5" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
-              <folding>
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#2;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#3;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#5;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#6;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#7;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JavaScript里面的居民们(数字类型).html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数字类型).html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2047">
-              <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JavaScript里面的居民们(字符串类型).html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串类型).html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2852">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JavaScript里面的居民们(字符串去空格).html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="46">
+              <caret line="64" column="5" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -190,6 +381,7 @@
         <option value="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数字类型).html" />
         <option value="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串类型).html" />
         <option value="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html" />
+        <option value="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(对象).html" />
       </list>
     </option>
   </component>
@@ -207,7 +399,7 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/temp/xc/HTML/girlFriend/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/IFE-2017/xc/girlFriend/bootstrap/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -235,13 +427,18 @@
             <path>
               <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
               <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
+              <item name="IFE-2017" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
+              <item name="IFE-2017" type="462c0819:PsiDirectoryNode" />
+              <item name="binbin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
               <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
               <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="day2224" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,15 +461,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sourceCode\spareWork\baidu-ife\IFE-2017\xc" />
+      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
+      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院\studyWebGL" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\sourceCode\spareWork\baidu-ife\IFE-2018\day2224" />
       <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
       <recent name="D:\sourceCode\spareWork\baidu-ife\test\深入理解javascript汤姆大叔的博客" />
       <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
-      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院\studyWebGL" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -702,7 +900,7 @@
       <workItem from="1526435939194" duration="645000" />
       <workItem from="1526474252963" duration="18114000" />
       <workItem from="1526791070646" duration="13705000" />
-      <workItem from="1526906677944" duration="1934000" />
+      <workItem from="1526906677944" duration="5847000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的任务">
       <created>1497935601764</created>
@@ -851,17 +1049,23 @@
       <option name="project" value="LOCAL" />
       <updated>1526557349062</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="day2224 字符串操作">
+      <created>1526909160058</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1526909160058</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170172000" />
+    <option name="totallyTimeSpent" value="174085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18361954" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22258916" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3281471" />
@@ -897,6 +1101,43 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="NativeScript" order="11" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="JRebel" order="7" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="TypeScript" order="14" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Properties" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3281471" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32673267" />
+      <window_info id="Nl-Palette" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="JRebel Executor" order="12" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.01981506" />
+      <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32972974" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" id="Key Promoter" order="10" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24972972" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -922,7 +1163,8 @@
     <MESSAGE value="day19" />
     <MESSAGE value="day2021" />
     <MESSAGE value="day2021 改为两种方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="day2021 改为两种方式" />
+    <MESSAGE value="day2224 字符串操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="day2224 字符串操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -930,7 +1172,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/糯米学院/databinding1/index.html" />
     <entry file="file://$PROJECT_DIR$/binbin/test6.html" />
     <entry file="file://$PROJECT_DIR$/yaoyao/听指令的小方块.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js" />
@@ -963,61 +1204,61 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/temp/stickyRice/test1.html" />
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - Three.js 入门.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/WebGL No.1 - Three.js 入门.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.4.1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.4.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.3.1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.3.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter1/1.1.1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter1/1.1.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/WebGL No.1 - test.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/WebGL No.1 - test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="25" column="70" lean-forward="true" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.1.1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.1.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.2.1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.2.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-96">
           <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.3.1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.3.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1800" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/test1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
@@ -1066,68 +1307,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/yaoyao/position 如何使用.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/position 如何使用.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.2.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.2.1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.2.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.3.1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.3.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.4.1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.4.1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-412">
           <caret line="28" column="37" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test6.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/test6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2088" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test7.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/test7.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
           <caret line="151" column="31" lean-forward="true" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test7改版.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/test7改版.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-996">
           <caret line="142" column="37" selection-start-line="142" selection-start-column="37" selection-end-line="142" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test6改版.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/test6改版.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1632">
           <caret line="68" selection-start-line="68" selection-end-line="68" />
@@ -1137,14 +1378,14 @@
     <entry file="file://$PROJECT_DIR$/temp/yaoyao/iframe.html" />
     <entry file="file://$PROJECT_DIR$/temp/yaoyao/test623423.html" />
     <entry file="file://$PROJECT_DIR$/temp/yaoyao/test6改版32232.html" />
-    <entry file="file://$PROJECT_DIR$/temp/yaoyao/200.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/200.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test4.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/test4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3431">
           <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
@@ -1182,19 +1423,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2018/day19/dom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="42" column="138" selection-start-line="42" selection-start-column="138" selection-end-line="42" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/yaoyao/test.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-276" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/binbin/test1.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2017/binbin/test1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="40" />
@@ -1235,8 +1469,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(字符串去空格).html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="49">
+          <caret line="47" column="6" lean-forward="true" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day19/dom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="42" column="138" selection-start-line="42" selection-start-column="138" selection-end-line="42" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(对象).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
         </state>
       </provider>
     </entry>
