@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id = "chinese"></p>
+<p id = "english"></p>
+
+<script>
+
+    //     在页面中显示当前日期及时间，按秒更新
+    //     格式为 YYYY 年 MM 月 DD 日 星期 D HH:mm:ss
+    //     注意位数的补齐，比如：
+    // -- 假设时间为2008年10月10日星期一的12点12分12秒，显示2008年10月10日星期一 12:12:12
+    //     -- 假设时间为2008年1月1日星期一的3点2分2秒，显示2008年01月01日星期一 03:02:02
+    //     编码过程中，我们希望你注意对函数的封装，尽量让一个函数就做一个事情，而不要把所有的功能、代码揉在一起：
+    //
+    // 封装一个函数，来根据某个日期返回这一天是星期几
+    //     封装一个函数，把月、日、小时等出现个位数的情况前面补充0，补充为两位，比如1变为01
+    //     封装一个函数，把最后的日期时间，按照要求的格式进行包装
+    //     可能不止上面这些，尽可能地进行功能的解耦和拆解
+
+
+    function getWeek(weekDay, english) {
+        let week;
+        if (english) {
+            week = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ];
+        } else {
+            week = [
+                "星期日",
+                "星期一",
+                "星期二",
+                "星期三",
+                "星期四",
+                "星期五",
+                "星期六",
+            ];
+        }
+
+        return week[weekDay];
+    }
+
+    function formateTime(time) {
+        if (time < 10) {
+            time = `0${time}`;
+        }
+        return time;
+    }
+
+    function getClock(hour) {
+        let halfDay,halfDayHour;
+        if(hour > 12){
+            halfDay = "PM";
+            halfDayHour = hour - 12;
+        }else{
+            halfDay = "AM"
+            halfDayHour = hour;
+        }
+        return {halfDay,halfDayHour};
+    }
+    function getDate(english) {
+        let date = new Date(),
+            year = date.getFullYear(),
+            month = date.getMonth() + 1,
+            day = date.getDate(),
+            weekDay = date.getDay(),
+            hour = date.getHours(),
+            minutes = date.getMinutes(),
+            seconds = date.getSeconds(),
+            time;
+
+        if(english){
+            time = year + "-" + formateTime(month) + "-" + formateTime(day) + "&nbsp;" + getWeek(weekDay,english) + "&nbsp;" + formateTime(getClock(hour).halfDayHour) + ":" + formateTime(minutes) + ":" + formateTime(seconds)+"&nbsp;"+getClock(hour).halfDay;
+        }else{
+            time = year + "年" + formateTime(month) + "月" + formateTime(day) + "日" + getWeek(weekDay,english) + "&nbsp;" + formateTime(hour) + ":" + formateTime(minutes) + ":" + formateTime(seconds)
+        }
+        return time;
+    }
+
+    // 输出格式变为：2008-10-10 Monday 07:10:30 PM
+    function showDate(dom){
+        let english;
+        dom === "chinese" ? english = false : english = true;
+        setInterval(() => {
+            document.querySelector("#"+dom).innerHTML = getDate(english);
+        }, 1000)
+    }
+    showDate('chinese');
+    showDate('english');
+
+
+</script>
+</body>
+</html>

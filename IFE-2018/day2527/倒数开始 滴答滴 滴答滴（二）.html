@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="year-select">
+    <option value="2000">2000</option>
+    <option value="2001">2001</option>
+    <option value="2002">2002</option>
+    ……
+    <option value="2032">2002</option>
+</select>
+
+<select id="month-select">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    ……
+    <option value="12">12</option>
+</select>
+
+<select id="day-select">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    ……
+    <option value="31">31</option>
+</select>
+
+<select id="hour-select">
+    <option value="0">00</option>
+    <option value="1">01</option>
+    ……
+    <option value="23">23</option>
+</select>
+
+<select id="minute-select">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    ……
+    <option>59</option>
+</select>
+
+<select id="second-select">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    ……
+    <option>59</option>
+</select>
+
+<p id="result-wrapper">现在距离 2001年1月1日星期X HH:MM:SS 还有 X 天 X 小时 X 分 X 秒</p>
+</body>
+<script>
+    // 使用上方的HTML结构（可以根据需要自行微调）为基础编写JavaScript代码
+    // 当变更任何一个select选择时，更新 result-wrapper 的内容
+    // 当所选时间早于现在时间时，文案为 现在距离 "所选时间" 已经过去 xxxx
+    // 当所选时间晚于现在时间时，文案为 现在距离 "所选时间" 还有 xxxx
+    // 注意当前时间经过所选时间时候的文案变化
+    // 注意选择不同月份的时候，日期的可选范围不一样，比如1月可以选31天，11月只有30天，注意闰年
+    // 同样，需要注意，通过优雅的函数封装，使得代码更加可读且可维护
+
+    // 生成两个数之间的数组
+    function getID(id) {
+        return document.getElementById(id);
+    }
+
+    function generateArr(min,max,arr = []){
+        for(let i =  min; i <= max;i++){
+            arr.push(i);
+        }
+        return arr;
+    }
+
+    function generateOption(arr,id){
+        let fragment = "";
+        arr.forEach(item => {
+            item < 10 ? item = `0${item}` : item;
+            fragment+=`<option value="${item}">${item}</option>`
+        })
+        getID(id).innerHTML = fragment;
+    }
+
+    function generateDate() {
+        generateOption(generateArr(2000,2032),"year-select")
+        generateOption(generateArr(1,12),"month-select")
+        generateOption(generateArr(1,31),"day-select")
+        generateOption(generateArr(0,24),"hour-select")
+        generateOption(generateArr(0,59),"minute-select")
+        generateOption(generateArr(0,59),"second-select")
+    }
+    generateDate();
+
+
+
+
+    function isLeapYear(year) {
+        if((year%4==0&&year%400==0)||year%100!=0) {
+            return 28;
+        } else {
+            return 29;
+        }
+    }
+
+    function getRealDay(month) {
+        if(month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12){
+            return 31;
+        }else{
+            return 30;
+        }
+    }
+
+
+
+</script>
+</html>

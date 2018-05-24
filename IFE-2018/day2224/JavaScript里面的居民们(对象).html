@@ -73,15 +73,18 @@
     console.log(tree)
 
     // 假设id和name均不会重复，根据输入name找到对应的id
-        function findIdByName(name, node) {
-            if (node.name === name) {
-                return node.id
-            }
-            if (node.left !== undefined) {
-                arguments.callee(name, node.left)
-            }
-            if (node.right !== undefined) {
-                arguments.callee(name, node.right)
+        function findIdByName(name) {
+            let node = [];
+            node.push(tree);
+
+            function root(node,name) {
+                if(node){
+                    if(node.name === name){
+                        return node.id;
+                    }
+                    root(node.left,name)
+                    root(node.right,name)
+                }
             }
         }
         console.log(findIdByName("Kai",tree));

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    function Go(n) {
+        // console.log(`Go${n}次`);
+        console.log('Go'+n+'次');
+    }
+
+    function GoSteps(n) {
+        if(!isNaN(n)){
+            // null
+            if(String(n) === "null"){
+                n = 0;
+            }else if(typeof n === "boolean"){
+                if(n){
+                    // true
+                    n = 1;
+                }else {
+                    // false
+                    n = 0;
+                }
+            }else{
+                if(n <= 0){
+                    // 0 -1 -1
+                    n = 0;
+                }else{
+                    n = parseInt(n);
+                }
+            }
+        }else{
+            // NaN "test" 不传参等同于undefined
+            if(typeof n === "undefined"){
+                // n不传参
+                n = 1;
+            }else{
+                n = 0;
+            }
+        }
+        Go(n);
+    }
+
+    GoSteps(10); // Go 10次
+    GoSteps(1); // Go 1次
+    GoSteps(); // Go 1次，认为缺少参数时，默认参数为1  true
+    GoSteps(0);  // 0次 true
+    GoSteps(-1);  // 0次 true
+    GoSteps(1.4);  // Go 1次
+    GoSteps(1.6);  // Go 1次
+    GoSteps(-1);  // 0次 true
+    GoSteps(true);  // Go 1次 true
+    GoSteps(false);  // 0次 true
+    GoSteps("Test");  // 0次 true
+    GoSteps(NaN);  // 0次 true
+    GoSteps(null);  // 0次 true
+</script>
+</html>
