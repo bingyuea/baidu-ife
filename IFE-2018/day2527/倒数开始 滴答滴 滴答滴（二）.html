@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
-<select id="year-select">
-    <option value="2000">2000</option>
-    <option value="2001">2001</option>
-    <option value="2002">2002</option>
-    ……
-    <option value="2032">2002</option>
-</select>
+    <select id="year-select">
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        ……
+        <option value="2032">2002</option>
+    </select>
 
-<select id="month-select">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    ……
-    <option value="12">12</option>
-</select>
+    <select id="month-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        ……
+        <option value="12">12</option>
+    </select>
 
-<select id="day-select">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    ……
-    <option value="31">31</option>
-</select>
+    <select id="day-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        ……
+        <option value="31">31</option>
+    </select>
 
-<select id="hour-select">
-    <option value="0">00</option>
-    <option value="1">01</option>
-    ……
-    <option value="23">23</option>
-</select>
+    <select id="hour-select">
+        <option value="0">00</option>
+        <option value="1">01</option>
+        ……
+        <option value="23">23</option>
+    </select>
 
-<select id="minute-select">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    ……
-    <option>59</option>
-</select>
+    <select id="minute-select">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        ……
+        <option>59</option>
+    </select>
 
-<select id="second-select">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    ……
-    <option>59</option>
-</select>
+    <select id="second-select">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        ……
+        <option>59</option>
+    </select>
 
-<p id="result-wrapper">现在距离 2001年1月1日星期X HH:MM:SS 还有 X 天 X 小时 X 分 X 秒</p>
+    <p id="result-wrapper"></p>
 </body>
 <script>
     // 使用上方的HTML结构（可以根据需要自行微调）为基础编写JavaScript代码
@@ -59,57 +61,193 @@
     // 注意选择不同月份的时候，日期的可选范围不一样，比如1月可以选31天，11月只有30天，注意闰年
     // 同样，需要注意，通过优雅的函数封装，使得代码更加可读且可维护
 
-    // 生成两个数之间的数组
     function getID(id) {
         return document.getElementById(id);
     }
 
-    function generateArr(min,max,arr = []){
-        for(let i =  min; i <= max;i++){
+    function eventHandle(element, type, handle) {
+        if (element.addEventListener) {
+            element.addEventListener(type, handle, false)
+        }
+        if (element.attachEvent) {
+            element.attachEvent(`on${type}`, handle)
+        }
+    }
+
+    // 生成两个数之间的数组
+    function generateArr(min, max, arr = []) {
+        for (let i = min; i <= max; i++) {
             arr.push(i);
         }
         return arr;
     }
 
-    function generateOption(arr,id){
+    function generateOption(arr, id) {
         let fragment = "";
         arr.forEach(item => {
             item < 10 ? item = `0${item}` : item;
-            fragment+=`<option value="${item}">${item}</option>`
+            fragment += `<option value="${item}">${item}</option>`
         })
         getID(id).innerHTML = fragment;
     }
 
     function generateDate() {
-        generateOption(generateArr(2000,2032),"year-select")
-        generateOption(generateArr(1,12),"month-select")
-        generateOption(generateArr(1,31),"day-select")
-        generateOption(generateArr(0,24),"hour-select")
-        generateOption(generateArr(0,59),"minute-select")
-        generateOption(generateArr(0,59),"second-select")
+        generateOption(generateArr(2000, 2032), "year-select");
+        generateOption(generateArr(1, 12), "month-select");
+        generateDay();
+        generateOption(generateArr(0, 23), "hour-select");
+        generateOption(generateArr(0, 59), "minute-select");
+        generateOption(generateArr(0, 59), "second-select");
     }
-    generateDate();
 
+    function generateDay() {
+        let day;
+        // 闰年
+        let monthValue = Number((getID("month-select").value));
+        if (monthValue === 2) {
+            day = isLeapYear((getID("year-select").value));
+        } else {
+            day = getRealDay((getID("month-select").value));
+        }
+        generateOption(generateArr(1, day), "day-select");
+    }
 
 
 
     function isLeapYear(year) {
-        if((year%4==0&&year%400==0)||year%100!=0) {
-            return 28;
-        } else {
+        year = Number(year)
+        if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
             return 29;
+        } else {
+            return 28;
         }
     }
 
     function getRealDay(month) {
-        if(month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12){
+        month = Number(month)
+        if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12) {
             return 31;
-        }else{
+        } else {
             return 30;
         }
     }
 
+    function getWeek(weekDay) {
+        let week;
+        week = [
+            "星期日",
+            "星期一",
+            "星期二",
+            "星期三",
+            "星期四",
+            "星期五",
+            "星期六",
+        ];
+        return week[weekDay];
+    }
+
+    function getSelectDate() {
+        let year = getID("year-select").value,
+            month = getID("month-select").value,
+            day = getID("day-select").value,
+            hour = getID("hour-select").value,
+            minute = getID("minute-select").value,
+            second = getID("second-select").value,
+
+            time =
+            `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+        return time;
+    }
+
+    function formateTime(time) {
+        if (time < 10) {
+            time = `0${time}`;
+        }
+        return time;
+    }
+
+    function getFormateDate(date) {
+        date = new Date(date);
+        let year = date.getFullYear(),
+            month = date.getMonth() + 1,
+            day = date.getDate(),
+            weekDay = date.getDay(),
+            hour = date.getHours(),
+            minutes = date.getMinutes(),
+            seconds = date.getSeconds(),
+            time;
+
+        time = year + "年" + formateTime(month) + "月" + formateTime(day) + "日" + getWeek(weekDay) +
+            "&nbsp;" + formateTime(hour) + ":" + formateTime(minutes) + ":" + formateTime(seconds)
+        return time;
+    }
+
+    function checkDate(date1, date2) {
+        if (new Date(date1) > new Date(date2)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function getInterval(date1, date2) {
+        let intervalMillisecond = Math.abs(new Date(date1).getTime() - new Date(date2).getTime()),
+
+            day = Math.floor(intervalMillisecond / (24 * 3600 * 1000)),
+            remain1 = intervalMillisecond % (24 * 3600 * 1000), // 计算天数后剩余的毫秒数  
+            hour = Math.floor(remain1 / (3600 * 1000)),
+            // 计算相差分钟数  
+            remain2 = remain1 % (3600 * 1000), // 计算小时数后剩余的毫秒数  
+            minute = Math.floor(remain2 / (60 * 1000)),
+            // 计算相差秒数
+            remain3 = remain2 % (60 * 1000), // 计算小时数后剩余的毫秒数  
+            second = Math.floor(remain3 / (1000));
+        return {
+            day,
+            hour,
+            minute,
+            second
+        }
+
+    }
+
+    function printResult(params) {
+        // 现在距离 2001年1月1日星期X HH:MM:SS 还有 X 天 X 小时 X 分 X 秒
+        let res = getID("result-wrapper"),
+            time = getInterval(getSelectDate(), new Date());
+        console.log(time)
+        if (checkDate) {
+            res.innerHTML =
+                `现在距离 ${getFormateDate(getSelectDate())} 已经过去 ${time.day} 天 ${time.hour} 小时 ${time.minute} 分 ${time.second} 秒`;
+        } else {
+            res.innerHTML =
+                `现在距离 ${getFormateDate(getSelectDate())} 还有 ${time.day} 天 ${time.hour} 小时 ${time.minute} 分 ${time.second} 秒`;
+        }
+    }
 
 
+    eventHandle(getID("month-select"), "change", () => {
+        generateDay();
+    })
+
+    eventHandle(getID("year-select"), "change", () => {
+        generateDay();
+    })
+
+    eventHandle(document, "change", () => {
+        printResult();
+    })
+
+    function init() {
+        generateDate();
+        getSelectDate();
+        printResult();
+    }
+
+    setInterval(() => {
+        printResult();
+    }, 1000);
+    init();
 </script>
+
 </html>
