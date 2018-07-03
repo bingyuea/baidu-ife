@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>第二十八天到第三十天 给爱的人发个邮件吧</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="wrapper">
+    <input id="email-input" type="text">
+    <ul id="email-sug-wrapper" class="email-sug"></ul>
+  </div>
+  <a href="https://blog.csdn.net/ganyingxie123456/article/details/70230486">xss</a>
+  <a href="https://www.cnblogs.com/GumpYan/p/7883133.html">js转义</a>
+</body>
+<script src  ="../utils/util.js " ></script>
+<script>
+  // 根据下面需求实现如示意图所示的邮箱输入提示功能，注意，根据要求只需实现下面功能
+
+  // 当用户没有任何输入时，提示框消失
+  // 当用户输入字符后，显示提示框，并且把用户输入的内容自动拼上邮箱后缀进行显示
+  // 暂时不用考虑示意图中的红色和蓝色背景色的逻辑
+  // 注意用户输入中前后空格需要去除
+  // 邮箱后缀List参考
+  var postfixList = ['163.com', 'gmail.com', '126.com', 'qq.com', '263.net'];
+  var selectedIndex = 1;
+  let $ul = utils.getID("email-sug-wrapper"),
+      $input = utils.getID("email-input");
+
+  utils.eventHandle($input, "input", (e) => {
+    // 获取用户输入， 生成提示框中的提示内容， 将提示内容添加到email - sug - wrapper中
+    // 控制email - sug - wrapper的显示 / 隐藏状态
+    generateLi(e.target.value);
+    controlStatus(e.target.value);
+  })
+
+
+
+
+  function trims(params) {
+    return String(params).trim();
+  }
+
+  function generateLi(params) {
+    // 获取用户输入
+    // 遍历postfixList {
+    //   把用户输入和每一个postfix进行结合成为每一个Li
+    // }
+    // 返回生成的提示内容
+    let fragment = "",
+      input = trims(params);
+    input = utils.HtmlUtil.htmlEncode(input);
+    if (input.includes("@")) {
+      postfixList.forEach(element => {
+        if (element.includes(filterIput(input, false))) {
+          fragment += `<li>${filterIput(input,true)}${element}</li>`;
+        }
+      });
+    } else {
+      postfixList.forEach(element => {
+        if (element.includes(filterIput(input, false))) {
+          fragment += `<li>${input}@${element}</li>`;
+        }
+      });
+    }
+    appendToEmail(fragment);
+  }
+
+  function filterIput(params, before) {
+    if (before) {
+      return params.includes("@") ? params.substring(0, params.indexOf("@") + 1) : "";
+    } else {
+      return params.includes("@") ? params.substring(params.indexOf("@") + 1, params.length) : "";
+    }
+  }
+
+  function appendToEmail(fragment) {
+    // 获取生成提示框中的提示内容
+    // 将内容添加到email - sug - wrapper中
+    $ul.innerHTML = fragment;
+  }
+
+  // 控制下拉框的显示或者隐藏
+  function controlStatus(params) {
+    // if 用户输入为空 {
+    //   隐藏提示框
+    // } else {
+    //   显示提示框
+    // }
+    if (trims(params) === "") {
+      $ul.style.display = "none";
+    } else {
+      $ul.style.display = "block";
+      setDefaultSelected(selectedIndex);
+    }
+  }
+
+  // 点击选中某一个li
+  utils.eventHandle(document, "click", (e) => {
+    // 选择一个合适的DOM节点.监听鼠标点击 = function () {
+    // if 被点击的是不是提示框中的Li节点 {
+    //     获取被点击Li对应的提示内容
+    //     将内容放到input输入框中
+    //     隐藏输入框
+    // }
+    // }
+    if (e.target.nodeName.toLowerCase() === "li") {
+      let targetValue = e.target.innerHTML;
+      setInputValue(targetValue);
+    }
+  })
+  
+  // 设置input的值
+  function setInputValue(targetValue){
+    $input.value = utils.HtmlUtil.htmlDecode(targetValue);
+    setFocus();
+    controlStatus("");
+  }
+  
+  // 查找selectedIndex的li
+  function searchIndexLi(params) {
+    console.log($ul.childNodes)
+    let element = null;
+    Array.from($ul.childNodes).forEach((item,index) => {
+      if(params-1 === index){
+        element =  item;
+      }
+    })
+    return element;
+  }
+  
+  // 默认选中第一个
+  function setDefaultSelected(params) {
+    let item = searchIndexLi(params);
+    item.style.color = "red";
+  }
+
+  // 基于数据，我们设置一个变量，来保存当前选择的index（即当前选中的是第几行，从0开始计数）
+  // ，当发生上下键操作的时候，直接改变index值，然后重新渲染提示框中的所有html内容，
+  // 根据index设置来操作后的选择提示样式，回车的时候，直接根据index来获取对应的内容
+  // 基于数据的代码结构
+  // 监听特殊3个键的键盘事件，这个事件可能就是inputDom的输入监听，也有可能是另外一个，请自己测试后判断
+  
+  utils.eventHandle(document,"keydown",(e) => {
+    console.log(e)
+    switch (e.keyCode){
+      case 38:
+        // 上
+        if(selectedIndex === 1){
+          selectedIndex = $ul.childNodes.length;
+        }else{
+          selectedIndex -= 1;
+        }
+        setDefaultSelected(selectedIndex);
+      case 40:
+        // 下
+        if(selectedIndex === $ul.childNodes.length){
+          selectedIndex = 1;
+        }else{
+          selectedIndex += 1;
+        }
+        setDefaultSelected(selectedIndex);
+      case 13:
+        // enter
+        let item = searchIndexLi(selectedIndex);
+        setInputValue(item.innerHTML)
+      case 27:
+        // esc
+        setSelect();
+      default:
+        return false;
+    }
+  })
+  // 一进入页面就将焦点放在输入框中
+  // 用户点击鼠标，进行提示选择后，焦点依然在输入框中
+  // 用户按ESC键的时候，对用户输入进行全选
+  function  setFocus() {
+    $input.focus();
+  }
+
+  function  setSelect() {
+    $input.select();
+  }
+  
+  window.onload = _ => {
+    setFocus();
+  }
+</script>
+
+</html>
