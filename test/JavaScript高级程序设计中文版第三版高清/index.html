@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+  // 工厂模式
+  function creatPeson (name,age) {
+    var o = new Object();
+    o.name = name;
+    o.age = age;
+    o.sayName = function() {
+      alert(this.name)
+    }
+    return o;
+  }
+  
+  var perons1 = creatPeson("xcming",22);
+  var perons2 = creatPeson("xcming2",24);
+  // 工厂模式虽然解决了创建 多个相似对象的问题，但却没有解决对象识别的问题（即怎样知道一个对象的类型）。
+  
+  // 构造函数模式
+  function Person(name,age) {
+    
+  }
+</script>
+</html>
