@@ -11,24 +11,12 @@
 
 </body>
 <script>
-  // 工厂模式
-  function creatPeson (name,age) {
-    var o = new Object();
-    o.name = name;
-    o.age = age;
-    o.sayName = function() {
-      alert(this.name)
+  function outputNumbers(count){
+    for (var i=0; i < count; i++){
+      alert(i+"11");
     }
-    return o;
-  }
-  
-  var perons1 = creatPeson("xcming",22);
-  var perons2 = creatPeson("xcming2",24);
-  // 工厂模式虽然解决了创建 多个相似对象的问题，但却没有解决对象识别的问题（即怎样知道一个对象的类型）。
-  
-  // 构造函数模式
-  function Person(name,age) {
-    
-  }
+    alert(i+"222");   //计数
+   }
+  outputNumbers(3)
 </script>
 </html>
