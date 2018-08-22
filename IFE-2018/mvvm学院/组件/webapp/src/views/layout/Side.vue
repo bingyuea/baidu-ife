@@ -1,14 +1,31 @@
 <template>
   <div class = "side">
     <ul class = "side_content">
-      <li class = "side_item">级联组件</li>
+      <li class = "side_item"
+          v-for = "(item,index,key) in menu"
+          :path = "item.path"
+          @click = "pushRouter(item)"
+      >{{item.name}}</li>
     </ul>
   </div>
 </template>
 
 <script>
+  import menu from "../../var/menu"
   export default {
-    name: "side"
+    name: "side",
+    data(){
+      return{
+        menu,
+      }
+    },
+    methods:{
+      pushRouter(item){
+        this.$router.push({
+          path:`components/${item.path}`
+        })
+      }
+    }
   }
 </script>
 
