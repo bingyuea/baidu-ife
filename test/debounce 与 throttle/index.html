@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 300px;
+      border: 1px solid #000;
+      display: inline-block;
+      margin: 30px 15px 0;
+      text-align: center;
+      line-height: 300px;
+      color: #00a0e9;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div class="box">不处理</div>
+<div class="box">节流</div>
+<div class="box">防抖</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+<script>
+  window.onload = (_ => {
+    let boxs = document.querySelectorAll(".box");
+    // [ ...boxs ].map(item => {
+    //   item.addEventListener("mousemove",() => {
+    //     console.log(`我在移动鼠标哦${moment().format("YYYY-MM-DD HH:mm:ss")}--${item.innerText}`)
+    //   })
+    // });
+  
+    [ ...boxs ].map(item => {
+      item.addEventListener("mousemove",debounce(function() {
+        console.log(this)
+        console.log(arguments)
+        console.log(`我在移动鼠标哦${moment().format("YYYY-MM-DD HH:mm:ss")}--${item.innerText}`)
+      },1000))
+    })
+    
+    
+    
+    function throttleFn(fn,delay) {
+      let last = null;
+      return function() {
+        let now = +new Date();
+        if( now - last > delay || !last){
+          last = now;
+          fn();
+        }
+      }
+    }
+    
+    // function fn() {
+    //   console.log(`2s执行一次${moment().format("YYYY-MM-DD HH:mm:ss SS")}`)
+    // }
+    // setInterval(throttle(fn,200),2000);
+  
+    function throttle(fun, delay) {
+      let last, deferTimer
+      return function (args) {
+        let that = this
+        let _args = arguments
+        let now = +new Date()
+        if (last && now < last + delay) {
+          clearTimeout(deferTimer)
+          deferTimer = setTimeout(function () {
+            last = now;
+            fun.apply(that, _args)
+          }, delay)
+        }else{
+          last = now;
+          fun.apply(that,_args)
+        }
+      }
+    }
+    
+    
+    function debounce(fn,delay) {
+      let time = null;
+      return function() {
+        let args = arguments;
+        if(time){
+          clearTimeout(time);
+          time = null;
+        };
+        time = setTimeout(() => {
+          fn.apply(this,args)
+        },delay)
+      }
+    }
+  })
+
+</script>
+</html>
