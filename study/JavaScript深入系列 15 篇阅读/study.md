@@ -1,16 +1,16 @@
-##### JavaScript深入之词法作用域和动态作用域
+##### JavaScript 深入之词法作用域和动态作用域
 
-* 作用域是指程序源代码中定义变量的区域
+- 作用域是指程序源代码中定义变量的区域
 
-* 作用域规定了如何查找变量，也就是确定当前执行代码对变量的访问权限。
+- 作用域规定了如何查找变量，也就是确定当前执行代码对变量的访问权限。
 
-* JavaScript 采用词法作用域(lexical scoping)，也就是静态作用域。
+- JavaScript 采用词法作用域(lexical scoping)，也就是静态作用域。
 
 ##### 静态作用域与动态作用域
 
-* 因为 JavaScript 采用的是词法作用域，函数的作用域在函数定义的时候就决定了。
+- 因为 JavaScript 采用的是词法作用域，函数的作用域在函数定义的时候就决定了。
 
-* 而与词法作用域相对的是动态作用域，函数的作用域是在函数调用的时候才决定的。
+- 而与词法作用域相对的是动态作用域，函数的作用域是在函数调用的时候才决定的。
 
 ```
 var value = 1;
@@ -37,10 +37,10 @@ bar();
 前面我们已经说了，JavaScript采用的是静态作用域，所以这个例子的结果是 1。
 ```
 
-##### JavaScript深入之执行上下文栈
+##### JavaScript 深入之执行上下文栈
 
-* 当执行到一个函数的时候，就会进行准备工作，这里的“准备工作”，让我们用个更专业一点的说法，就叫做"执行上下文(execution context)"。
-所以 JavaScript 引擎创建了执行上下文栈（Execution context stack，ECS）来管理执行上下文
+- 当执行到一个函数的时候，就会进行准备工作，这里的“准备工作”，让我们用个更专业一点的说法，就叫做"执行上下文(execution context)"。
+  所以 JavaScript 引擎创建了执行上下文栈（Execution context stack，ECS）来管理执行上下文
 
 ```
 function fun3() {
@@ -84,15 +84,15 @@ ECStack.pop();
 
 对于每个执行上下文，都有三个重要属性：
 
-* 变量对象(Variable object，VO)
-* 作用域链(Scope chain)
-* this
+- 变量对象(Variable object，VO)
+- 作用域链(Scope chain)
+- this
 
 ##### 变量对象
 
-* 变量对象是与执行上下文相关的数据作用域，存储了在上下文中定义的变量和函数声明。
+- 变量对象是与执行上下文相关的数据作用域，存储了在上下文中定义的变量和函数声明。
 
-* 因为不同执行上下文下的变量对象稍有不同，所以我们来聊聊全局上下文下的变量对象和函数上下文下的变量对象。
+- 因为不同执行上下文下的变量对象稍有不同，所以我们来聊聊全局上下文下的变量对象和函数上下文下的变量对象。
 
 ##### 函数上下文
 
@@ -182,3 +182,54 @@ ECStack.pop();
       在代码执行阶段，会再次修改变量对象的属性值
 ```
 
+##### 从原型到原型链
+
+- 构造函数创建一个对象
+
+```
+function Person(){
+
+}
+
+使用 new 创建一个实例对象person
+var person = new Person();
+person.name = "kevin";
+```
+
+- prototype
+
+每一个函数都有一个 prototype，只有函数才有的属性
+函数的 prototype 属性指向了一个对象，这个对象正是调用该构造函数而创建的实例的原型，也就是这个例子中的 person1 和 person2 的原型。
+
+那什么是原型呢？你可以这样理解：每一个 JavaScript 对象(null 除外)在创建的时候就会与之关联另一个对象，这个对象就是我们所说的原型，每一个对象都会从原型"继承"属性
+
+- proto
+
+这是每一个 JavaScript 对象(除了 null )都具有的一个属性，叫`_proto_`，这个属性会指向该对象的原型。
+
+- constructor
+  因为一个构造函数可以生成多个实例，但是原型指向构造函数倒是有的，这就要讲到第三个属性：constructor，每个原型都有一个 constructor 属性指向关联的构造函数。
+
+- Object.getPrototypeOf(person)
+  顺便学习一个 ES5 的方法,可以获得对象的原型
+  console.log(Object.getPrototypeOf(person) === Person.prototype) // true
+
+- 实例与原型
+
+当读取实例的属性时，如果找不到，就会查找与对象关联的原型中的属性，如果还查不到，就去找原型的原型，一直找到最顶层为止
+
+```
+function Person() {
+
+}
+
+Person.prototype.name = 'Kevin';
+
+var person = new Person();
+
+person.name = 'Daisy';
+console.log(person.name) // Daisy
+
+delete person.name;
+console.log(person.name) // Kevin
+```
