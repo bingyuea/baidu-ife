@@ -226,4 +226,167 @@ Vue.filter( id, [definition] )
 
 ```
 
-#### 测试 git
+### vue 生命周期
+
+#### beforeCreate
+
+```
+实例初始化   new vue（）
+
+数据观测   在vue的响应式系统中加入data对象中所有数据，这边涉及到vue的双向绑定
+
+暴露属性和方法   就是vue实例自带的一些属性和方法，我们可以看一个官网的例子，例子中带$的属性和方法就是vue实例自带的
+```
+
+#### create
+
+```
+el属性对生命周期的影响
+
+// 有el属性的情况下
+new Vue({
+el: '#app',
+beforeCreate: function() {
+  console.log('调用了beforeCreate')
+},
+created: function() {
+  console.log('调用了created')
+},
+beforeMount: function() {
+  console.log('调用了beforeMount')
+},
+mounted: function() {
+  console.log('调用了mounted')
+}
+})
+
+// 输出结果
+// 调用了beforeCreate
+// 调用了created
+// 调用了beforeMount
+// 调用了mounted
+
+
+// 在没有el属性的情况下，没有vm.$mount
+
+new Vue({
+beforeCreate: function() {
+  console.log('调用了beforeCreate')
+},
+created: function() {
+  console.log('调用了created')
+},
+beforeMount: function() {
+  console.log('调用了beforeMount')
+},
+mounted: function() {
+  console.log('调用了mounted')
+}
+})
+
+// 输出结果
+// 调用了beforeCreate
+// 调用了created
+
+```
+
+#### beforeMount 和 mounted
+
+```
+<div id="app">
+  <p>{{message}}</p>
+</div>
+
+new Vue({
+  el: '#app',
+  data: {
+    message: 1
+  },
+  beforeMount: function() {
+    console.log('调用了beforeMount');
+    console.log(this.message)
+    console.log(this.$el)
+  },
+  mounted: function() {
+    console.log('调用了mounted');
+    console.log(this.message)
+    console.log(this.$el)
+  }
+})
+
+// 输出的结果：
+// 调用了beforeMount
+// 1
+// <div>
+// </div>
+
+// 调用了mounted
+// 1
+// <div id="app">
+//  <p>1</p>
+// </div>
+
+```
+
+#### 生命周期总结
+
+```
+
+生命周期钩子	组件状态	最佳实践
+beforeCreate	实例初始化之后，this指向创建的实例，不能访问到data、computed、watch、methods上的方法和数据	常用于初始化非响应式变量
+created	实例创建完成，可访问data、computed、watch、methods上的方法和数据，未挂载到DOM，不能访问到$el属性，$ref属性内容为空数组	常用于简单的ajax请求，页面的初始化
+beforeMount	在挂载开始之前被调用，beforeMount之前，会找到对应的template，并编译成render函数	–
+mounted	实例挂载到DOM上，此时可以通过DOM API获取到DOM节点，$ref属性可以访问	常用于获取VNode信息和操作，ajax请求
+beforeupdate	响应式数据更新时调用，发生在虚拟DOM打补丁之前	适合在更新之前访问现有的DOM，比如手动移除已添加的事件监听器
+updated	虚拟 DOM 重新渲染和打补丁之后调用，组件DOM已经更新，可执行依赖于DOM的操作	避免在这个钩子函数中操作数据，可能陷入死循环
+beforeDestroy	实例销毁之前调用。这一步，实例仍然完全可用，this仍能获取到实例	常用于销毁定时器、解绑全局事件、销毁插件对象等操作
+destroyed	实例销毁后调用，调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁	–
+created阶段的ajax请求与mounted请求的区别：前者页面视图未出现，如果请求信息过多，页面会长时间处于白屏状态
+mounted 不会承诺所有的子组件也都一起被挂载。如果你希望等到整个视图都渲染
+完毕，可以用 vm.$nextTick
+
+vue2.0之后主动调用$destroy()不会移除dom节点，作者不推荐直接destroy这种做法，如果实在需要这样用可以在这个生命周期钩子中手动移除dom节点
+```
+
+#### vue 中的虚拟 dom
+
+```
+前面我们提到过render函数的参数createElement，其实你再回头去看createElement这个函数，就大概清楚是怎么回事，它实际上就生成了VNode（一个对象）。但是如果我们传入了template而没有传入render函数呢？vue会通过一个ast语法优化，对我们传入的template经过HTML解析器之后的对象转化为给createElement的参数。
+
+总之，你会发现，vue的render函数实际上是要生成VNode，它到真实的DOM，还有一个过程。
+
+VNode patch生成DOM
+Virtual DOM之所以快，是因为在生成真实的DOM之前，通过内部的一个简单的多的对象的对比，判断是否有变化，具体的变化在哪里，这个对比的过程比直接操作DOM要快非常多。
+
+vue还有一个特点，VNode还具有队列，当VNode发生变化时，会放在一个队列里，并不会马上去更新DOM，而是在遍历完整个队列之后才更新DOM。所以性能上又好了一些。
+
+vue里对比新旧DOM的方法是patchVnode这个方法，当它决定是否要更新DOM之前，会比较DOM节点对应的新旧VNode，只有不同时，才进行更新，这个对比是在VNode内部，因此比对比DOM快很多。patchValue这个方法是vue里面非常出色，可以说是vue里面使得Virtual DOM可行的核心部分。它的实现比较复杂，本书也说不清楚，你要是有兴趣，可以阅读源码，细心研究。
+
+vue生成真正的DOM靠createElm方法，它把一个VNode真正转化为真实的DOM。
+```
+
+#### vuex
+
+state : 定义所需要的数据， mapstate 用来批量获取 state
+getter: 获取 state 所定义的数据。mapgetter 用来 批量获取 ，类似 state 的 computed
+mutation : 定义更改 state 定义的数据方法 ，调用更改使用的 commit 同步
+
+```
+...mapMutations([`
+      'increment', // 将 `this.increment()` 映射为 `this.$store.commit('increment')`
+
+      // `mapMutations` 也支持载荷：
+      'incrementBy' // 将 `this.incrementBy(amount)` 映射为 `this.$store.commit('incrementBy', amount)`
+    ]),
+```
+
+action : 定义更改 state 定义的数据方法 ，调用更改使用的 dispatch 异步，mapActions 用来
+
+```
+...mapActions([
+'increment', // 将 `this.increment()` 映射为 `this.$store.dispatch('increment')`
+
+      // `mapActions` 也支持载荷：
+      'incrementBy' // 将 `this.incrementBy(amount)` 映射为 `this.$store.dispatch('incrementBy', amount)`
+    ]),
+```
