@@ -18,31 +18,27 @@
             eventHandle(document,"click",(e) => {
                 e = e || window.event;
                 let target  = e.target || e.srcElement,
-                    targetID = target.id;
+                    targetID = target.id,
+                  firstValue = getValue().firstValue,
+                  secondValue = getValue().secondValue;
+              if(checkNum(firstValue) === false|| checkNum(secondValue) === false ){
+                return;
+              }
                 switch (targetID){
                     case "add-btn" :
-                        if(checkNum(getValue().firstValue) === false|| checkNum(getValue().secondValue) === false ){
-                            return;
-                        }
-                        setValue(Number(getValue().firstValue) + Number(getValue().secondValue));
+                        setValue(Number(firstValue) + Number(secondValue));
                         break;
                     case "minus-btn" :
-                        if(checkNum(getValue().firstValue) === false|| checkNum(getValue().secondValue) === false ){
-                            return;
-                        }
-                        setValue(Number(getValue().firstValue) - Number(getValue().secondValue));
+                        setValue(Number(firstValue) - Number(secondValue));
                         break;
                     case "times-btn" :
-                        if(checkNum(getValue().firstValue) === false|| checkNum(getValue().secondValue) === false ){
-                            return;
-                        }
-                        setValue(Number(getValue().firstValue) * Number(getValue().secondValue));
+                        setValue(Number(firstValue) * Number(secondValue));
                         break
                     case "divide-btn" :
-                        if(checkNum(getValue().firstValue) === false|| checkNum(getValue().secondValue) === false || checkDevider(getValue().secondValue) === false){
+                        if(checkDevider(secondValue) === false){
                             return;
                         }
-                        setValue(Number(getValue().firstValue) / Number(getValue().secondValue));
+                        setValue(Number(firstValue) / Number(secondValue));
                         break;
                 }
             })
