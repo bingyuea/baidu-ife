@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/IFE-2018/day2527/倒数开始 滴答滴 滴答滴（一）.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IFE-2018/day2527/倒数开始 滴答滴 滴答滴（二）.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IFE-2018/day2527/函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IFE-2018/day78/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IFE-2018/day78/study.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/JavaScript权威指南(第6版)中文版/test.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(对象).html" beforeDir="false" afterPath="$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(对象).html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,29 +34,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="函数.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day2527/函数.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IFE-2018/day78/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="480">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="倒数开始 滴答滴 滴答滴（一）.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day2527/倒数开始 滴答滴 滴答滴（一）.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2231">
-              <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="倒数开始 滴答滴 滴答滴（二）.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day2527/倒数开始 滴答滴 滴答滴（二）.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+      <file leaf-file-name="study.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IFE-2018/day78/study.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="598">
+                <caret line="26" lean-forward="true" selection-end-line="33" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -154,6 +149,9 @@
         <option value="$PROJECT_DIR$/IFE-2018/day2527/函数.html" />
         <option value="$PROJECT_DIR$/IFE-2018/day2527/倒数开始 滴答滴 滴答滴.html" />
         <option value="$PROJECT_DIR$/IFE-2018/day2527/倒数开始 滴答滴 滴答滴（二）.html" />
+        <option value="$PROJECT_DIR$/test/JavaScript权威指南(第6版)中文版/test.MD" />
+        <option value="$PROJECT_DIR$/IFE-2018/day78/index.html" />
+        <option value="$PROJECT_DIR$/IFE-2018/day78/study.md" />
       </list>
     </option>
   </component>
@@ -176,8 +174,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="1935" />
-    <option name="height" value="1040" />
+    <option name="width" value="1550" />
+    <option name="height" value="834" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -187,93 +185,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
+              <item name="baiduIFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baiduIFE" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2017" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2017" type="462c0819:PsiDirectoryNode" />
-              <item name="binbin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2017" type="462c0819:PsiDirectoryNode" />
-              <item name="ECharts &amp; WebVR学院" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2017" type="462c0819:PsiDirectoryNode" />
-              <item name="xc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2017" type="462c0819:PsiDirectoryNode" />
-              <item name="yaoyao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
+              <item name="baiduIFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baiduIFE" type="462c0819:PsiDirectoryNode" />
               <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
+              <item name="baiduIFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baiduIFE" type="462c0819:PsiDirectoryNode" />
               <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="day16" type="462c0819:PsiDirectoryNode" />
+              <item name="day78" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="day19" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="day1718" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="day2021" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="day2224" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="day2527" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
+              <item name="baiduIFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baiduIFE" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baiduIFE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baiduIFE" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaScript权威指南(第6版)中文版" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -286,22 +231,22 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js-jscs-nodeInterpreter" value="D:\software\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dashbord" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sourceCode\spareWork\baidu-ife\IFE-2017\xc" />
+      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
+      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院\studyWebGL" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\sourceCode\spareWork\baidu-ife\IFE-2018\day2527" />
       <recent name="D:\sourceCode\spareWork\baidu-ife\IFE-2018\day2224" />
       <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
       <recent name="D:\sourceCode\spareWork\baidu-ife\test\深入理解javascript汤姆大叔的博客" />
       <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\sourceCode\spareWork\baidu-ife\IFE-2017\xc" />
-      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\yaoyao" />
-      <recent name="D:\sourceCode\spareWork\baidu-ife\temp\ECharts &amp; WebVR学院\studyWebGL" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -734,6 +679,12 @@
       <workItem from="1526906677944" duration="8218000" />
       <workItem from="1526979169592" duration="11938000" />
       <workItem from="1527165758004" duration="2133000" />
+      <workItem from="1531631333408" duration="435000" />
+      <workItem from="1531633194713" duration="1922000" />
+      <workItem from="1532232586933" duration="704000" />
+      <workItem from="1537578529607" duration="338000" />
+      <workItem from="1537582697185" duration="92000" />
+      <workItem from="1555731037452" duration="11310000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的任务">
       <created>1497935601764</created>
@@ -910,17 +861,24 @@
       <option name="project" value="LOCAL" />
       <updated>1526914300512</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="更改目录结构">
+      <created>1531631391569</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1531631391569</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190527000" />
+    <option name="totallyTimeSpent" value="205328000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21664464" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17228661" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3281471" />
@@ -996,11 +954,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/test/typeScript分享/js.js" />
-      </list>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1027,25 +980,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/设计模式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/typeScript分享/typeScript.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/typeScript分享/js.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/1.编写高质量的javascript.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-388">
@@ -1061,27 +995,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.4.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.3.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter1/1.1.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.4.1.html" />
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.3.1.html" />
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter1/1.1.1.html" />
     <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/WebGL No.1 - test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1089,25 +1005,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.1.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.2.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.3.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1800" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.1.1.html" />
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.2.1.html" />
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.3.1.html" />
     <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/test1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1164,41 +1064,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.2.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.3.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.4.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-412">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.1.html" />
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.1.2.html" />
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.2.1.html" />
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.3.1.html" />
+    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter8/8.4.1.html" />
     <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/test6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2088" />
@@ -1290,11 +1160,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="207">
@@ -1303,6 +1168,11 @@
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1334,10 +1204,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数组1).html">
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day2224/JavaScript里面的居民们(数组1).html" />
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day2527/倒数开始 滴答滴 滴答滴（一）.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="2231">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/JavaScript权威指南(第6版)中文版/test.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="253">
+            <caret line="11" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day2527/倒数开始 滴答滴 滴答滴（二）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
@@ -1348,17 +1238,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2018/day2527/倒数开始 滴答滴 滴答滴（一）.html">
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day78/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2231">
-          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
+        <state relative-caret-position="480">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2018/day2527/倒数开始 滴答滴 滴答滴（二）.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+    <entry file="file://$PROJECT_DIR$/IFE-2018/day78/study.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="598">
+            <caret line="26" lean-forward="true" selection-end-line="33" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
