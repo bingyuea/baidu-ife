@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>第三十一到第三十三天：我是精明的小卖家</title>
+</head>
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  
+  table, tr td, th td {
+    border: 1px solid #000;
+  }
+</style>
+<body>
+
+<div id="region-select">
+</div>
+<div id="product-select">
+</div>
+<div id="table-wrapper">
+</div>
+</body>
+<script src="../utils/util.js "></script>
+<script src="./data.js"></script>
+<script>
+  window.onload = _ => {
+    // 地区选择器
+    let regionSelectDom = utils.getID("region-select"),
+      productSelectDom = utils.getID("product-select"),
+      tableWrapperDom = utils.getID("table-wrapper"),
+      // 地区下拉框
+      regionList = getUniqueArr(sourceData,"region"),
+      // 产品下拉框
+      productList = getUniqueArr(sourceData,"product"),
+      // 月份
+      monthList = generateArr(1,12),
+      // thead
+      theadList = [
+        {
+          product: "商品",
+          region: "地区",
+          monthList: [ ...monthList ]
+        }
+      ]
+    
+    // 获取对应的数组
+    function getUniqueArr(data,type) {
+      let res = data.map((item,index,self) => {
+        return item[ type ];
+      })
+      res.unshift("全部")
+      return res = res.filter((item,index,self) => {
+        return self.indexOf(item) === index;
+      })
+    }
+    
+    // 生成下拉框
+    function generateOption(id,list) {
+      let fragment = "";
+      list.forEach(item => {
+        fragment += `
+          <label>${item}
+            <input type = 'checkbox' value = "${item}"/>
+          </label>
+          `;
+      })
+      id.innerHTML = fragment;
+    }
+    
+    function generateArr(min,max) {
+      let arr = [];
+      for (let i = min; i <= max; i++) {
+        arr.push(`${i}月`);
+      }
+      return arr;
+    }
+    // 生成option
+    generateOption(regionSelectDom,regionList);
+    generateOption(productSelectDom,productList);
+    
+    utils.eventHandle(regionSelectDom,"click",(e) => {
+      if(e.target.nodeName.toUpperCase() === "INPUT"){
+        let allSelect = regionSelectDom.children[0].children[0];
+        console.log(allSelect)
+        if(e.target.value === "全部"){
+          if(e.target.checked){
+            [...regionSelectDom.children].map((item,index) => {
+              item.children[0].checked = true;
+            })
+          }else{
+            [...regionSelectDom.children].map((item,index) => {
+              item.children[0].checked = false;
+            })
+          }
+        }else{
+          [...regionSelectDom.children].map((item,index) => {
+            if (item.children[0].checked === false){
+              allSelect.checked = false;
+            }
+          })
+        }
+      }
+      getTableData()
+    })
+    
+  
+    utils.eventHandle(productSelectDom,"change",(e) => {
+      getTableData()
+    })
+    getTableData();
+    function getTableData() {
+      handleAllSelected();
+      let res = filterData(sourceData,"region",regionSelectDom.value);
+      res = filterData(res,"product",productSelectDom.value)
+      res = theadList.concat(res);
+      let tableNode = renderTable(res);
+      tableWrapperDom.children.length > 0 ?
+        tableWrapperDom.replaceChild(tableNode,tableWrapperDom.children[ 0 ])
+        :
+        tableWrapperDom.appendChild(tableNode);
+    }
+    // 处理下拉框全选逻辑
+    function handleAllSelected() {
+      if(regionSelectDom.value === "全部"){
+        [...regionSelectDom.children].map(item => {
+          item.selected = true;
+        })
+      }
+    }
+    // 过滤出下拉框所选
+    function filterData(data,type,value) {
+      return data.filter((item,index) => {
+        return item[ type ] === value
+      })
+    }
+    
+    function renderTable(tableData) {
+      let tableNode = document.createElement("table"),
+        tbodyNode = document.createElement("tbody"),
+        tdNode,
+        textNode,
+        trNode;
+      for (let value of tableData) {
+        trNode = document.createElement("tr")
+        for (let k in value) {
+          if (Object.prototype.toString.call(value[ k ]) === "[object Array]") {
+            value[ k ].map(item => {
+              tdNode = document.createElement("td");
+              textNode = document.createTextNode(item);
+              tdNode.appendChild(textNode);
+              trNode.appendChild(tdNode);
+            })
+          } else {
+            tdNode = document.createElement("td");
+            textNode = document.createTextNode(value[ k ]);
+            tdNode.appendChild(textNode);
+            trNode.appendChild(tdNode);
+          }
+        }
+
+        tbodyNode.appendChild(trNode)
+      }
+      tableNode.appendChild(tbodyNode)
+      return tableNode;
+    }
+  }
+</script>
+</html>

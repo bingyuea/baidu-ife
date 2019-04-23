@@ -1,0 +1,23 @@
+<template>
+  <div class="hello">hello {{msg}}
+    <a href="https://segmentfault.com/a/1190000006178770">入门webpack</a>
+    <a href="https://www.webpackjs.com/guides/asset-management/#%E5%9B%9E%E9%80%80%E5%A4%84%E7%90%86">入门webpack中文文档</a>
+  </div>
+  
+</template>
+
+<script>
+  export default {
+    initData () {
+      return {
+        msg: 'hahaha'
+      };
+    }
+  }
+</script>
+
+<style>
+  .hello {
+    color: blue;
+  }
+</style>
