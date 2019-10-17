@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="">
+    <list default="true" id="168cee77-0594-41c1-96b6-5475efb3f210" name="Default" comment="更改目录结构">
+      <change beforePath="$PROJECT_DIR$/.idea/baidu-ife.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/baidu-ife.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IFE-2018/day78/study.md" beforeDir="false" afterPath="$PROJECT_DIR$/IFE-2018/day78/study.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,24 +33,85 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day78/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <entry file="file://$PROJECT_DIR$/study/JavaScript深入系列 15 篇阅读/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="倒数开始 滴答滴 滴答滴（一）.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IFE-2018/零基础学院/day2527/倒数开始 滴答滴 滴答滴（一）.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="study.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/study/JavaScript深入系列 15 篇阅读/study.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="study.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IFE-2018/day78/study.md">
+      <file leaf-file-name="readme.MD" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/vue音乐app/readme.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="798">
-                <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/vue编程-糖霜、/app/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="study.MD" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/JavaScript高级程序设计中文版第三版高清/study.MD">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="8778">
+                <caret line="418" selection-start-line="418" selection-end-line="418" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
               </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.编写高质量的javascript.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/深入理解javascript汤姆大叔的博客/1.编写高质量的javascript.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="2.函数表达式与函数声明.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/深入理解javascript汤姆大叔的博客/2.函数表达式与函数声明.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="3全面解析Module模式.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/深入理解javascript汤姆大叔的博客/3全面解析Module模式.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="6.SOLID 五大原则之一 单一职责SPR.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study/深入理解javascript汤姆大叔的博客/6.SOLID 五大原则之一 单一职责SPR.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="966">
+              <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -177,9 +238,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1550" />
-    <option name="height" value="834" />
+    <option name="x" value="-800" />
+    <option name="y" value="114" />
+    <option name="width" value="2586" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -189,34 +251,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="baiduIFE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baiduIFE" type="462c0819:PsiDirectoryNode" />
+              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="baiduIFE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baiduIFE" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baiduIFE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baiduIFE" type="462c0819:PsiDirectoryNode" />
-              <item name="IFE-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="day78" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baiduIFE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baiduIFE" type="462c0819:PsiDirectoryNode" />
+              <item name="baidu-ife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ife" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -527,22 +578,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -600,13 +635,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -684,6 +712,9 @@
       <workItem from="1537582697185" duration="92000" />
       <workItem from="1555731037452" duration="11310000" />
       <workItem from="1558235837511" duration="510000" />
+      <workItem from="1558917918768" duration="493000" />
+      <workItem from="1561537467482" duration="3921000" />
+      <workItem from="1561966159160" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="添加新的任务">
       <created>1497935601764</created>
@@ -885,13 +916,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207249000" />
+    <option name="totallyTimeSpent" value="211678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17228661" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17017913" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3281471" />
@@ -914,19 +944,19 @@
       <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32936078" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32972974" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Nl-Palette" order="6" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="JRebel Executor" order="12" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32936078" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32972974" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" id="Key Promoter" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="2" />
@@ -994,40 +1024,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/1.编写高质量的javascript.html" />
-    <entry file="file://$PROJECT_DIR$/temp/stickyRice/test1.html" />
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/WebGL No.1 - Three.js 入门.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.4.1.html" />
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter2/2.3.1.html" />
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter1/1.1.1.html" />
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/WebGL No.1 - test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="70" lean-forward="true" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.1.1.html" />
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.2.1.html" />
-    <entry file="file://$PROJECT_DIR$/IFE-2017/ECharts &amp; WebVR学院/studyWebGL/ThreeExample.js/Chapter3/3.3.1.html" />
-    <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/test1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/3全面解析Module模式.html" />
-    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/2.函数表达式与函数声明.html" />
-    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/6.SOLID 五大原则之一 单一职责SPR.html" />
-    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/7.SOLID五大原则之开闭原则.html" />
-    <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/20.javaScript 的语法五道.html" />
     <entry file="file://$PROJECT_DIR$/test/深入理解javascript汤姆大叔的博客/23 和 24 略js  和 dom.html" />
     <entry file="file://$PROJECT_DIR$/IFE-2017/yaoyao/position 如何使用.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1146,7 +1142,7 @@
     <entry file="file://$PROJECT_DIR$/IFE-2018/day2527/函数.html" />
     <entry file="file://$PROJECT_DIR$/IFE-2018/day78/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
+        <state relative-caret-position="441">
           <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
@@ -1157,6 +1153,100 @@
           <first_editor relative-caret-position="798">
             <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/零基础学院/day16/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/零基础学院/day19/dom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2268" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/零基础学院/day2021/让你和页面对话.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/零基础学院/day2224/JavaScript里面的居民们(字符串去空格).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-768" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/零基础学院/day2224/JavaScript里面的居民们(对象).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1323" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/零基础学院/day2224/JavaScript里面的居民们(数字类型).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2175" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IFE-2018/零基础学院/day2527/倒数开始 滴答滴 滴答滴（一）.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/vue音乐app/readme.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/vue编程-糖霜、/app/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/JavaScript高级程序设计中文版第三版高清/study.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="8778">
+            <caret line="418" selection-start-line="418" selection-end-line="418" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/深入理解javascript汤姆大叔的博客/1.编写高质量的javascript.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/深入理解javascript汤姆大叔的博客/2.函数表达式与函数声明.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/深入理解javascript汤姆大叔的博客/3全面解析Module模式.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/深入理解javascript汤姆大叔的博客/6.SOLID 五大原则之一 单一职责SPR.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/JavaScript深入系列 15 篇阅读/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/JavaScript深入系列 15 篇阅读/study.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
